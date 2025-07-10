@@ -1,0 +1,45 @@
+version: "3.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - have a nice day
+
+- intent: ask_about_college_pdf
+  examples: |
+    - Tell me about the admission guidelines
+    - What are the college rules?
+    - Can you provide information from the PDF?
+    - I want to know about the college policies
+
+- intent: ask_about_college_t5
+  examples: |
+    - What courses are offered?
+    - Tell me about the faculty
+    - How is the campus life?
+    - What are the admission criteria?
+
+- intent: affirm
+  examples: |
+    - yes
+    - indeed
+    - correct
+    - right
+
+- intent: deny
+  examples: |
+    - no
+    - never
+    - I don't think so
+    - don't like that

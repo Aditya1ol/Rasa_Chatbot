@@ -1,0 +1,23 @@
+version: "3.0"
+
+rules:
+- rule: Greet and ask topic
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_topic
+
+- rule: Respond to goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Handle ask_about_college_pdf intent
+  steps:
+  - intent: ask_about_college_pdf
+  - action: action_fetch_pdf_info
+
+- rule: Handle ask_about_college_t5 intent
+  steps:
+  - intent: ask_about_college_t5
+  - action: action_generate_t5_response

@@ -1,0 +1,7 @@
+*.safetensors
+*.pt
+*.pkl
+__pycache__/
+env/
+*.log
+.DS_Store

@@ -1,0 +1,34 @@
+version: "3.0"
+
+intents:
+  - greet
+  - goodbye
+  - ask_about_college_pdf
+  - ask_about_college_t5
+  - affirm
+  - deny
+
+entities:
+  - topic
+
+slots:
+  topic:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: topic
+
+responses:
+  utter_greet:
+    - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day."
+
+  utter_ask_topic:
+    - text: "What topic would you like to know about?"
+
+actions:
+  - action_fetch_pdf_info
+  - action_generate_t5_response

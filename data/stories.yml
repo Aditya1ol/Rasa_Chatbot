@@ -1,0 +1,23 @@
+version: "3.0"
+
+stories:
+- story: greet and ask topic
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - action: utter_ask_topic
+
+- story: goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: ask about college pdf
+  steps:
+  - intent: ask_about_college_pdf
+  - action: action_fetch_pdf_info
+
+- story: ask about college t5
+  steps:
+  - intent: ask_about_college_t5
+  - action: action_generate_t5_response

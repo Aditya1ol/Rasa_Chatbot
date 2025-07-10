@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>College Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <h1>College Chatbot</h1>
+
+  <!-- Dropdown selector -->
+  <div>
+    <select id="question-dropdown">
+      <option value="" disabled selected>Select a question</option>
+      {% for item in saved_questions %}
+      {% set question_only = item.question.split('Answer:')[0].strip() %}
+      <option value="{{ item.question }}">{{ question_only }}</option>
+      {% endfor %}
+    </select>
+    <button id="send-dropdown-btn">Ask</button>
+  </div>
+
+  <!-- Chat container -->
+  <div class="chat-container">
+    <div id="chat-messages" class="chat-messages"></div>
+
+    <!-- Input form -->
+    <form id="chat-form" class="chat-input">
+      <textarea id="msg" placeholder="Type your question here..." required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+
+  <script>
+    const chatMessages = document.getElementById("chat-messages");
+    const chatForm = document.getElementById("chat-form");
+    const msgInput = document.getElementById("msg");
+    const dropdown = document.getElementById("question-dropdown");
+    const sendDropdownBtn = document.getElementById("send-dropdown-btn");
+
+    function appendMessage(sender, text) {
+      const msgDiv = document.createElement("div");
+      msgDiv.classList.add("message", sender === "User" ? "user" : "bot");
+      msgDiv.innerText = `${text}`;
+      chatMessages.appendChild(msgDiv);
+      chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+
+    async function sendMessage(text) {
+      appendMessage("User", text);
+      msgInput.value = "";
+
+      const response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message: text }),
+      });
+
+      const data = await response.json();
+      if (data.response) {
+        data.response.forEach(msg => appendMessage("Bot", msg));
+      } else {
+        appendMessage("Bot", "Sorry, something went wrong.");
+      }
+    }
+
+    chatForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+      const msg = msgInput.value.trim();
+      if (msg) sendMessage(msg);
+    });
+
+sendDropdownBtn.addEventListener("click", function () {
+  const selected = dropdown.value;
+  if (selected) {
+    // Set input to only the question text without answer
+    msgInput.value = selected;
+    sendMessage(selected);
+  }
+});
+  </script>
+</body>
+</html>
