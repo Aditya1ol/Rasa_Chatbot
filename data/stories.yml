@@ -1,23 +1,85 @@
 version: "3.0"
-
 stories:
-- story: greet and ask topic
+- story: admission query
+  steps:
+  - intent: ask_admission
+  - action: utter_ask_admission
+  - intent: ask_more_details
+  - action: utter_admission_details
+- story: hostel fee query
+  steps:
+  - intent: ask_hostel_fees
+  - action: utter_ask_hostel_fees
+- story: club query
+  steps:
+  - intent: ask_clubs
+  - action: utter_ask_clubs
+- story: greet path
   steps:
   - intent: greet
   - action: utter_greet
-  - action: utter_ask_topic
 
-- story: goodbye
+- story: goodbye path
   steps:
   - intent: goodbye
   - action: utter_goodbye
 
-- story: ask about college pdf
+- story: affirm path
   steps:
-  - intent: ask_about_college_pdf
-  - action: action_fetch_pdf_info
+  - intent: affirm
+  - action: utter_affirm
 
-- story: ask about college t5
+- story: deny path
   steps:
-  - intent: ask_about_college_t5
-  - action: action_generate_t5_response
+  - intent: deny
+  - action: utter_deny
+
+- story: mood great path
+  steps:
+  - intent: mood_great
+  - action: utter_happy
+
+- story: mood unhappy path
+  steps:
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+
+- story: chit chat path
+  steps:
+  - intent: chit_chat
+  - action: utter_chitchat
+
+- story: ask weather
+  steps:
+  - intent: ask_weather
+  - action: utter_weather
+
+- story: ask time
+  steps:
+  - intent: ask_time
+  - action: utter_time
+
+- story: ask date
+  steps:
+  - intent: ask_date
+  - action: utter_date
+
+- story: favorite color
+  steps:
+  - intent: smalltalk_favorite_color
+  - action: utter_favorite_color
+
+- story: hobby
+  steps:
+  - intent: smalltalk_hobby
+  - action: utter_hobby
+
+- story: music
+  steps:
+  - intent: smalltalk_music
+  - action: utter_music
+
+- story: movie
+  steps:
+  - intent: smalltalk_movie
+  - action: utter_movie

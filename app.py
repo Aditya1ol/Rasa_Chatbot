@@ -1,16 +1,50 @@
 from flask import Flask, render_template, request, jsonify
 import os
-import fitz  # PyMuPDF
+import pdfplumber
 import faiss
 import pickle
 import numpy as np
-from sentence_transformers import SentenceTransformer
-import requests
+from sentence_transformers import SentenceTransformer, util
 from flask_cors import CORS
 import json
+import requests
+import torch
+from transformers import T5ForConditionalGeneration, T5Tokenizer
+import logging
+from cachetools import TTLCache
+import re
 
 app = Flask(__name__)
 CORS(app)
+logging.basicConfig(level=logging.INFO, filename="chatbot.log")
+
+# Configuration
+PDF_FOLDER = "pdfs"
+INDEX_PATH = "pdf_index.faiss"
+CHUNKS_PATH = "pdf_chunks.pkl"
+RASA_API_URL = os.getenv("RASA_API_URL", "http://localhost:5005/webhooks/rest/webhook")
+EMBEDDING_MODEL = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
+cache = TTLCache(maxsize=100, ttl=3600)
+
+# Global T5 model
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+try:
+    t5_tokenizer = T5Tokenizer.from_pretrained("actions/trained_model")
+    t5_model = T5ForConditionalGeneration.from_pretrained("actions/trained_model").to(device)
+    logging.info("Loaded T5 model from actions/trained_model")
+except Exception as e:
+    logging.warning(f"Failed to load T5 model: {e}. Using t5-small.")
+    t5_tokenizer = T5Tokenizer.from_pretrained("t5-small")
+    t5_model = T5ForConditionalGeneration.from_pretrained("t5-small").to(device)
+
+# Global FAISS index
+index = None
+chunks = []
+if os.path.exists(INDEX_PATH) and os.path.exists(CHUNKS_PATH):
+    index = faiss.read_index(INDEX_PATH)
+    with open(CHUNKS_PATH, "rb") as f:
+        chunks = pickle.load(f)
+    logging.info(f"Loaded FAISS index and {len(chunks)} chunks")
 
 # Track continuation state
 pdf_response_state = {
@@ -18,18 +52,11 @@ pdf_response_state = {
     "pointer": 0
 }
 
-# Configuration
-PDF_FOLDER = "pdfs"
-INDEX_PATH = "pdf_index.faiss"
-CHUNKS_PATH = "pdf_chunks.pkl"
-RASA_API_URL = "http://localhost:5005/webhooks/rest/webhook"
-EMBEDDING_MODEL = SentenceTransformer("sentence-transformers/all-MiniLM-L6-v2")
-
-# Load pre-saved questions from college_faq.json
+# Load FAQs
 with open("college_faq.json", "r", encoding="utf-8") as f:
     saved_faq = json.load(f)
 
-# Load generated questions from generated_questions.json
+# Load generated questions
 GENERATED_QUESTIONS_PATH = "generated_questions.json"
 if os.path.exists(GENERATED_QUESTIONS_PATH):
     with open(GENERATED_QUESTIONS_PATH, "r", encoding="utf-8") as f:
@@ -37,145 +64,147 @@ if os.path.exists(GENERATED_QUESTIONS_PATH):
 else:
     generated_questions = []
 
-# 📄 Extract text chunks from a PDF
-import re
-
+# Clean text
 def clean_text(text):
-    # Remove multiple spaces, newlines, tabs
     text = re.sub(r'\s+', ' ', text)
-    # Remove leading/trailing spaces
-    text = text.strip()
-    return text
+    return text.strip()
 
+# Extract chunks from PDF
 def extract_chunks_from_pdf(pdf_path, max_chars=500):
-    doc = fitz.open(pdf_path)
     chunks = []
-    for page in doc:
-        text = page.get_text()
-        # Clean extracted text
-        text = clean_text(text)
-        lines = text.split('. ')  # Split by sentences for better chunking
-        current_chunk = ""
-        for line in lines:
-            if len(current_chunk) + len(line) < max_chars:
-                current_chunk += line + ". "
-            else:
-                chunks.append(current_chunk.strip())
-                current_chunk = line + ". "
-        if current_chunk:
-            chunks.append(current_chunk.strip())
+    try:
+        with pdfplumber.open(pdf_path) as doc:
+            for page in doc.pages:
+                text = page.extract_text() or ""
+                text = clean_text(text)
+                sentences = text.split('. ')
+                current_chunk = ""
+                for sentence in sentences:
+                    if len(current_chunk) + len(sentence) < max_chars:
+                        current_chunk += sentence + ". "
+                    else:
+                        if current_chunk:
+                            chunks.append(current_chunk.strip())
+                        current_chunk = sentence + ". "
+                if current_chunk:
+                    chunks.append(current_chunk.strip())
+    except Exception as e:
+        logging.error(f"Failed to process {pdf_path}: {e}")
     return chunks
 
-# ⚙️ Process all PDFs into FAISS index
+# Process PDFs into FAISS index
 def process_all_pdfs():
-    # Check if index and chunks already exist to avoid reprocessing
     if os.path.exists(INDEX_PATH) and os.path.exists(CHUNKS_PATH):
-        print(f"✅ Using cached index '{INDEX_PATH}' and chunks '{CHUNKS_PATH}'")
+        logging.info(f"Using cached index '{INDEX_PATH}' and chunks '{CHUNKS_PATH}'")
         return
-
     all_chunks = []
     for filename in os.listdir(PDF_FOLDER):
         if filename.endswith(".pdf"):
             pdf_path = os.path.join(PDF_FOLDER, filename)
-            print(f"🔍 Processing: {filename}")
-            try:
-                chunks = extract_chunks_from_pdf(pdf_path)
-                all_chunks.extend(chunks)
-            except Exception as e:
-                print(f"❌ Failed to process {filename}: {e}")
-
+            logging.info(f"Processing: {filename}")
+            chunks = extract_chunks_from_pdf(pdf_path)
+            all_chunks.extend(chunks)
     if all_chunks:
-        print(f"💬 Total Chunks: {len(all_chunks)}")
+        logging.info(f"Total Chunks: {len(all_chunks)}")
         embeddings = EMBEDDING_MODEL.encode(all_chunks, show_progress_bar=True)
         dim = embeddings[0].shape[0]
         index = faiss.IndexFlatL2(dim)
         index.add(np.array(embeddings))
-
         faiss.write_index(index, INDEX_PATH)
         with open(CHUNKS_PATH, "wb") as f:
             pickle.dump(all_chunks, f)
-        print(f"✅ Saved index to '{INDEX_PATH}' and chunks to '{CHUNKS_PATH}'")
+        logging.info(f"Saved index to '{INDEX_PATH}' and chunks to '{CHUNKS_PATH}'")
     else:
-        print("⚠️ No PDF content found to index.")
+        logging.warning("No PDF content found to index.")
 
-# 🤖 Get response from Rasa
-import torch
-from transformers import T5ForConditionalGeneration, T5Tokenizer, T5TokenizerFast
-
-# Load T5 model and tokenizer
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-t5_model_path = "actions/trained_model"
-try:
-    # Load model from PyTorch .bin file in actions/trained_model
-    t5_tokenizer = T5Tokenizer.from_pretrained(t5_model_path)
-    t5_model = T5ForConditionalGeneration.from_pretrained(t5_model_path).to(device)
-except Exception as e:
-    print(f"Failed to load model from {t5_model_path}: {e}")
-    # Fallback: Load from new_college_bot with safetensors (may fail)
-    t5_tokenizer = T5Tokenizer.from_pretrained("new_college_bot")
-    t5_model = T5ForConditionalGeneration.from_pretrained("new_college_bot").to(device)
-
+# Generate T5 response
 def generate_t5_response(message, context=None):
-    # If context is provided, prepend it to the message for T5 input
-    input_text = message
-    if context:
-        # Combine context chunks into a single string
-        context_text = " ".join(context)
-        input_text = f"Context: {context_text} Question: {message}"
+    cache_key = (message, tuple(context or []))
+    if cache_key in cache:
+        return cache[cache_key]
 
+    # Preprocess context chunks to remove "Question X:" and "Answer:" prefixes for cleaner input
+    def clean_chunk(chunk):
+        chunk = re.sub(r'Question \d+:', '', chunk, flags=re.IGNORECASE)
+        chunk = re.sub(r'Answer:', '', chunk, flags=re.IGNORECASE)
+        return chunk.strip()
+
+    cleaned_context = [clean_chunk(c) for c in context] if context else []
+    context_text = " ".join(cleaned_context) if cleaned_context else "UIET Chandigarh is a premier engineering institute offering B.E., M.E., and Ph.D. programs."
+
+    input_text = f"Context: {context_text} Question: {message} Answer:"
     inputs = t5_tokenizer.encode(input_text, return_tensors="pt", truncation=True, max_length=512).to(device)
     outputs = t5_model.generate(
         inputs,
         max_length=150,
         num_beams=10,
         early_stopping=True,
-        no_repeat_ngram_size=3,  # Avoid repeating phrases
-        length_penalty=2.0,      # Encourage shorter responses
-        max_new_tokens=100,       # Limit generated tokens
-        num_return_sequences=1,   # Generate 1 response to avoid confusion
-        do_sample=False           # Disable sampling for deterministic output
+        no_repeat_ngram_size=3,
+        length_penalty=2.0,
+        max_new_tokens=100
     )
-    response = t5_tokenizer.decode(outputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True)
-
-    # Fix spacing issues by replacing multiple spaces with single space
+    response = t5_tokenizer.decode(outputs[0], skip_special_tokens=True)
     response = ' '.join(response.split())
-
-    # Post-process to truncate overly long responses
     if len(response) > 300:
         response = response[:300] + "..."
-    return response
+    cache[cache_key] = response
 
+# Get Rasa response
 def get_rasa_response(message):
     try:
-        response = requests.post(RASA_API_URL, json={"sender": "user", "message": message})
+        response = requests.post(RASA_API_URL, json={"sender": "user", "message": message}, timeout=5)
         response.raise_for_status()
-        bot_messages = response.json()
-        return [msg.get("text", "") for msg in bot_messages if msg.get("text")]
+        return [msg.get("text", "") for msg in response.json() if msg.get("text")]
     except requests.exceptions.RequestException as e:
-        print(f"❌ Rasa error: {e}")
+        logging.error(f"Rasa error: {e}")
         return []
 
-# 📚 Get response from PDF semantic search
-def get_pdf_response(message, k=3):
-    if not os.path.exists(INDEX_PATH) or not os.path.exists(CHUNKS_PATH):
+# Get PDF response
+def get_pdf_response(message, k=5):
+    if not index or not chunks:
         return ["No PDF data found."]
-
     try:
-        index = faiss.read_index(INDEX_PATH)
-        with open(CHUNKS_PATH, "rb") as f:
-            chunks = pickle.load(f)
-            pdf_response_state["chunks"] = chunks
-
         query_embedding = EMBEDDING_MODEL.encode([message])
-        distances, indices = index.search(query_embedding, k)
-        results = [chunks[idx] for idx in indices[0] if idx < len(chunks)]
+        distances, indices = index.search(query_embedding, k * 3)  # Search more to filter later
+        candidate_chunks = [chunks[idx] for idx in indices[0] if idx < len(chunks)]
 
-        pdf_response_state["pointer"] = min(2, len(results))
+        # Filter out redundant chunks based on semantic similarity
+        filtered_chunks = []
+        filtered_embeddings = []
+        for chunk in candidate_chunks:
+            chunk_embedding = EMBEDDING_MODEL.encode([chunk])[0]
+            if not any(np.dot(chunk_embedding, fe) / (np.linalg.norm(chunk_embedding) * np.linalg.norm(fe)) > 0.85 for fe in filtered_embeddings):
+                filtered_chunks.append(chunk)
+                filtered_embeddings.append(chunk_embedding)
+            if len(filtered_chunks) >= k:
+                break
 
-        return results[:2]
+        pdf_response_state["chunks"] = filtered_chunks
+        pdf_response_state["pointer"] = min(2, len(filtered_chunks))
+        return filtered_chunks[:2]
     except Exception as e:
-        print(f"❌ PDF search error: {e}")
-        return ["Error processing the PDF."]
+        logging.error(f"PDF search error: {e}")
+        return ["Error processing PDF."]
+
+# Deduplicate responses
+def deduplicate_responses(responses, threshold=0.9):
+    embeddings = EMBEDDING_MODEL.encode(responses)
+    unique_responses = []
+    for i, (resp, emb) in enumerate(zip(responses, embeddings)):
+        if not any(util.cos_sim(emb, EMBEDDING_MODEL.encode([ur])) > threshold for ur in unique_responses):
+            unique_responses.append(resp)
+    return unique_responses
+
+# Semantic FAQ matching
+def find_faq_answer(user_message):
+    user_embedding = EMBEDDING_MODEL.encode([user_message])
+    faq_questions = [faq["question"].lower() for faq in saved_faq]
+    faq_embeddings = EMBEDDING_MODEL.encode(faq_questions)
+    similarities = util.cos_sim(user_embedding, faq_embeddings)[0]
+    best_idx = similarities.argmax().item()
+    if similarities[best_idx] > 0.8:
+        return saved_faq[best_idx]["answer"]
+    return None
 
 @app.route("/")
 def landing():
@@ -183,88 +212,61 @@ def landing():
 
 @app.route("/chatbot")
 def home():
-    # Pass saved questions and generated questions to template
     return render_template("index.html", saved_questions=saved_faq, generated_questions=generated_questions)
 
 @app.route("/chat", methods=["POST"])
 def chat():
     user_message = request.json.get("message", "").strip().lower()
-
-    # CONTINUE case
     if user_message in ["continue", "more"]:
         if pdf_response_state["chunks"]:
             start = pdf_response_state["pointer"]
-            end = start + 2
-            next_chunks = pdf_response_state["chunks"][start:end]
-            pdf_response_state["pointer"] = end
-            if next_chunks:
+            remaining_chunks = pdf_response_state["chunks"][start:]
+            if remaining_chunks:
+                next_chunks = remaining_chunks[:2]
+                pdf_response_state["pointer"] += len(next_chunks)
                 return jsonify({"response": next_chunks})
             else:
                 return jsonify({"response": ["No more information to show."]})
         else:
-            return jsonify({"response": ["There's no previous answer to continue from."]})
+            return jsonify({"response": ["No previous answer to continue from."]})
+    
+    # Check FAQ
+    faq_answer = find_faq_answer(user_message)
+    if faq_answer:
+        return jsonify({"response": [faq_answer]})
 
-    # Check if user_message matches any FAQ question exactly (case-insensitive)
-    matched_answer = None
-    for faq_entry in saved_faq:
-        faq_question = faq_entry.get("question", "").strip().lower()
-        if user_message == faq_question:
-            matched_answer = faq_entry.get("answer", "").strip()
-            break
-
-    if matched_answer:
-        # Return exact FAQ answer without generalization
-        return jsonify({"response": [matched_answer]})
-
-    # New query case
+    # Get responses
     rasa_responses = get_rasa_response(user_message)
+    pdf_chunks = get_pdf_response(user_message)
+    t5_response = generate_t5_response(user_message, context=pdf_chunks)
 
-    # Get top 5 semantically matched chunks
-    all_chunks = []
-    top_chunks = []
-    if os.path.exists(INDEX_PATH) and os.path.exists(CHUNKS_PATH):
-        with open(CHUNKS_PATH, "rb") as f:
-            all_chunks = pickle.load(f)
-        index = faiss.read_index(INDEX_PATH)
-        query_embedding = EMBEDDING_MODEL.encode([user_message])
-        distances, indices = index.search(query_embedding, 5)
-        top_chunks = [all_chunks[i] for i in indices[0] if i < len(all_chunks)]
-
-    # Store chunks for continuation
-    pdf_response_state["chunks"] = top_chunks
-    pdf_response_state["pointer"] = 2  # first 2 shown immediately
-
-    # Prepare response
-    response_chunks = top_chunks[:2]
-
-    # Generate T5 response with PDF context
-    t5_response = generate_t5_response(user_message, context=response_chunks)
-
-    # Combine responses with priority: Rasa for question answers, then T5, then PDF chunks
+    # Combine responses
     final_responses = []
-    # Add Rasa response if available
-    if rasa_responses:
-        for resp in rasa_responses[:1]:
-            if resp.strip():
-                final_responses.append(resp)
-                break
-    # Add T5 responses if available and different from Rasa
-    elif t5_response:
-        # Combine multiple T5 responses into one summary
-        combined_response = " ".join([resp.strip() for resp in t5_response if resp.strip()])
-        if combined_response:
-            final_responses.append(combined_response)
-    # Add PDF chunks only if not duplicate
-    elif response_chunks:
-        for chunk in response_chunks:
-            if chunk.strip():
-                final_responses.append(chunk)
-                break
+    if rasa_responses and t5_response and t5_response.strip() and not any(gf in t5_response.lower() for gf in generic_fallbacks):
+        # Combine Rasa and T5 responses
+        combined_response = rasa_responses[0].strip()
+        if t5_response.strip() not in combined_response:
+            combined_response += " " + t5_response.strip()
+        final_responses.append(combined_response)
+    elif rasa_responses:
+        final_responses.extend(rasa_responses[:1])
+    elif t5_response and t5_response.strip() and not any(gf in t5_response.lower() for gf in generic_fallbacks):
+        final_responses.append(t5_response)
+    elif pdf_chunks:
+        final_responses.extend(pdf_chunks)
+    else:
+        final_responses.append("Sorry, I couldn't find any relevant information.")
 
-    if not final_responses:
-        final_responses = ["Sorry, I couldn't find any relevant information."]
-
+    final_responses = deduplicate_responses(final_responses)
     return jsonify({"response": final_responses})
+
+@app.route("/save_faq", methods=["POST"])
+def save_faq():
+    new_faq = request.json.get("faq", {})
+    saved_faq.append(new_faq)
+    with open("college_faq.json", "w", encoding="utf-8") as f:
+        json.dump(saved_faq, f, indent=2)
+    return jsonify({"message": "FAQ saved successfully"})
 
 if __name__ == "__main__":
     if not os.path.exists(PDF_FOLDER):

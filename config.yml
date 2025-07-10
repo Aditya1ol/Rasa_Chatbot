@@ -4,6 +4,8 @@ pipeline:
 - name: WhitespaceTokenizer
 - name: CountVectorsFeaturizer
 - name: DIETClassifier
+- name: RegexFeaturizer
+- name: LexicalSyntacticFeaturizer
   epochs: 100
 - name: EntitySynonymMapper
 - name: ResponseSelector

@@ -1,0 +1,58 @@
+version: "3.0"
+intents:
+  - ask_admission
+  - ask_hostel_fees
+  - ask_clubs
+  - ask_more_details
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - chit_chat
+  - ask_weather
+  - ask_time
+  - ask_date
+  - smalltalk_favorite_color
+  - smalltalk_hobby
+  - smalltalk_music
+  - smalltalk_movie
+responses:
+  utter_ask_admission:
+  - text: "To get admission in UIET Chandigarh, appear for JEE Main 2025 and register for JAC Chandigarh Counselling. You need to pass Class 12 with Physics, Mathematics, and a language."
+  utter_admission_details:
+  - text: "The JEE Main cutoff for UIET in 2024 ranged from 31,588 to 109,323 for General category. Computer Science closes at ~30,000 AIR."
+  utter_ask_hostel_fees:
+  - text: "Hostel fees at UIET Chandigarh are approximately INR 1,800/month for regular hostels and INR 7,000/month for the International Hostel."
+  utter_ask_clubs:
+  - text: "UIET has 8–9 active clubs, including DIG, SAE-UIET, EDC, Rotaract, BPC, TPC, Osmium, and Magboard."
+  utter_greet:
+  - text: "Hello! How can I assist you today?"
+  utter_goodbye:
+  - text: "Goodbye! Have a great day."
+  utter_affirm:
+  - text: "Great! How can I help you further?"
+  utter_deny:
+  - text: "Okay, let me know if you have any other questions."
+  utter_happy:
+  - text: "I'm glad to hear that! How can I assist you?"
+  utter_cheer_up:
+  - text: "I'm sorry to hear that. I hope things get better soon."
+  utter_chitchat:
+  - text: "I'm here to chat! Ask me anything or tell me a joke."
+  utter_weather:
+  - text: "I can't provide real-time weather updates yet, but you can check a weather website or app."
+  utter_time:
+  - text: "I don't have access to the current time, but you can check your device's clock."
+  utter_date:
+  - text: "I can't tell the date right now, please check your calendar."
+  utter_favorite_color:
+  - text: "I like all colors, but blue is quite calming."
+  utter_hobby:
+  - text: "I enjoy chatting and helping people with their questions."
+  utter_music:
+  - text: "I like all kinds of music, especially instrumental and classical."
+  utter_movie:
+  - text: "I enjoy movies that make you think and feel."
+actions: []

@@ -1,0 +1,12 @@
+[
+    {
+        "context": "UIET Chandigarh provides 21 hostels: 8 for boys, 11 for girls, 1 Working Women Hostel, and 1 International Hostel, accommodating ~7,600 students. Hostel rent is ~INR 1,800/month for regular hostels.",
+        "question": "What are the hostel fees at UIET?",
+        "answer": "Hostel fees at UIET Chandigarh are approximately INR 1,800/month for regular hostels and INR 7,000/month for the International Hostel."
+    },
+    {
+        "context": "The JEE Main cutoff for UIET Chandigarh in 2024 for General category ranged from 31,588 to 109,323. Computer Science closes at ~30,000 AIR, and Biotechnology at ~350,000.",
+        "question": "What is the JEE Main cutoff for UIET?",
+        "answer": "The JEE Main cutoff for UIET Chandigarh in 2024 ranged from 31,588 to 109,323 for General category."
+    }
+]

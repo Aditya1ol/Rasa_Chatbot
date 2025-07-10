@@ -1,7 +1,27 @@
+# Byte-compiled / cache files
+__pycache__/
+*.py[cod]
+*.so
+
+# Environment
+.env
+env/
+.b_env/
+
+# Logs
+*.log
+
+# Rasa model files
+*.tar.gz
+models/
 *.safetensors
 *.pt
 *.pkl
-__pycache__/
-env/
-*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
 .DS_Store
+Thumbs.db
