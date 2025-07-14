@@ -252,6 +252,21 @@ def save_faq():
         json.dump(saved_faq, f, indent=2)
     return jsonify({"message": "FAQ saved successfully"})
 
+@app.route("/submit_feedback", methods=["POST"])
+def submit_feedback():
+    data = request.json
+    feedback_text = data.get("feedback", "").strip()
+
+    if feedback_text:
+        # Save feedback to a file
+        with open("user_feedback.json", "a", encoding="utf-8") as f:
+            json.dump({"feedback": feedback_text}, f)
+            f.write("\n")  # Newline for readability
+        return jsonify({"message": "✅ Feedback submitted. Thank you!"})
+    else:
+        return jsonify({"message": "⚠️ Feedback was empty."})
+
+
 # Main entry point
 if __name__ == "__main__":
     if not os.path.exists(PDF_FOLDER):
