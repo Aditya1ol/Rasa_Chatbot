@@ -1,6 +1,15 @@
 version: "3.0"
 intents:
   - ask_admission
+  - ask_fee_structure
+  - ask_scholarships
+  - ask_documents
+  - ask_course_duration
+  - ask_reservation_policy
+  - ask_branches
+  - ask_cutoff
+  - ask_counseling
+  - ask_miscellaneous
   - ask_hostel_fees
   - ask_clubs
   - ask_more_details
@@ -23,6 +32,24 @@ responses:
   - text: "To get admission in UIET Chandigarh, appear for JEE Main 2025 and register for JAC Chandigarh Counselling. You need to pass Class 12 with Physics, Mathematics, and a language."
   utter_admission_details:
   - text: "The JEE Main cutoff for UIET in 2024 ranged from 31,588 to 109,323 for General category. Computer Science closes at ~30,000 AIR."
+  utter_ask_fee_structure:
+  - text: "The average annual fee ranges from 70,000 to 1,20,000 depending on the institute. UIET and CCET have separate fee structures."
+  utter_ask_scholarships:
+  - text: "PU offers multiple scholarships for SC/ST, OBC, EWS, meritorious students, and girls. College notice boards and websites list them."
+  utter_ask_documents:
+  - text: "You will need your JEE (Main) scorecard, 10+2 mark sheet, migration certificate (if from another board), category certificate (if applicable), passport-size photos, and ID proof."
+  utter_ask_course_duration:
+  - text: "The B.E. course spans 4 years (8 semesters), with a structured curriculum, internal assessments, labs, projects, and a mandatory internship."
+  utter_ask_reservation_policy:
+  - text: "Colleges in Chandigarh follow UT Chandigarh policy, while those in Punjab follow Punjab Government policy for SC/ST/OBC and other categories."
+  utter_ask_branches:
+  - text: "Branches include Computer Science, IT, Electronics & Communication, Mechanical, Biotechnology, and Electrical Engineering (varies by college)."
+  utter_ask_cutoff:
+  - text: "Cutoff ranks vary by branch and category. Computer Science is usually the most competitive."
+  utter_ask_counseling:
+  - text: "Counseling rounds include regular, special, and spot rounds. Seat allotment is based on merit and preferences."
+  utter_ask_miscellaneous:
+  - text: "For other queries like gap years, transfers, or exam failures, please ask specifically."
   utter_ask_hostel_fees:
   - text: "Hostel fees at UIET Chandigarh are approximately INR 1,800/month for regular hostels and INR 7,000/month for the International Hostel."
   utter_ask_clubs:

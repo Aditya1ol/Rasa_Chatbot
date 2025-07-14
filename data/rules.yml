@@ -1,10 +1,13 @@
-version: "3.0"
+version: "3.1"
+
 rules:
-- rule: Respond to hostel fee query
+
+- rule: Say goodbye anytime the user says goodbye
   steps:
-  - intent: ask_hostel_fees
-  - action: utter_ask_hostel_fees
-- rule: Respond to club query
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: Say 'I am a bot' anytime the user challenges
   steps:
-  - intent: ask_clubs
-  - action: utter_ask_clubs
+  - intent: bot_challenge
+  - action: utter_iamabot

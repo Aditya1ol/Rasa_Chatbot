@@ -1,0 +1,703 @@
+question: As a Sports quota student, can I expect to get a seat in the Spot Round
+with a rank of 40?	Yes, with a rank of 40, you can get into: Mechanical Engineering (min:
+35, max: 41), Biotechnology (min/max: 43). You can secure a seat in the Spot
+Round for these branches.
+question: As an EWS student, can I expect to get a seat in the Spot Round with a rank
+of 110000?	Yes, with a rank of 110000, you can get into: Mechanical Engineering
+(min: 100069, max: 102646), Biotechnology (min: 135000, max: 193410). You
+can secure a seat in the Spot Round for these branches.
+question: Im a Sports quota student with a rank of 12. Can I get a seat in the Special
+Round?	Yes, with a rank of 12, you can get into Information Technology (min/max:
+12) in the Special Round, as your rank matches the cutoff.
+question: As a Defence quota student, what is the rank difference between the most
+and least competitive branches?	The most competitive branch is Computer Science and Engineering
+(min: 2), and the least competitive is Biotechnology (max: 112). The difference
+is 112 - 2 = 110.
+question: As a PwD student, should I be concerned if my rank is close to the minimum
+rank for Computer Science and Engineering?	Yes, if your rank is close to 998050 (e.g., 999000), you should be
+cautious. The min/max rank being the same (998050) suggests it might be a
+single seat, so competition could be high, and you might miss out if that seat is
+taken.
+question: What is the basic eligibility for B.E. at PU?	A candidate must have passed 10+2 with Physics and Mathematics
+as compulsory subjects, along with Chemistry/Biology/Biotechnology/Technical
+subject. Additionally, they must appear in JEE (Main) for the current admission
+year.
+question: As a Defence quota student, which branches have seats available for me?	Seats are available for Defence quota students in all branches: Biotech-
+nology (min: 68, max: 112), Computer Science and Engineering (min: 2, max:
+8), Electrical and Electronics Engineering (min: 45, max: 47), Electronics and
+Communication Engineering (min: 24, max: 32), Information Technology (min:
+15, max: 23), Mechanical Engineering (min: 51, max: 57).
+question: Im a Defence quota student with a rank of 1. How many branches can I
+apply for?	With a rank of 1, you can apply for: Computer Science and Engineering
+(min: 2, max: 8). No other branches are available, as their minimum ranks are
+higher (e.g., Information Technology at 15).
+question: As a PwD student, what does it mean if the minimum and maximum ranks
+are the same for a branch?	If the minimum and maximum ranks are the same (e.g., 998050 for
+Computer Science and Engineering), it likely means only one PwD candidate
+was allotted a seat in that branch, or it reﬂects a speciﬁc allotment case under
+the All India Quota.
+question: Do spot round admissions have different rules?	Yes, spot rounds typically allow candidates who havent been allotted
+in earlier rounds or are seeking upgrades. Usually, there’s no withdrawal/refund
+after spot admission.
+question: Do cutoff ranks increase or decrease in spot rounds?	Cutoff ranks usually increase (become less competitive) in spot rounds
+because many top-ranked students have already taken seats elsewhere.
+question: Are Integrated B.E.-MBA courses available?	Yes, UIET Chandigarh offers an Integrated B.E.-MBA dual degree pro-
+gram in select branches.
+question: As a PwD student, can I expect to get a seat in the Spot Round with a rank
+of 1160000?	No, with a rank of 1160000, you wont qualify for any branch, as the
+highest maximum rank is 1154312 (Information Technology). The Spot Round
+might not help unless new seats are added, which is unlikely.
+question: Im an OGC student with a rank of 400000. Can I get into any branch?	Yes, with a rank of 400000, you can get into Mechanical Engineering
+(min: 309844, max: 321829). Other branches have lower maximum ranks (e.g.,
+Electrical and Electronics Engineering at 149895).
+question: Are foreign and NRI students eligible?	Yes, PU allows NRI and foreign national admissions under a separate
+quota. Eligibility certiﬁcate and relevant documents are required from the Dean
+International Students.
+question: What is the least competitive branch for SC students based on this table?	The least competitive branch is Biotechnology, as it has the highest
+maximum rank (388856), meaning it accepts students with lower ranks com-
+pared to other branches.
+question: As an EWS student, what is the rank difference between the most and least
+competitive branches?	The most competitive branch is Computer Science and Engineering
+(min: 5423), and the least competitive is Biotechnology (max: 193410). The
+difference is 193410 - 5423 = 187,987.
+question: Im an EWS student with a rank of 60000. Can I get a seat in the Special
+Round?	Yes, with a rank of 60000, you can get into Information Technology
+(min: 58714, max: 67113) in the Special Round, as your rank is within the range.
+question: Are these closing ranks different for state quota?	Yes, State Quota usually has different (and often more lenient) cutoffs
+than the All India Quota.
+question: What is the intake capacity in B.E. programs?	Intake ranges from 60 to 120 students per branch depending on the
+institute and stream.
+question: Im a Sports quota student with a rank of 50. Can I get into any branch?	No, with a rank of 50, you cannot get into any branch, as the highest
+maximum rank is 43 (Biotechnology), which is below your rank.
+question: Im an OGC candidate with a rank of 75000. Can I get into Computer Science
+and Engineering?	Yes, with a rank of 75000, you can get into Computer Science and
+Engineering, as your rank falls within the range (min: 70887, max: 76330).
+question: As an OGC student, what does the rank range for Electrical and Electronics
+Engineering tell me about my chances?	The rank range for Electrical and Electronics Engineering is 147993 to
+149895. If your rank is within this range, you have a good chance of securing a
+seat, but if its closer to the maximum (e.g., 149000), you should be cautious as
+seats may ﬁll up quickly.
+question: Im a Sports quota candidate. Can I get into Electronics and Communication
+Engineering with a rank of 15?
+21	Yes, with a rank of 15, you can get into Electronics and Communication
+Engineering, as your rank is better than the cutoff (min/max: 18).
+question: As a Sports quota student, what is the rank difference between the most
+and least competitive branches?	The most competitive branch is Computer Science and Engineering
+(min: 7), and the least competitive is Biotechnology (max: 43). The difference is
+43 - 7 = 36.
+question: As an SC student, should I be worried if my rank is close to the maximum
+rank for a branch?	If your rank is close to the maximum rank (e.g., 270000 for Electrical
+and Electronics Engineering with a max of 271802), theres some risk. Seats
+may ﬁll up quickly, especially in earlier rounds. You might have a better chance
+in later rounds like the Spot Round if seats remain.
+10
+
+ST Category Questions
+question: Im an SC candidate with a rank of 85000. Can I get into any branch?	Yes, with a rank of 85000, you can get into Computer Science and
+Engineering, as its minimum rank is 85676, which is very close to your rank.
+However, you wont qualify for other branches since their minimum ranks are
+higher.
+question: What if I fail in a semester exam?	You will be promoted with a backlog but must clear failed subjects
+in future attempts. Promotion requires clearing 50% of total credits up to that
+semester.
+4
+
+Other Important FAQs
+question: As an OGC student, what is the rank difference between the most and least
+competitive branches?	The most competitive branch is Computer Science and Engineering
+(min: 70887), and the least competitive is Mechanical Engineering (max: 321829).
+The difference is 321829 - 70887 = 250,942.
+question: Do differently-abled students get any reservation?	Yes, seats are reserved for differently-abled candidates and they may
+also get relaxation in eligibility as per guidelines.
+Fee & Financial Aid
+question: Im an ST student with a rank of 320000. How many branches can I apply
+for?	With a rank of 320000, you can apply for: Computer Science and
+Engineering (min: 315588, max: 351500). No other branches are available, as
+their minimum ranks are higher (e.g., Information Technology at 431211).
+PwD Category Questions
+question: How competitive was Electronics and Communication Engineering (ECE)?	ECE cutoff was 93990 to 102169, making it moderately competitive.
+question: Im a Sports quota student with a rank of 5. How many branches can I apply
+for?	With a rank of 5, you can apply for: Computer Science and Engineering
+(min/max: 7).
+No other branches are available, as their minimum ranks are
+higher (e.g., Information Technology at 12).
+question: Im a KM candidate. Can I get into Electrical and Electronics Engineering
+with a rank of 95000?
+16	No, with a rank of 95000, you cannot get into Electrical and Electronics
+Engineering, as the rank is 94147, which is below your rank.
+question: What is the maximum rank for Information Technology for EWS students?	The maximum rank for Information Technology is 67113.
+question: As a Defence quota student, what is the safest branch to choose if my rank
+is 90?	With a rank of 90, the safest branch is Biotechnology (min: 68, max:
+112), as your rank is comfortably within the range.
+question: Im an OGC candidate with a rank of 100000. Which branches can I apply
+for?
+17	With a rank of 100000, you can apply for: Electronics and Communica-
+tion Engineering (min: 96374, max: 97331), Electrical and Electronics Engineer-
+ing (min: 147993, max: 149895), Mechanical Engineering (min: 309844, max:
+321829). You dont qualify for Computer Science (max: 76330) or Information
+Technology (max: 80056).
+question: As an EWS student, what does the rank range for Electrical and Electronics
+Engineering tell me about my chances?	The rank range for Electrical and Electronics Engineering is 85164 to
+98346. If your rank is within this range, you have a good chance of securing a
+seat, but if its closer to the maximum (e.g., 98000), you should be cautious as
+seats may ﬁll up quickly.
+question: Im an ST candidate with a rank of 400000. Which branches can I apply for?	With a rank of 400000, you can apply for: Information Technology (min:
+431211, max: 434215). No other branches are available, as their minimum ranks
+are either lower (e.g., Computer Science at 315588) or not speciﬁed (Biotechnol-
+ogy).
+question: Which branch had the highest (least competitive) closing rank?	Mechanical Engineering, with a max rank of 219068, had the least
+competition.
+question: Why are the minimum and maximum ranks the same for all branches for
+Kashmiri Migrant students?	The minimum and maximum ranks being the same (e.g., 76864 for
+Computer Science and Engineering) likely means only one KM candidate was
+allotted a seat per branch under the All India Quota, or it reﬂects a speciﬁc allot-
+ment case.
+question: Im a Defence quota student with a rank of 20. Can I get a seat in the Special
+Round?	Yes, with a rank of 20, you can get into Information Technology (min:
+15, max: 23) in the Special Round, as your rank is within the range.
+question: Im an OGC student with a rank of 80000. Can I get a seat in the Special
+Round?	Yes, with a rank of 80000, you can get into Information Technology
+(min: 79902, max: 80056) in the Special Round, as your rank is within the range.
+question: Will next years cutoffs be the same?	Cutoffs vary yearly based on number of applicants, difﬁculty of JEE,
+preferences, and category applications.
+8
+
+Special Notes (BC Category)
+question: Why are there no ranks listed for Biotechnology for ST students?	The absence of ranks for Biotechnology likely means no ST candidates
+were allotted seats in this branch under the All India Quota, possibly due to low
+preference, limited seats, or no ST applicants meeting other eligibility criteria.
+question: As a KM student, which branch is the most competitive based on the rank?	Computer Science and Engineering is the most competitive for KM
+students, with the lowest rank of 76864.
+question: As an ST student, can I expect the cutoffs to drop in Round 3 if I have a
+rank of 800000?	With a rank of 800000, you dont qualify for any branch except possibly
+Mechanical Engineering (min/max: 1134392), which seems to be a special case.
+Cutoffs might drop slightly in Round 3 if seats remain unﬁlled, but its unlikely to
+drop enough for you to qualify for other branches (e.g., Electrical and Electronics
+Engineerings max is 752917).
+question: What is the closing rank range for ECE?	Electronics and Communication Engineering closed between 66644
+(min) and 92150 (max).
+question: As an OGC student, what is the safest branch to choose if my rank is
+310000?	With a rank of 310000, the safest branch is Mechanical Engineering
+(min: 309844, max: 321829), as your rank is comfortably within the range.
+question: Im a Defence quota candidate with a rank of 30. Which branches can I apply
+for?	With a rank of 30, you can apply for: Electronics and Communication
+Engineering (min: 24, max: 32), Electrical and Electronics Engineering (min:
+45, max: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min:
+68, max: 112). You dont qualify for Computer Science (max: 8) or Information
+Technology (max: 23).
+question: Im a TP candidate with a rank of 1200000. Can I get into Computer Science
+and Engineering?	Yes, with a rank of 1200000, you can get into Computer Science and
+Engineering, as the rank is 1228828, which is close to your rank. However, this
+appears to be a single seat or speciﬁc allotment.
+question: Im an ST candidate. What is the rank difference between Computer Science
+and Electrical and Electronics Engineering?	The minimum rank for Computer Science and Engineering is 315588,
+and for Electrical and Electronics Engineering, its 516610.
+The difference is
+516610 - 315588 = 201,022.
+question: Im a Defence quota candidate. Can I get into Electronics and Communica-
+tion Engineering with a rank of 25?	Yes, with a rank of 25, you can get into Electronics and Communication
+Engineering, as your rank falls within the range (min: 24, max: 32).
+question: What about a JEE rank of 70,000?	You can expect to get CSE (upper range), IT, or possibly ECE, depend-
+ing on seat availability.
+Student-Oriented Concerns (BC Category)
+question: As a Sports quota student, what is the safest branch to choose if my rank
+is 40?	With a rank of 40, the safest branch is Mechanical Engineering (min:
+35, max: 41), as your rank is comfortably within the range.
+Biotechnology
+(min/max: 43) is also an option but riskier as your rank is closer to the cutoff.
+question: How is the B.E. merit list prepared?	The merit list is based purely on the All India Rank (AIR) in JEE (Main).
+No other exams or marks are considered.
+question: Can students from any state apply to PUs B.E. program?	Yes, PU accepts applications from across India. However, reserva-
+tion beneﬁts vary for UT Chandigarh and Punjab-based candidates as per their
+domicile.
+question: Im an EWS student with a rank of 80000. Which branch should I prioritize?	With a rank of 80000, you can apply for: Electronics and Communi-
+cation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-
+neering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:
+102646), Biotechnology (min: 135000, max: 193410). You should prioritize Elec-
+tronics and Communication Engineering, as your rank is closest to its range and
+its a more competitive branch.
+question: Which branch had the most competitive cutoff in the spot round?	CSE, with a minimum rank of 56803, remained the most competitive
+even in the spot round.
+question: Im an EWS candidate. Are these ranks speciﬁc to the Economically Weaker
+Section quota, or do they include other categories?	The ranks are speciﬁc to the Economically Weaker Section quota under
+the All India Quota, as indicated by the "ECONOMICALLY WEAKER SECTION"
+20
+
+label at the top.
+Sports Category Questions
+question: As an ST student, which branch is the most competitive based on the min-
+imum rank?	Computer Science and Engineering is the most competitive for ST stu-
+dents, with the lowest minimum rank of 315588.
+question: What is the maximum rank for Computer Science and Engineering for ST
+students?	The maximum rank for Computer Science and Engineering is 351500.
+question: As a Defence quota student, what does the rank range for Electrical and
+Electronics Engineering tell me about my chances?	The rank range for Electrical and Electronics Engineering is 45 to 47.
+23
+
+If your rank is within this range, you have a good chance of securing a seat, but
+if its closer to the maximum (e.g., 47), you should be cautious as seats may ﬁll
+up quickly.
+question: Can I transfer from another university to PU in the middle of the course?	Migration to PU-afﬁliated B.E. programs is allowed in the 3rd or 5th
+semester, subject to seat availability and approval of equivalency by the univer-
+sity.
+question: Why is Biotechnology cut-off so high (less competitive)?	Biotechnology has fewer job opportunities in the core ﬁeld compared
+to CS/IT, which reduces demand.
+question: What if my rank is around 1.5 lakh?	You could get Biotechnology, Mechanical, or EEE, based on spot round
+trends.
+question: What isTechnical the meaning of Special Round in this chart?	It refers to an extra counseling round held after regular ones for vacant
+seats. Lower ranks often get admission in this round.
+question: As an FF student, what does the rank range for Computer Science and
+Engineering tell me about my chances?	The rank range for Computer Science and Engineering is 113118 to
+142886. If your rank is within this range, you have a good chance of securing a
+seat, but if its closer to the maximum (e.g., 140000), you should be cautious as
+seats may ﬁll up quickly.
+question: Im a TP student with a rank of 1300000. Can I get into any branch?	No, with a rank of 1300000, you cannot get into any branch, as the only
+available branch, Computer Science and Engineering, has a rank of 1228828,
+which is below your rank.
+Economically Weaker Section (EWS) Category Questions
+question: Is a 1,00,000 JEE rank sufﬁcient for admission to PU?	Yes, for branches like Mechanical, EEE, or Bio Tech, which have higher
+closing ranks.
+question: Im a KM student with a rank of 50000. How many branches can I apply for?	With a rank of 50000, you can apply for no branches, as the lowest
+rank is 76864 (Computer Science and Engineering), which is above your rank.
+question: Im a Defence quota candidate with a rank of 5. Can I get into Computer
+Science and Engineering?	Yes, with a rank of 5, you can get into Computer Science and Engi-
+neering, as your rank falls within the range (min: 2, max: 8).
+question: What if I have a gap year?	Students with a gap year must submit an afﬁdavit stating they were not
+3
+
+involved in any unlawful activities during the gap period. No admission is allowed
+during disqualiﬁcation.
+question: As an ST student, what is the minimum rank required to get into Electronics
+and Communication Engineering?	The minimum rank for Electronics and Communication Engineering is
+498741.
+question: As an FF student, which branch is the most competitive based on the min-
+imum rank?	Computer Science and Engineering is the most competitive for FF stu-
+14
+
+dents, with a minimum rank of 113118, compared to Information Technologys
+minimum rank of 312072.
+question: Im a KM student with a rank of 88000. Can I get a seat in the Special Round?	Yes, with a rank of 88000, you can get into: Electronics and Com-
+munication Engineering (min/max: 88431), Information Technology (min/max:
+88414). Your rank is better than these cutoffs, so you can secure a seat in the
+Special Round.
+question: What is the maximum rank for Information Technology for Defence quota
+students?	The maximum rank for Information Technology is 23.
+question: Why are there no ranks listed for most branches for Freedom Fighter stu-
+dents?	The absence of ranks for branches like Biotechnology, Electrical and
+Electronics Engineering, Electronics and Communication Engineering, and Me-
+chanical Engineering likely means no FF candidates were allotted seats in these
+branches under the All India Quota, possibly due to limited seats, low preference,
+or no FF applicants meeting eligibility criteria.
+question: What is the maximum rank for Computer Science and Engineering for Tha-
+lassemia Patient students?	The maximum rank for Computer Science and Engineering is 1228828.
+question: Do reserved categories have different cutoffs?	Absolutely, SC/ST/OBC/EWS and PwD candidates have relaxed cut-
+offs under their respective quotas.
+question: What B.E. branches are available?	Branches include Computer Science, IT, Electronics & Communication,
+Mechanical, Biotechnology, and Electrical Engineering (varies by college).
+question: Is the spot round cutoff available in this image?	No, only Special Round minimum and maximum ranks are shown. Spot
+Round data is missing here.
+question: As an ST student, what is the rank range for Mechanical Engineering?	The rank range for Mechanical Engineering is 1134392 (minimum) to
+1134392 (maximum), indicating it might be a single seat or a speciﬁc allotment.
+question: Are scanned documents acceptable?	Yes, during online registration, scanned copies are required. However,
+original documents must be shown for veriﬁcation at the time of physical reporting
+or as instructed.
+question: Are there opportunities for research in B.E.?	Yes, under NEP, research tracks may be offered in the ﬁnal year. Also,
+students can take part in innovation cell projects, hackathons, and technical pa-
+per presentations.
+question: Im an FF candidate with a rank of 400000. Is Information Technology a
+good option for me?	Yes, with a rank of 400000, you qualify for Information Technology (min:
+312072, max: 538484), as your rank is within the range.
+question: Which institutes offer B.E. under Panjab University?	B.E. courses are offered by UIET Chandigarh, UIET Hoshiarpur, UICET
+(Chemical Engineering), and CCET Chandigarh.
+question: Im an SC student with a rank of 220000. Will I have a better chance in the
+Spot Round?	With a rank of 220000, you already qualify for Electronics and Com-
+munication Engineering (max: 219829), Electrical and Electronics Engineering
+(max: 271802), and others in earlier rounds. The Spot Round might offer more
+seats if others dont accept their allotments, but youre already eligible for these
+branches.
+question: Do I need a migration certiﬁcate for PU admission?	Yes, candidates coming from boards or universities other than Punjab
+School Education Board or CBSE must submit a migration certiﬁcate within the
+stipulated time.
+question: Im an FF student with a rank of 500000. Can I get a seat in the Special
+Round?	Yes, with a rank of 500000, you can get into Information Technology
+(min: 312072, max: 538484) in the Special Round, as your rank is within the
+range.
+question: As an SC student, if I aim for Biotechnology, how much buffer should I have
+in my rank?	The maximum rank for Biotechnology is 388856.
+To be safe, you
+should aim for a rank at least 10-15% lower than the maximum, so around
+330,000 or better, to account for competition and seat availability.
+question: Is the counseling conducted online or ofﬂine?	Counseling is conducted online. Students have to lock choices, and
+seat allotment is done based on merit and preferences.
+question: What is the academic calendar for B.E. at PU?	The academic year is divided into two semesters odd (July to Dec)
+and even (Jan to May), followed by exams, vacations, and internships.
+question: As an SC student, what is the rank difference between the most and least
+competitive branches?	The most competitive branch is Computer Science and Engineering
+(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).
+The difference is 388856 - 85676 = 303,180.
+question: Is there a spot round in PU B.E. counseling?	Yes, if seats remain vacant after regular rounds, PU may conduct spot
+or mop-up rounds.
+Colleges & Courses
+question: Im an OGC candidate. Can I get into Electronics and Communication Engi-
+neering with a rank of 95000?	Yes, with a rank of 95000, you can get into Electronics and Communi-
+cation Engineering, as your rank falls within the range (min: 96374, max: 97331).
+question: Should I choose a lower branch in a better institute or a better branch in a lower one?	Its subjectiveCSE in a lesser-known college can still offer better packages than Mechanical in a top one. Research your interests and goals.
+question: What if I want to prepare again if I didnt get in this year?	You can take a drop year and reattempt JEE, aiming for a better rank
+to secure a top branch next year.
+Branch-wise Cutoff Questions (BC Category)
+question: What is the maximum rank for Mechanical Engineering for Sports quota
+students?	The maximum rank for Mechanical Engineering is 41.
+question: What reservation policy is followed at PU colleges?	Colleges in Chandigarh follow UT Chandigarh policy, while those in
+Punjab follow Punjab Government policy for SC/ST/OBC and other categories.
+question: Is domicile certiﬁcate required for reservation beneﬁts?	Yes, domicile certiﬁcate is required to claim beneﬁts under UT Chandi-
+garh or Punjab state reservation categories.
+Academic & Campus Life
+question: Im a Sports quota candidate with a rank of 20. Which branches can I apply
+for?	With a rank of 20, you can apply for: Electronics and Communica-
+tion Engineering (min/max: 18), Electrical and Electronics Engineering (min: 24,
+max: 27), Mechanical Engineering (min: 35, max: 41), Biotechnology (min/max:
+43). You dont qualify for Computer Science (max: 7) or Information Technology
+(max: 12).
+question: What is the least competitive branch for ST students based on this table?	Mechanical Engineering is the least competitive, with the highest min-
+imum rank of 1134392, but this seems to be a special case (possibly one seat).
+Excluding that, Electrical and Electronics Engineering is the least competitive
+with a maximum rank of 752917.
+question: As a Sports quota student, which branch is the most competitive based on
+the minimum rank?	Computer Science and Engineering is the most competitive for Sports
+quota students, with the lowest minimum rank of 7.
+question: Im an ST student with a rank of 350000. Can I get into Computer Science
+and Engineering in the Spot Round?	Yes, with a rank of 350000, you can get into Computer Science and En-
+gineering (min: 315588, max: 351500) in any round, including the Spot Round,
+as your rank is within the range.
+11
+question: Im a Sports quota candidate. Are these ranks speciﬁc to the Sports quota,
+or do they include other categories?	The ranks are speciﬁc to the Sports quota under the All India Quota,
+as indicated by the "SPORTS" label at the top.
+Defence Category Questions
+question: Im a KM candidate. Are these ranks speciﬁc to the Kashmiri Migrant quota,
+or do they include other categories?	The ranks are speciﬁc to the Kashmiri Migrant quota under the All India
+Quota, as indicated by the "KASHMIRI MIGRANT" label at the top.
+One Girl Child (OGC) Category Questions
+question: Im an EWS candidate with a rank of 6000. Can I get into Computer Science
+and Engineering?	Yes, with a rank of 6000, you can get into Computer Science and
+Engineering, as your rank falls within the range (min: 5423, max: 55564).
+question: What is the maximum rank for Information Technology for Freedom Fighter
+students?	The maximum rank for Information Technology is 538484.
+question: Is there a separate entrance test conducted by PU?	No separate entrance test is conducted by Panjab University for B.E.
+The selection is solely based on JEE (Main) scores.
+question: Im an ST student with a rank of 600000. Can I get into any branch?	No, with a rank of 600000, you cannot get into any branch, as the
+highest maximum rank is 1134392 (Mechanical Engineering), but its minimum
+rank is 1134392, indicating a single seat or speciﬁc case.
+The next highest
+maximum rank is 752917 (Electrical and Electronics Engineering), which is still
+below your rank.
+question: Is EWS reservation available?	Yes, 10% of seats are reserved for Economically Weaker Sections
+(EWS), as per central government norms.
+2
+question: Can students apply for education loans?	PU doesn’t provide direct loans, but students can apply through nation-
+alized banks with admission letters and fee details.
+question: As an ST student, if my rank is 430000, should I prioritize Information Tech-
+nology or Electronics and Communication Engineering?	With a rank of 430000, you qualify for: Information Technology (min:
+431211, max: 434215). You dont qualify for Electronics and Communication
+Engineering (min: 498741). So, you should prioritize Information Technology.
+question: How many branches are available for ST students with a rank below 450000?	For a rank below 450000, the available branches are: Computer Sci-
+ence and Engineering (min: 315588), Information Technology (min: 431211).
+Thats 2 branches.
+question: Why are there no ranks listed for most branches for PwD students?	The absence of ranks for branches like Biotechnology, Electrical and
+Electronics Engineering, Electronics and Communication Engineering, and Me-
+chanical Engineering likely means no PwD candidates were allotted seats in
+these branches under the All India Quota, possibly due to limited seats, low pref-
+erence, or no PwD applicants meeting eligibility criteria.
+question: Why is CSE cut-off so low (more competitive)?	Due to its popularity, high placements, and scope in software/tech,
+CSE sees the highest demand, hence lower cutoff ranks.
+question: Im a PwD candidate with a rank of 1000000. Can I get into Computer Sci-
+ence and Engineering?	Yes, with a rank of 1000000, you can get into Computer Science and
+Engineering, as the rank is 998050, which is very close to your rank. However,
+this appears to be a single seat or speciﬁc allotment.
+question: Why is Mechanical Engineering cut-off so high (less competitive)?	Mechanical branches currently see lower demand due to fewer soft-
+ware jobs, leading to higher cutoff ranks.
+question: Im a PwD candidate with a rank of 1100000. Is Information Technology a
+good option for me?	Yes, with a rank of 1100000, you qualify for Information Technology
+(min/max: 1154312), as your rank is within the range.
+question: Is there any age limit for applying to the B.E. program?	No speciﬁc age limit is mentioned for B.E. admissions at PU. The can-
+didate just needs to meet educational eligibility and appear for JEE (Main).
+question: What is the duration of the B.E. course?	The B.E. course spans 4 years (8 semesters), with a structured cur-
+riculum, internal assessments, labs, projects, and a mandatory internship.
+question: As a PwD student, what is the rank difference between Computer Science
+and Information Technology?	The minimum rank for Computer Science and Engineering is 998050,
+and for Information Technology, its 1154312. The difference is 1154312 - 998050
+= 156,262.
+question: Im an SC candidate with a rank of 275000. Is Mechanical Engineering a
+good choice for me?	Yes, with a rank of 275000, you qualify for Mechanical Engineering
+(min: 270303, max: 307027). Your rank is comfortably within the range, making
+it a good choice.
+question: Im an EWS candidate. Can I get into Electronics and Communication Engi-
+neering with a rank of 71000?	Yes, with a rank of 71000, you can get into Electronics and Communi-
+cation Engineering, as your rank falls within the range (min: 70236, max: 72612).
+question: Is this cutoff data for UIET Chandigarh?	Most likely yes, based on the pattern and ranks. Conﬁrm via ofﬁcial
+website or brochure.
+question: What documents are required at the time of admission?	You will need your JEE (Main) scorecard, 10+2 mark sheet, migration
+certiﬁcate (if from another board), category certiﬁcate (if applicable), passport-
+size photos, and ID proof.
+question: Are there special seats for single girl children?	Yes, two additional seats per course are reserved for a Single Girl Child
+or one out of two girl children.
+question: If Im an SC student with a rank of 150000, how many branches can I apply
+for?	With a rank of 150000, you can apply for: Computer Science and
+Engineering (min: 85676). Other branches have minimum ranks above 150000
+(e.g., Information Technology at 179529), so only 1 branch is available.
+question: As a Sports quota student, what does the rank range for Electrical and
+Electronics Engineering tell me about my chances?	The rank range for Electrical and Electronics Engineering is 24 to 27.
+If your rank is within this range, you have a good chance of securing a seat, but
+if its closer to the maximum (e.g., 26), you should be cautious as seats may ﬁll
+up quickly.
+question: What is the admission schedule?	Admission notices are usually released in May/June, and counseling
+takes place after JEE (Main)driven results. The full schedule is published on the
+PU admissions portal.
+question: Im a Defence quota student with a rank of 40. Which branch should I prior-
+itize?	With a rank of 40, you can apply for: Electronics and Communication
+Engineering (min: 24, max: 32), Electrical and Electronics Engineering (min: 45,
+max: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min: 68,
+max: 112). You should prioritize Electronics and Communication Engineering,
+as your rank is closest to its range and its a more competitive branch.
+question: What is the fee structure for B.E. at PU?	The average annual fee ranges from 70,000 to 1,20,000 depending on
+the institute. UIET and CCET have separate fee structures.
+question: Can I switch my branch later?	Some colleges allow branch changes after the ﬁrst year, depending on
+merit and seat availability. Rules vary by institution.
+question: Which branches can I get with a JEE rank of 70,000?	You may be eligible for ECE, IT, and possibly EEE, but not CSE.
+question: Can I change my branch after admission?	Some colleges under PU allow internal branch changes after the ﬁrst
+year, subject to academic performance and seat availability.
+question: Im a Sports quota student with a rank of 30. Which branch should I priori-
+tize?	With a rank of 30, you can apply for: Mechanical Engineering (min: 35,
+max: 41), Biotechnology (min/max: 43). You should prioritize Mechanical Engi-
+neering, as your rank is more comfortably within its range compared to Biotech-
+nology.
+question: Im an EWS student with a rank of 200000. Can I get into any branch?	Yes, with a rank of 200000, you can get into Biotechnology (min:
+135000, max: 193410). Other branches have lower maximum ranks (e.g., Me-
+chanical Engineering at 102646).
+question: Im a PwD student with a rank of 1150000. Can I get a seat in the Special
+13
+
+Round?	Yes, with a rank of 1150000, you can get into Information Technology
+(min/max: 1154312) in the Special Round, as your rank is within the range.
+question: Im a PwD student with a rank of 1200000. Can I get into any branch?	No, with a rank of 1200000, you cannot get into any branch.
+The
+12
+
+highest maximum rank is 1154312 (Information Technology), which is below your
+rank.
+question: Im an OGC student with a rank of 60000. How many branches can I apply
+for?	With a rank of 60000, you can apply for no branches, as the lowest
+minimum rank is 70887 (Computer Science and Engineering), which is above
+your rank.
+question: Can compartment students apply?	Students placed in one subject only, with at least 20% marks in that
+subject, may be admitted provisionally and must clear it in the next attempt.
+question: As a KM student, what is the safest branch to choose if my rank is 260000?	With a rank of 260000, the safest branch is Biotechnology (min/max:
+265226), as your rank is very close to the cutoff.
+question: As an FF student, what is the rank difference between Computer Science
+and Information Technology?	The minimum rank for Computer Science and Engineering is 113118,
+and for Information Technology, its 312072. The difference is 312072 - 113118 =
+198,954.
+question: Im an EWS student with a rank of 5000. How many branches can I apply
+for?	With a rank of 5000, you can apply for: Computer Science and En-
+gineering (min: 5423, max: 55564). No other branches are available, as their
+minimum ranks are higher (e.g., Information Technology at 58714).
+question: Im an ST candidate with a rank of 500000. Is Electrical and Electronics
+Engineering a good option for me?	Yes, with a rank of 500000, you qualify for Electrical and Electronics
+Engineering (min: 516610, max: 752917), as your rank is within the range.
+question: Is this cutoff applicable to girls-only category or gender-neutral?	This data reﬂects General (Open) category, gender-neutral. Girls can
+also apply under this.
+question: Can I transfer from one PU college to another?	Intra-university transfers may be permitted based on academic perfor-
+mance, seat availability, and university regulations.
+question: What was the closing rank for Computer Science and Engineering (CSE)?	The CSE branch closed between JEE Main Rank 43007 (min) and
+51049 (max), making it the most competitive among all.
+question: What is the Mechanical Engineering spot round cutoff?	Mechanical had the widest range, admitting students from 211177 to
+219068, indicating low demand in this round.
+question: What is the maximum rank for Information Technology for OGC students?	The maximum rank for Information Technology is 80056.
+question: As an OGC student, can I expect to get a seat in the Spot Round with a rank
+of 330000?	Yes, with a rank of 330000, you can get into Mechanical Engineering
+(min: 309844, max: 321829) in the Spot Round. Other branches have lower
+maximum ranks.
+question: Im a Defence quota candidate. Are these ranks speciﬁc to the Defence
+quota, or do they include other categories?	The ranks are speciﬁc to the Defence quota under the All India Quota,
+as indicated by the "DEFENCE" label at the top.
+24
+question: As a KM student, can I expect to get a seat in the Spot Round with a rank
+of 300000?	Yes, with a rank of 300000, you can get into Biotechnology (min/max:
+265226) in the Spot Round, as your rank is better than the cutoff. However, other
+branches have lower ranks, so you wont qualify for them.
+question: As a PwD student, which branches have seats available for me?	Seats are available for PwD students in: Computer Science and Engi-
+neering (min/max: 998050), Information Technology (min/max: 1154312). Other
+branches (Biotechnology, Electrical and Electronics Engineering, Electronics and
+Communication Engineering, Mechanical Engineering) have no ranks listed, in-
+dicating no seats were allotted to PwD candidates.
+question: As a PwD student, which branch is the most competitive based on the
+minimum rank?	Computer Science and Engineering is the most competitive for PwD
+students, with a minimum rank of 998050, compared to Information Technologys
+minimum rank of 1154312.
+question: Are summer internships part of the B.E. program?	Yes, internships are a part of the curriculum. Most colleges under PU
+encourage industrial training during summer breaks in the third year.
+question: How many rounds of counseling are there?	Typically, there are 23 regular rounds, followed by special or spot
+rounds for vacant seats.
+question: As an SC student, what happens if I dont meet the minimum rank for any
+branch in Round 1?
+9	If you dont meet the minimum rank in Round 1, you can wait for sub-
+sequent rounds (Round 2, 3, Special, or Spot). Cutoffs often decrease in later
+rounds as seats remain unﬁlled. For example, the maximum ranks shown (e.g.,
+388856 for Biotechnology) might be from later rounds.
+question: How many branches are available for SC students with a rank below 200000?	For a rank below 200000, the available branches are: Computer Sci-
+ence and Engineering (min: 85676), Information Technology (min: 179529),
+Electronics and Communication Engineering (min: 195911). Thats 3 branches.
+question: Im a Defence quota student with a rank of 60. Can I get into any branch?	Yes, with a rank of 60, you can get into Biotechnology (min: 68, max:
+112). Other branches have lower maximum ranks (e.g., Mechanical Engineering
+at 57).
+question: What is the maximum rank for Information Technology for PwD students?	The maximum rank for Information Technology is 1154312.
+question: Can I get CSE at PU with 60,000 rank?	No, based on this data, CSE closed at 51049, so 60,000 rank would
+not qualify under General (All India) quota.
+question: As an EWS student, what is the safest branch to choose if my rank is
+150000?	With a rank of 150000, the safest branch is Biotechnology (min: 135000,
+max: 193410), as your rank is comfortably within the range.
+question: Im an FF candidate. Are these ranks speciﬁc to the Freedom Fighter quota,
+or do they include other categories?	The ranks are speciﬁc to the Freedom Fighter quota under the All India
+Quota, as indicated by the "FREEDOM FIGHTER" label at the top.
+15
+
+Kashmiri Migrant (KM) Category Questions
+question: What is the maximum rank for Mechanical Engineering for Kashmiri Mi-
+grant students?	The maximum rank for Mechanical Engineering is 106715.
+question: Is there data for Biotechnology?	No speciﬁc rank data is shown for Biotechnology in this round either
+no seats were ﬁlled or data is missing.
+Trend & Analysis Questions (BC Category)
+question: Im an EWS candidate with a rank of 70000. Which branches can I apply
+for?	With a rank of 70000, you can apply for: Electronics and Communi-
+cation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-
+neering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:
+102646), Biotechnology (min: 135000, max: 193410). You dont qualify for Com-
+puter Science (max: 55564) or Information Technology (max: 67113).
+19
+question: Im a KM candidate with a rank of 90000. Which branches can I apply for?	With a rank of 90000, you can apply for: Electronics and Communica-
+tion Engineering (min/max: 88431), Information Technology (min/max: 88414).
+Other branches have either lower ranks (e.g., Computer Science at 76864) or
+higher ranks (e.g., Biotechnology at 265226).
+question: Is there any beneﬁt for Kashmiri migrants?	Yes, up to 10% relaxation in cutoff and 5% supernumerary seats are
+available for Kashmiri migrants and Pandits.
+question: How accurate are these cutoffs for future reference?	These are past cutoffs and provide a good estimate, but actual ranks
+may vary yearly due to number of applicants and preference trends.
+Counseling & Rounds
+question: Are board exam marks given any weight in the merit list?	No, only the All India Rank from JEE (Main) is considered. 10+2 marks
+are required only to ensure eligibility, not for ranking.
+Application & Admission Process
+question: As an EWS student, which branch is the most competitive based on the
+minimum rank?	Computer Science and Engineering is the most competitive for EWS
+students, with the lowest minimum rank of 5423.
+question: Im an OGC candidate. Are these ranks speciﬁc to the One Girl Child quota,
+or do they include other categories?	The ranks are speciﬁc to the "One Girl Child Out of the Only Two Girl
+Children" quota under the All India Quota, as indicated by the label at the top.
+18
+
+Thalassemia Patient (TP) Category Questions
+question: Is JEE (Main) compulsory for B.E. admission?	Yes, appearing in JEE (Main) is mandatory. Admission is strictly based
+on the All India Rank (AIR) obtained in JEE (Main); 12th board marks are not
+considered in the merit list.
+question: Im a PwD student with a rank of 900000. How many branches can I apply
+for?	With a rank of 900000, you cannot apply for any branch, as the lowest
+minimum rank is 998050 (Computer Science and Engineering), which is above
+your rank.
+question: Which branch had the highest cutoff rank (least competitive)?	Bio Technology, with a max closing rank of 14,09,038, was the least
+competitive.
+question: Im a KM student with a rank of 200000. Can I get into any branch?	Yes, with a rank of 200000, you can get into Biotechnology (min/max:
+265226), as your rank is better than the cutoff. Other branches have lower ranks
+(e.g., Computer Science at 76864), so you wont qualify for those.
+question: Can I get a seat in PU B.E. with a JEE rank of 1.5 lakh under BC?	Yes, you might get EEE or Mechanical, based on this data.
+question: Should I wait for a spot round if my rank is just above the cutoff?	If you’re within 510% of the max rank cutoff, its worth waiting. Spot
+rounds often ﬁll leftover seats and admit higher ranks.
+question: Can I apply ofﬂine for B.E.?	No, the entire process is conducted online, including application, fee
+payment, and document submission.
+question: Im a Sports quota candidate with a rank of 10. Can I get into Computer
+Science and Engineering?	Yes, with a rank of 10, you can get into Computer Science and Engi-
+neering, as the rank is 7, which is close to your rank. However, this appears to
+be a single seat or speciﬁc allotment.
+question: Im an FF candidate with a rank of 120000. Can I get into Computer Science
+and Engineering?	Yes, with a rank of 120000, you can get into Computer Science and
+Engineering, as your rank falls within the range (min: 113118, max: 142886).
+question: Im a PwD candidate. Are these ranks speciﬁc to my category, or do they
+include other categories?	The ranks are speciﬁc to the PwD category under the All India Quota,
+as indicated by the "PERSON WITH DISABILITY (PWD)" label at the top.
+Freedom Fighter (FF) Category Questions
+question: Im an SC student with a rank of 190000. Should I prioritize Information
+Technology or Electronics and Communication Engineering?	Your rank of 190000 qualiﬁes you for both: Information Technology
+(min: 179529, max: 186198), Electronics and Communication Engineering (min:
+195911, max: 219829). Since your rank is closer to the maximum for Information
+Technology, you should prioritize Electronics and Communication Engineering,
+where your rank has a better buffer.
+question: As a KM student, what is the rank difference between the most and least
+competitive branches?	The most competitive branch is Computer Science and Engineering
+(rank: 76864), and the least competitive is Biotechnology (rank: 265226). The
+difference is 265226 - 76864 = 188,362.
+question: Why is CSE still competitive even in the spot round?	CSE remains in top demand for placements and future scope in IT/software,
+keeping cutoffs low even in late rounds.
+question: Im an FF candidate. Can I get into Electronics and Communication Engi-
+neering with a rank of 150000?	No, there are no seats allotted for FF students in Electronics and Com-
+munication Engineering, as indicated by the missing ranks.
+question: What was the lowest rank admitted in Mechanical Engineering?	The highest (least competitive) closing rank for Mechanical was 197495,
+with a minimum rank cutoff of 105219.
+question: Why are there no ranks listed for Biotechnology for OGC students?	The absence of ranks for Biotechnology likely means no OGC candi-
+dates were allotted seats in this branch under the All India Quota, possibly due
+to limited seats, low preference, or no OGC applicants meeting eligibility criteria.
+question: What is the difference between the minimum and maximum ranks for Me-
+chanical Engineering for SC students?	For Mechanical Engineering, the minimum rank is 270303, and the
+maximum rank is 307027. The difference is 307027 - 270303 = 36,724.
+question: Im an FF student with a rank of 200000. How many branches can I apply
+for?	With a rank of 200000, you can apply for: Computer Science and
+Engineering (min: 113118, max: 142886). You dont qualify for Information Tech-
+nology (min: 312072), so only 1 branch is available.
+question: Is IT a better option than ECE at PU if I get both?	Depends on your interestIT is closer to CSE and has strong job prospects
+in software, while ECE offers ﬂexibility between electronics and computing.
+6
+question: Where can I apply for B.E. admission at PU?	Applications are submitted online at https://admissions.puchd.ac.
+in. The candidate must register, ﬁll in details, upload documents, and pay the
+application fee.
+question: As a Thalassemia Patient student, which branches have seats available for
+me?	Seats are available for Thalassemia Patient students only in: Com-
+puter Science and Engineering (min/max: 1228828). Other branches (Biotech-
+nology, Electrical and Electronics Engineering, Electronics and Communication
+Engineering, Information Technology, Mechanical Engineering) have no ranks
+listed, indicating no seats were allotted to TP candidates.
+question: What happens after submission of the form?	PU publishes a merit list based on JEE (Main) ranks. Candidates are
+then invited for online counseling to choose preferences and conﬁrm admission.
+1
+
+Merit List & Counseling
+question: As a Freedom Fighter quota student, which branches have seats available
+for me?	Seats are available for Freedom Fighter quota students in: Computer
+Science and Engineering (min: 113118, max: 142886), Information Technology
+(min: 312072, max: 538484). Other branches (Biotechnology, Electrical and
+Electronics Engineering, Electronics and Communication Engineering, Mechan-
+ical Engineering) have no ranks listed, indicating no seats were allotted to FF
+candidates.
+question: As an SC student, what is the safest branch to choose if my rank is 200000?	With a rank of 200000, the safest branches (where your rank is well
+within the range) are: Electronics and Communication Engineering (max rank:
+219829), Electrical and Electronics Engineering (max rank: 271802).
+question: As an FF student, can I expect to get a seat in the Spot Round with a rank
+of 550000?	No, with a rank of 550000, you wont qualify for any branch, as the
+highest maximum rank is 538484 (Information Technology). The Spot Round
+might not help unless new seats are added, which is unlikely.
+question: Im an FF student with a rank of 600000. Can I get into any branch?	No, with a rank of 600000, you cannot get into any branch. The highest
+maximum rank is 538484 (Information Technology), which is below your rank.
+question: Im a KM candidate with a rank of 80000. Can I get into Computer Science
+and Engineering?	Yes, with a rank of 80000, you can get into Computer Science and
+Engineering, as the rank is 76864, which is very close to your rank. However,
+this appears to be a single seat or speciﬁc allotment.
+question: What is the cutoff range for Computer Science and Engineering (CSE)?	CSE admitted students from Rank 56803 to 70422 under BC category
+still competitive even in the spot round.
+question: How competitive is Electrical and Electronics Engineering (EEE)?	EEE closed between 81989 and 147184, indicating moderate demand
+compared to CSE/IT.
+question: As an OGC student, which branch is the most competitive based on the
+minimum rank?	Computer Science and Engineering is the most competitive for OGC
+students, with the lowest minimum rank of 70887.
+question: Are there scholarships available?	Yes, PU offers multiple scholarships for SC/ST, OBC, EWS, meritorious
+students, and girls. College notice boards and websites list them.
+question: How can I ﬁnd updated or ofﬁcial cutoffs?	Visit the ofﬁcial PU website or check https://collegepravesh.com for
+recent years’ data.
+question: As a Defence quota student, can I expect to get a seat in the Spot Round
+with a rank of 100?	Yes, with a rank of 100, you can get into Biotechnology (min: 68, max:
+112) in the Spot Round. Other branches have lower maximum ranks.

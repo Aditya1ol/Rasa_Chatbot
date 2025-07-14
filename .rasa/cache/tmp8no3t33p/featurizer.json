@@ -1,0 +1,63 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "affirm": 0,
+        "back": 1,
+        "bot_challenge": 2,
+        "deny": 3,
+        "goodbye": 4,
+        "greet": 5,
+        "mood_great": 6,
+        "mood_unhappy": 7,
+        "nlu_fallback": 8,
+        "out_of_scope": 9,
+        "restart": 10,
+        "session_start": 11
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_admission_details": 13,
+        "utter_affirm": 14,
+        "utter_ask_admission": 15,
+        "utter_ask_clubs": 16,
+        "utter_ask_hostel_fees": 17,
+        "utter_cheer_up": 18,
+        "utter_chitchat": 19,
+        "utter_date": 20,
+        "utter_deny": 21,
+        "utter_did_that_help": 22,
+        "utter_favorite_color": 23,
+        "utter_goodbye": 24,
+        "utter_greet": 25,
+        "utter_happy": 26,
+        "utter_hobby": 27,
+        "utter_iamabot": 28,
+        "utter_movie": 29,
+        "utter_music": 30,
+        "utter_time": 31,
+        "utter_weather": 32
+      },
+      "entities": {},
+      "slots": {},
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}
