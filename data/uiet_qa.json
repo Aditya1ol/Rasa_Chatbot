@@ -1,12 +1,1717 @@
 [
-    {
-        "context": "UIET Chandigarh provides 21 hostels: 8 for boys, 11 for girls, 1 Working Women Hostel, and 1 International Hostel, accommodating ~7,600 students. Hostel rent is ~INR 1,800/month for regular hostels.",
-        "question": "What are the hostel fees at UIET?",
-        "answer": "Hostel fees at UIET Chandigarh are approximately INR 1,800/month for regular hostels and INR 7,000/month for the International Hostel."
-    },
-    {
-        "context": "The JEE Main cutoff for UIET Chandigarh in 2024 for General category ranged from 31,588 to 109,323. Computer Science closes at ~30,000 AIR, and Biotechnology at ~350,000.",
-        "question": "What is the JEE Main cutoff for UIET?",
-        "answer": "The JEE Main cutoff for UIET Chandigarh in 2024 ranged from 31,588 to 109,323 for General category."
-    }
+  {
+    "context": "Question 1: What is the basic eligibility for B.E. at PU?\nAnswer: A candidate must have passed 10+2 with Physics and Mathematics\nas compulsory subjects, along with Chemistry/Biology/Biotechnology/Technical\nsubject. Additionally, they must appear in JEE (Main) for the current admission\nyear.",
+    "question": "What is the basic eligibility for B.E. at PU?",
+    "answer": "A candidate must have passed 10+2 with Physics and Mathematics\nas compulsory subjects, along with Chemistry/Biology/Biotechnology/Technical\nsubject. Additionally, they must appear in JEE (Main) for the current admission\nyear."
+  },
+  {
+    "context": "Question 2: Is JEE (Main) compulsory for B.E. admission?\nAnswer: Yes, appearing in JEE (Main) is mandatory. Admission is strictly based\non the All India Rank (AIR) obtained in JEE (Main); 12th board marks are not\nconsidered in the merit list.",
+    "question": "Is JEE (Main) compulsory for B.E. admission?",
+    "answer": "Yes, appearing in JEE (Main) is mandatory. Admission is strictly based\non the All India Rank (AIR) obtained in JEE (Main); 12th board marks are not\nconsidered in the merit list."
+  },
+  {
+    "context": "Question 3: Can students from any state apply to PUs B.E. program?\nAnswer: Yes, PU accepts applications from across India. However, reserva-\ntion bene\ufb01ts vary for UT Chandigarh and Punjab-based candidates as per their\ndomicile.",
+    "question": "Can students from any state apply to PUs B.E. program?",
+    "answer": "Yes, PU accepts applications from across India. However, reserva-\ntion bene\ufb01ts vary for UT Chandigarh and Punjab-based candidates as per their\ndomicile."
+  },
+  {
+    "context": "Question 4: Is there any age limit for applying to the B.E. program?\nAnswer: No speci\ufb01c age limit is mentioned for B.E. admissions at PU. The can-\ndidate just needs to meet educational eligibility and appear for JEE (Main).",
+    "question": "Is there any age limit for applying to the B.E. program?",
+    "answer": "No speci\ufb01c age limit is mentioned for B.E. admissions at PU. The can-\ndidate just needs to meet educational eligibility and appear for JEE (Main)."
+  },
+  {
+    "context": "Question 5: Are board exam marks given any weight in the merit list?\nAnswer: No, only the All India Rank from JEE (Main) is considered. 10+2 marks\nare required only to ensure eligibility, not for ranking.\nApplication & Admission Process",
+    "question": "Are board exam marks given any weight in the merit list?",
+    "answer": "No, only the All India Rank from JEE (Main) is considered. 10+2 marks\nare required only to ensure eligibility, not for ranking.\nApplication & Admission Process"
+  },
+  {
+    "context": "Question 5: Are board exam marks given any weight in the merit list?\nAnswer: No, only the All India Rank from JEE (Main) is considered. 10+2 marks\nare required only to ensure eligibility, not for ranking.\nApplication & Admission Process",
+    "question": "are board exams given any weight in the merit list?",
+    "answer": "No, only the All India Rank from JEE (Main) is considered. 10+2 marks\nare required only to ensure eligibility, not for ranking.\nApplication & Admission Process"
+  },
+  {
+    "context": "Question 6: Where can I apply for B.E. admission at PU?\nAnswer: Applications are submitted online at https://admissions.puchd.ac.\nin. The candidate must register, \ufb01ll in details, upload documents, and pay the\napplication fee.",
+    "question": "Where can I apply for B.E. admission at PU?",
+    "answer": "Applications are submitted online at https://admissions.puchd.ac.\nin. The candidate must register, \ufb01ll in details, upload documents, and pay the\napplication fee."
+  },
+  {
+    "context": "Question 7: Is there a separate entrance test conducted by PU?\nAnswer: No separate entrance test is conducted by Panjab University for B.E.\nThe selection is solely based on JEE (Main) scores.",
+    "question": "Is there a separate entrance test conducted by PU?",
+    "answer": "No separate entrance test is conducted by Panjab University for B.E.\nThe selection is solely based on JEE (Main) scores."
+  },
+  {
+    "context": "Question 8: What is the admission schedule?\nAnswer: Admission notices are usually released in May/June, and counseling\ntakes place after JEE (Main)driven results. The full schedule is published on the\nPU admissions portal.",
+    "question": "What is the admission schedule?",
+    "answer": "Admission notices are usually released in May/June, and counseling\ntakes place after JEE (Main)driven results. The full schedule is published on the\nPU admissions portal."
+  },
+  {
+    "context": "Question 8: What is the admission schedule?\nAnswer: Admission notices are usually released in May/June, and counseling\ntakes place after JEE (Main)driven results. The full schedule is published on the\nPU admissions portal.",
+    "question": "tell me the admission schedule?",
+    "answer": "Admission notices are usually released in May/June, and counseling\ntakes place after JEE (Main)driven results. The full schedule is published on the\nPU admissions portal."
+  },
+  {
+    "context": "Question 9: Can I apply of\ufb02ine for B.E.?\nAnswer: No, the entire process is conducted online, including application, fee\npayment, and document submission.",
+    "question": "Can I apply of\ufb02ine for B.E.?",
+    "answer": "No, the entire process is conducted online, including application, fee\npayment, and document submission."
+  },
+  {
+    "context": "Question 10: What happens after submission of the form?\nAnswer: PU publishes a merit list based on JEE (Main) ranks. Candidates are\nthen invited for online counseling to choose preferences and con\ufb01rm admission.\n1\n\nMerit List & Counseling",
+    "question": "What happens after submission of the form?",
+    "answer": "PU publishes a merit list based on JEE (Main) ranks. Candidates are\nthen invited for online counseling to choose preferences and con\ufb01rm admission.\n1\n\nMerit List & Counseling"
+  },
+  {
+    "context": "Question 11: How is the B.E. merit list prepared?\nAnswer: The merit list is based purely on the All India Rank (AIR) in JEE (Main).\nNo other exams or marks are considered.",
+    "question": "How is the B.E. merit list prepared?",
+    "answer": "The merit list is based purely on the All India Rank (AIR) in JEE (Main).\nNo other exams or marks are considered."
+  },
+  {
+    "context": "Question 12: Is the counseling conducted online or of\ufb02ine?\nAnswer: Counseling is conducted online. Students have to lock choices, and\nseat allotment is done based on merit and preferences.",
+    "question": "Is the counseling conducted online or of\ufb02ine?",
+    "answer": "Counseling is conducted online. Students have to lock choices, and\nseat allotment is done based on merit and preferences."
+  },
+  {
+    "context": "Question 44: Can I switch my branch later?\nAnswer: Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution.",
+    "question": "Can I change my branch after admission?",
+    "answer": "Some colleges under PU allow internal branch changes after the \ufb01rst\nyear, subject to academic performance and seat availability."
+  },
+  {
+    "context": "Question 14: How many rounds of counseling are there?\nAnswer: Typically, there are 23 regular rounds, followed by special or spot\nrounds for vacant seats.",
+    "question": "How many rounds of counseling are there?",
+    "answer": "Typically, there are 23 regular rounds, followed by special or spot\nrounds for vacant seats."
+  },
+  {
+    "context": "Question 14: How many rounds of counseling are there?\nAnswer: Typically, there are 23 regular rounds, followed by special or spot\nrounds for vacant seats.",
+    "question": "is there more than 1 round of counseling?",
+    "answer": "Typically, there are 23 regular rounds, followed by special or spot\nrounds for vacant seats."
+  },
+  {
+    "context": "Question 15: Is there a spot round in PU B.E. counseling?\nAnswer: Yes, if seats remain vacant after regular rounds, PU may conduct spot\nor mop-up rounds.\nColleges & Courses",
+    "question": "Is there a spot round in PU B.E. counseling?",
+    "answer": "Yes, if seats remain vacant after regular rounds, PU may conduct spot\nor mop-up rounds.\nColleges & Courses"
+  },
+  {
+    "context": "Question 16: Which institutes offer B.E. under Panjab University?\nAnswer: B.E. courses are offered by UIET Chandigarh, UIET Hoshiarpur, UICET\n(Chemical Engineering), and CCET Chandigarh.",
+    "question": "Which institutes offer B.E. under Panjab University?",
+    "answer": "B.E. courses are offered by UIET Chandigarh, UIET Hoshiarpur, UICET\n(Chemical Engineering), and CCET Chandigarh."
+  },
+  {
+    "context": "Question 17: What B.E. branches are available?\nAnswer: Branches include Computer Science, IT, Electronics & Communication,\nMechanical, Biotechnology, and Electrical Engineering (varies by college).",
+    "question": "What B.E. branches are available?",
+    "answer": "Branches include Computer Science, IT, Electronics & Communication,\nMechanical, Biotechnology, and Electrical Engineering (varies by college)."
+  },
+  {
+    "context": "Question 18: What is the intake capacity in B.E. programs?\nAnswer: Intake ranges from 60 to 120 students per branch depending on the\ninstitute and stream.",
+    "question": "What is the intake capacity in B.E. programs?",
+    "answer": "Intake ranges from 60 to 120 students per branch depending on the\ninstitute and stream."
+  },
+  {
+    "context": "Question 19: Are Integrated B.E.-MBA courses available?\nAnswer: Yes, UIET Chandigarh offers an Integrated B.E.-MBA dual degree pro-\ngram in select branches.",
+    "question": "Are Integrated B.E.-MBA courses available?",
+    "answer": "Yes, UIET Chandigarh offers an Integrated B.E.-MBA dual degree pro-\ngram in select branches."
+  },
+  {
+    "context": "Question 20: Are honors or research options available in B.E.?\nAnswer: Under NEP 2020, PU may offer Honours or Research pathways in the\nfourth year for eligible students.\nReservation & Relaxations",
+    "question": "Are honors or research options available in B.E.?",
+    "answer": "Under NEP 2020, PU may offer Honours or Research pathways in the\nfourth year for eligible students.\nReservation & Relaxations"
+  },
+  {
+    "context": "Question 21: What reservation policy is followed at PU colleges?\nAnswer: Colleges in Chandigarh follow UT Chandigarh policy, while those in\nPunjab follow Punjab Government policy for SC/ST/OBC and other categories.",
+    "question": "What reservation policy is followed at PU colleges?",
+    "answer": "Colleges in Chandigarh follow UT Chandigarh policy, while those in\nPunjab follow Punjab Government policy for SC/ST/OBC and other categories."
+  },
+  {
+    "context": "Question 22: Is EWS reservation available?\nAnswer: Yes, 10% of seats are reserved for Economically Weaker Sections\n(EWS), as per central government norms.\n2",
+    "question": "Is EWS reservation available?",
+    "answer": "Yes, 10% of seats are reserved for Economically Weaker Sections\n(EWS), as per central government norms.\n2"
+  },
+  {
+    "context": "Question 23: Are there special seats for single girl children?\nAnswer: Yes, two additional seats per course are reserved for a Single Girl Child\nor one out of two girl children.",
+    "question": "Are there special seats for single girl children?",
+    "answer": "Yes, two additional seats per course are reserved for a Single Girl Child\nor one out of two girl children."
+  },
+  {
+    "context": "Question 24: Is there any bene\ufb01t for Kashmiri migrants?\nAnswer: Yes, up to 10% relaxation in cutoff and 5% supernumerary seats are\navailable for Kashmiri migrants and Pandits.",
+    "question": "Is there any bene\ufb01t for Kashmiri migrants?",
+    "answer": "Yes, up to 10% relaxation in cutoff and 5% supernumerary seats are\navailable for Kashmiri migrants and Pandits."
+  },
+  {
+    "context": "Question 25: Do differently-abled students get any reservation?\nAnswer: Yes, seats are reserved for differently-abled candidates and they may\nalso get relaxation in eligibility as per guidelines.\nFee & Financial Aid",
+    "question": "Do differently-abled students get any reservation?",
+    "answer": "Yes, seats are reserved for differently-abled candidates and they may\nalso get relaxation in eligibility as per guidelines.\nFee & Financial Aid"
+  },
+  {
+    "context": "Question 25: Do differently-abled students get any reservation?\nAnswer: Yes, seats are reserved for differently-abled candidates and they may\nalso get relaxation in eligibility as per guidelines.\nFee & Financial Aid",
+    "question": "do students with different disabilities get reservation?",
+    "answer": "Yes, seats are reserved for differently-abled candidates and they may\nalso get relaxation in eligibility as per guidelines.\nFee & Financial Aid"
+  },
+  {
+    "context": "Question 26: What is the fee structure for B.E. at PU?\nAnswer: The average annual fee ranges from 70,000 to 1,20,000 depending on\nthe institute. UIET and CCET have separate fee structures.",
+    "question": "What is the fee structure for B.E. at PU?",
+    "answer": "The average annual fee ranges from 70,000 to 1,20,000 depending on\nthe institute. UIET and CCET have separate fee structures."
+  },
+  {
+    "context": "Question 27: Is hostel facility available for B.E. students?\nAnswer: Yes, all PU-af\ufb01liated colleges provide hostel accommodation with sep-\narate fees. Hostel allotment is based on merit and distance.",
+    "question": "Is hostel facility available for B.E. students?",
+    "answer": "Yes, all PU-af\ufb01liated colleges provide hostel accommodation with sep-\narate fees. Hostel allotment is based on merit and distance."
+  },
+  {
+    "context": "Question 28: Are there scholarships available?\nAnswer: Yes, PU offers multiple scholarships for SC/ST, OBC, EWS, meritorious\nstudents, and girls. College notice boards and websites list them.",
+    "question": "Are there scholarships available?",
+    "answer": "Yes, PU offers multiple scholarships for SC/ST, OBC, EWS, meritorious\nstudents, and girls. College notice boards and websites list them."
+  },
+  {
+    "context": "Question 29: Can students apply for education loans?\nAnswer: PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details.",
+    "question": "Can students apply for education loans?",
+    "answer": "PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details."
+  },
+  {
+    "context": "Question 29: Can students apply for education loans?\nAnswer: PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details.",
+    "question": "can we apply for college loans?",
+    "answer": "PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details."
+  },
+  {
+    "context": "Question 29: Can students apply for education loans?\nAnswer: PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details.",
+    "question": "can a student apply for a loan?",
+    "answer": "PU doesn\u2019t provide direct loans, but students can apply through nation-\nalized banks with admission letters and fee details."
+  },
+  {
+    "context": "Question 30: Do blind students get any fee relief?\nAnswer: Yes, PU grants full fee exemption and free hostel facilities to visually\nimpaired students.\nDocuments & Veri\ufb01cation",
+    "question": "Do blind students get any fee relief?",
+    "answer": "Yes, PU grants full fee exemption and free hostel facilities to visually\nimpaired students.\nDocuments & Veri\ufb01cation"
+  },
+  {
+    "context": "Question 30: Do blind students get any fee relief?\nAnswer: Yes, PU grants full fee exemption and free hostel facilities to visually\nimpaired students.\nDocuments & Veri\ufb01cation",
+    "question": "do blind students get fee relief?",
+    "answer": "Yes, PU grants full fee exemption and free hostel facilities to visually\nimpaired students.\nDocuments & Veri\ufb01cation"
+  },
+  {
+    "context": "Question 31: What documents are required at the time of admission?\nAnswer: You will need your JEE (Main) scorecard, 10+2 mark sheet, migration\ncerti\ufb01cate (if from another board), category certi\ufb01cate (if applicable), passport-\nsize photos, and ID proof.",
+    "question": "What documents are required at the time of admission?",
+    "answer": "You will need your JEE (Main) scorecard, 10+2 mark sheet, migration\ncerti\ufb01cate (if from another board), category certi\ufb01cate (if applicable), passport-\nsize photos, and ID proof."
+  },
+  {
+    "context": "Question 31: What documents are required at the time of admission?\nAnswer: You will need your JEE (Main) scorecard, 10+2 mark sheet, migration\ncerti\ufb01cate (if from another board), category certi\ufb01cate (if applicable), passport-\nsize photos, and ID proof.",
+    "question": "what are the required documents to get admission?",
+    "answer": "You will need your JEE (Main) scorecard, 10+2 mark sheet, migration\ncerti\ufb01cate (if from another board), category certi\ufb01cate (if applicable), passport-\nsize photos, and ID proof."
+  },
+  {
+    "context": "Question 32: Are scanned documents acceptable?\nAnswer: Yes, during online registration, scanned copies are required. However,\noriginal documents must be shown for veri\ufb01cation at the time of physical reporting\nor as instructed.",
+    "question": "Are scanned documents acceptable?",
+    "answer": "Yes, during online registration, scanned copies are required. However,\noriginal documents must be shown for veri\ufb01cation at the time of physical reporting\nor as instructed."
+  },
+  {
+    "context": "Question 32: Are scanned documents acceptable?\nAnswer: Yes, during online registration, scanned copies are required. However,\noriginal documents must be shown for veri\ufb01cation at the time of physical reporting\nor as instructed.",
+    "question": "are scan documents acceptable?",
+    "answer": "Yes, during online registration, scanned copies are required. However,\noriginal documents must be shown for veri\ufb01cation at the time of physical reporting\nor as instructed."
+  },
+  {
+    "context": "Question 33: Do I need a migration certi\ufb01cate for PU admission?\nAnswer: Yes, candidates coming from boards or universities other than Punjab\nSchool Education Board or CBSE must submit a migration certi\ufb01cate within the\nstipulated time.",
+    "question": "Do I need a migration certi\ufb01cate for PU admission?",
+    "answer": "Yes, candidates coming from boards or universities other than Punjab\nSchool Education Board or CBSE must submit a migration certi\ufb01cate within the\nstipulated time."
+  },
+  {
+    "context": "Question 34: What if I have a gap year?\nAnswer: Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation.",
+    "question": "What if I have a gap year?",
+    "answer": "Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation."
+  },
+  {
+    "context": "Question 34: What if I have a gap year?\nAnswer: Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation.",
+    "question": "what happens if i have a gap year?",
+    "answer": "Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation."
+  },
+  {
+    "context": "Question 34: What if I have a gap year?\nAnswer: Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation.",
+    "question": "what do i do if i have a gap year?",
+    "answer": "Students with a gap year must submit an af\ufb01davit stating they were not\n3\n\ninvolved in any unlawful activities during the gap period. No admission is allowed\nduring disquali\ufb01cation."
+  },
+  {
+    "context": "Question 35: Is domicile certi\ufb01cate required for reservation bene\ufb01ts?\nAnswer: Yes, domicile certi\ufb01cate is required to claim bene\ufb01ts under UT Chandi-\ngarh or Punjab state reservation categories.\nAcademic & Campus Life",
+    "question": "Is domicile certi\ufb01cate required for reservation bene\ufb01ts?",
+    "answer": "Yes, domicile certi\ufb01cate is required to claim bene\ufb01ts under UT Chandi-\ngarh or Punjab state reservation categories.\nAcademic & Campus Life"
+  },
+  {
+    "context": "Question 36: What is the duration of the B.E. course?\nAnswer: The B.E. course spans 4 years (8 semesters), with a structured cur-\nriculum, internal assessments, labs, projects, and a mandatory internship.",
+    "question": "What is the duration of the B.E. course?",
+    "answer": "The B.E. course spans 4 years (8 semesters), with a structured cur-\nriculum, internal assessments, labs, projects, and a mandatory internship."
+  },
+  {
+    "context": "Question 37: Are summer internships part of the B.E. program?\nAnswer: Yes, internships are a part of the curriculum. Most colleges under PU\nencourage industrial training during summer breaks in the third year.",
+    "question": "Are summer internships part of the B.E. program?",
+    "answer": "Yes, internships are a part of the curriculum. Most colleges under PU\nencourage industrial training during summer breaks in the third year."
+  },
+  {
+    "context": "Question 38: Are there opportunities for research in B.E.?\nAnswer: Yes, under NEP, research tracks may be offered in the \ufb01nal year. Also,\nstudents can take part in innovation cell projects, hackathons, and technical pa-\nper presentations.",
+    "question": "Are there opportunities for research in B.E.?",
+    "answer": "Yes, under NEP, research tracks may be offered in the \ufb01nal year. Also,\nstudents can take part in innovation cell projects, hackathons, and technical pa-\nper presentations."
+  },
+  {
+    "context": "Question 39: What is the academic calendar for B.E. at PU?\nAnswer: The academic year is divided into two semesters odd (July to Dec)\nand even (Jan to May), followed by exams, vacations, and internships.",
+    "question": "What is the academic calendar for B.E. at PU?",
+    "answer": "The academic year is divided into two semesters odd (July to Dec)\nand even (Jan to May), followed by exams, vacations, and internships."
+  },
+  {
+    "context": "Question 40: Is the environment education course compulsory?\nAnswer: Yes, a paper on Environment, Road Safety, and Womens Rights is\ncompulsory and must be passed to be eligible for the award of the degree.\nTransfers, Migration & Credit System",
+    "question": "Is the environment education course compulsory?",
+    "answer": "Yes, a paper on Environment, Road Safety, and Womens Rights is\ncompulsory and must be passed to be eligible for the award of the degree.\nTransfers, Migration & Credit System"
+  },
+  {
+    "context": "Question 41: Can I transfer from another university to PU in the middle of the course?\nAnswer: Migration to PU-af\ufb01liated B.E. programs is allowed in the 3rd or 5th\nsemester, subject to seat availability and approval of equivalency by the univer-\nsity.",
+    "question": "Can I transfer from another university to PU in the middle of the course?",
+    "answer": "Migration to PU-af\ufb01liated B.E. programs is allowed in the 3rd or 5th\nsemester, subject to seat availability and approval of equivalency by the univer-\nsity."
+  },
+  {
+    "context": "Question 42: Can I transfer from one PU college to another?\nAnswer: Intra-university transfers may be permitted based on academic perfor-\nmance, seat availability, and university regulations.",
+    "question": "Can I transfer from one PU college to another?",
+    "answer": "Intra-university transfers may be permitted based on academic perfor-\nmance, seat availability, and university regulations."
+  },
+  {
+    "context": "Question 43: Is credit-based grading followed?\nAnswer: Yes, PU follows the Choice-Based Credit System (CBCS). Students\nearn credits based on subjects passed each semester.",
+    "question": "Is credit-based grading followed?",
+    "answer": "Yes, PU follows the Choice-Based Credit System (CBCS). Students\nearn credits based on subjects passed each semester."
+  },
+  {
+    "context": "Question 44: Can I switch my branch later?\nAnswer: Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution.",
+    "question": "Can I switch my branch later?",
+    "answer": "Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution."
+  },
+  {
+    "context": "Question 44: Can I switch my branch later?\nAnswer: Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution.",
+    "question": "can i switch my business branch later?",
+    "answer": "Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution."
+  },
+  {
+    "context": "Question 44: Can I switch my branch later?\nAnswer: Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution.",
+    "question": "can i switch branches later?",
+    "answer": "Some colleges allow branch changes after the \ufb01rst year, depending on\nmerit and seat availability. Rules vary by institution."
+  },
+  {
+    "context": "Question 45: What if I fail in a semester exam?\nAnswer: You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs",
+    "question": "What if I fail in a semester exam?",
+    "answer": "You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs"
+  },
+  {
+    "context": "Question 45: What if I fail in a semester exam?\nAnswer: You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs",
+    "question": "what happens if i fail the semester exam?",
+    "answer": "You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs"
+  },
+  {
+    "context": "Question 45: What if I fail in a semester exam?\nAnswer: You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs",
+    "question": "what if i fail a semester exam?",
+    "answer": "You will be promoted with a backlog but must clear failed subjects\nin future attempts. Promotion requires clearing 50% of total credits up to that\nsemester.\n4\n\nOther Important FAQs"
+  },
+  {
+    "context": "Question 46: What if I miss the admission deadline?\nAnswer: Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee.",
+    "question": "What if I miss the admission deadline?",
+    "answer": "Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee."
+  },
+  {
+    "context": "Question 46: What if I miss the admission deadline?\nAnswer: Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee.",
+    "question": "what if i miss the deadline?",
+    "answer": "Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee."
+  },
+  {
+    "context": "Question 46: What if I miss the admission deadline?\nAnswer: Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee.",
+    "question": "what should i do if i miss an admission deadline?",
+    "answer": "Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee."
+  },
+  {
+    "context": "Question 46: What if I miss the admission deadline?\nAnswer: Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee.",
+    "question": "what should i do if i miss the admission deadline?",
+    "answer": "Late admissions may be allowed only with permission of the Vice-\nChancellor, subject to availability of seats and payment of a late fee."
+  },
+  {
+    "context": "Question 47: How do I know if Ive been selected?\nAnswer: Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling.",
+    "question": "How do I know if Ive been selected?",
+    "answer": "Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling."
+  },
+  {
+    "context": "Question 47: How do I know if Ive been selected?\nAnswer: Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling.",
+    "question": "how do i know that i have been selected?",
+    "answer": "Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling."
+  },
+  {
+    "context": "Question 47: How do I know if Ive been selected?\nAnswer: Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling.",
+    "question": "how do i know if i have been selected?",
+    "answer": "Selected and waitlisted candidates are published on the PU admission\nportal and/or the respective college websites after each round of counseling."
+  },
+  {
+    "context": "Question 48: Are foreign and NRI students eligible?\nAnswer: Yes, PU allows NRI and foreign national admissions under a separate\nquota. Eligibility certi\ufb01cate and relevant documents are required from the Dean\nInternational Students.",
+    "question": "Are foreign and NRI students eligible?",
+    "answer": "Yes, PU allows NRI and foreign national admissions under a separate\nquota. Eligibility certi\ufb01cate and relevant documents are required from the Dean\nInternational Students."
+  },
+  {
+    "context": "Question 48: Are foreign and NRI students eligible?\nAnswer: Yes, PU allows NRI and foreign national admissions under a separate\nquota. Eligibility certi\ufb01cate and relevant documents are required from the Dean\nInternational Students.",
+    "question": "is nri and foreign students eligible?",
+    "answer": "Yes, PU allows NRI and foreign national admissions under a separate\nquota. Eligibility certi\ufb01cate and relevant documents are required from the Dean\nInternational Students."
+  },
+  {
+    "context": "Question 49: Can compartment students apply?\nAnswer: Students placed in one subject only, with at least 20% marks in that\nsubject, may be admitted provisionally and must clear it in the next attempt.",
+    "question": "Can compartment students apply?",
+    "answer": "Students placed in one subject only, with at least 20% marks in that\nsubject, may be admitted provisionally and must clear it in the next attempt."
+  },
+  {
+    "context": "Question 50: Where can I get admission updates?\nAnswer: All of\ufb01cial updates, notices, and merit lists are available at https://\nadmissions.puchd.ac.in and the Panjab University homepage https://puchd.\nac.in.\nCutoff Ranks (General Category)",
+    "question": "Where can I get admission updates?",
+    "answer": "All of\ufb01cial updates, notices, and merit lists are available at https://\nadmissions.puchd.ac.in and the Panjab University homepage https://puchd.\nac.in.\nCutoff Ranks (General Category)"
+  },
+  {
+    "context": "Question 50: Where can I get admission updates?\nAnswer: All of\ufb01cial updates, notices, and merit lists are available at https://\nadmissions.puchd.ac.in and the Panjab University homepage https://puchd.\nac.in.\nCutoff Ranks (General Category)",
+    "question": "how do i get admissions updates?",
+    "answer": "All of\ufb01cial updates, notices, and merit lists are available at https://\nadmissions.puchd.ac.in and the Panjab University homepage https://puchd.\nac.in.\nCutoff Ranks (General Category)"
+  },
+  {
+    "context": "Question 51: What was the closing rank for Computer Science and Engineering (CSE)?\nAnswer: The CSE branch closed between JEE Main Rank 43007 (min) and\n51049 (max), making it the most competitive among all.",
+    "question": "What was the closing rank for Computer Science and Engineering (CSE)?",
+    "answer": "The CSE branch closed between JEE Main Rank 43007 (min) and\n51049 (max), making it the most competitive among all."
+  },
+  {
+    "context": "Question 51: What was the closing rank for Computer Science and Engineering (CSE)?\nAnswer: The CSE branch closed between JEE Main Rank 43007 (min) and\n51049 (max), making it the most competitive among all.",
+    "question": "tell me the closing grade of computer science and engineering?",
+    "answer": "The CSE branch closed between JEE Main Rank 43007 (min) and\n51049 (max), making it the most competitive among all."
+  },
+  {
+    "context": "Question 52: What was the range for Information Technology (IT)?\nAnswer: The IT branch had a cutoff between 55135 (min) and 67216 (max),\nmaking it the second most competitive.",
+    "question": "What was the range for Information Technology (IT)?",
+    "answer": "The IT branch had a cutoff between 55135 (min) and 67216 (max),\nmaking it the second most competitive."
+  },
+  {
+    "context": "Question 53: What is the closing rank range for ECE?\nAnswer: Electronics and Communication Engineering closed between 66644\n(min) and 92150 (max).",
+    "question": "What is the closing rank range for ECE?",
+    "answer": "Electronics and Communication Engineering closed between 66644\n(min) and 92150 (max)."
+  },
+  {
+    "context": "Question 54: How competitive is Electrical and Electronics Engineering (EEE)?\nAnswer: EEE closed between 81989 and 147184, indicating moderate demand\ncompared to CSE/IT.",
+    "question": "How competitive is Electrical and Electronics Engineering (EEE)?",
+    "answer": "EEE closed between 81989 and 147184, indicating moderate demand\ncompared to CSE/IT."
+  },
+  {
+    "context": "Question 55: What was the lowest rank admitted in Mechanical Engineering?\nAnswer: The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219.",
+    "question": "What was the lowest rank admitted in Mechanical Engineering?",
+    "answer": "The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219."
+  },
+  {
+    "context": "Question 55: What was the lowest rank admitted in Mechanical Engineering?\nAnswer: The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219.",
+    "question": "tell me the lowest rank in mechanical engineering?",
+    "answer": "The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219."
+  },
+  {
+    "context": "Question 55: What was the lowest rank admitted in Mechanical Engineering?\nAnswer: The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219.",
+    "question": "which was the lowest rank in mechanical engineering?",
+    "answer": "The highest (least competitive) closing rank for Mechanical was 197495,\nwith a minimum rank cutoff of 105219."
+  },
+  {
+    "context": "Question 69: Why is Biotechnology cut-off so high (less competitive)?\nAnswer: Biotechnology has fewer job opportunities in the core \ufb01eld compared\nto CS/IT, which reduces demand.",
+    "question": "Whats the trend for Biotechnology?",
+    "answer": "Bio Technology had the widest cutoff range, from 152973 to 1409038,\nindicating it was the least competitive.\n5\n\nCutoff Analysis & Strategy"
+  },
+  {
+    "context": "Question 56: Whats the trend for Biotechnology?\nAnswer: Bio Technology had the widest cutoff range, from 152973 to 1409038,\nindicating it was the least competitive.\n5\n\nCutoff Analysis & Strategy",
+    "question": "show the future trends of biotechnology?",
+    "answer": "Bio Technology had the widest cutoff range, from 152973 to 1409038,\nindicating it was the least competitive.\n5\n\nCutoff Analysis & Strategy"
+  },
+  {
+    "context": "Question 57: Which branch had the highest cutoff rank (least competitive)?\nAnswer: Bio Technology, with a max closing rank of 14,09,038, was the least\ncompetitive.",
+    "question": "Which branch had the highest cutoff rank (least competitive)?",
+    "answer": "Bio Technology, with a max closing rank of 14,09,038, was the least\ncompetitive."
+  },
+  {
+    "context": "Question 58: Which branch had the lowest (most competitive) cutoff?\nAnswer: Computer Science and Engineering, with a min rank of 43007, was the\nmost competitive.",
+    "question": "which branch had the least competitive cutoff?",
+    "answer": "Bio Technology, with a max closing rank of 14,09,038, was the least\ncompetitive."
+  },
+  {
+    "context": "Question 58: Which branch had the lowest (most competitive) cutoff?\nAnswer: Computer Science and Engineering, with a min rank of 43007, was the\nmost competitive.",
+    "question": "Which branch had the lowest (most competitive) cutoff?",
+    "answer": "Computer Science and Engineering, with a min rank of 43007, was the\nmost competitive."
+  },
+  {
+    "context": "Question 58: Which branch had the lowest (most competitive) cutoff?\nAnswer: Computer Science and Engineering, with a min rank of 43007, was the\nmost competitive.",
+    "question": "which branch had the lowest most competitive cutoff?",
+    "answer": "Computer Science and Engineering, with a min rank of 43007, was the\nmost competitive."
+  },
+  {
+    "context": "Question 59: Can I get CSE at PU with 60,000 rank?\nAnswer: No, based on this data, CSE closed at 51049, so 60,000 rank would\nnot qualify under General (All India) quota.",
+    "question": "Can I get CSE at PU with 60,000 rank?",
+    "answer": "No, based on this data, CSE closed at 51049, so 60,000 rank would\nnot qualify under General (All India) quota."
+  },
+  {
+    "context": "Question 60: Is a 1,00,000 JEE rank suf\ufb01cient for admission to PU?\nAnswer: Yes, for branches like Mechanical, EEE, or Bio Tech, which have higher\nclosing ranks.",
+    "question": "Is a 1,00,000 JEE rank suf\ufb01cient for admission to PU?",
+    "answer": "Yes, for branches like Mechanical, EEE, or Bio Tech, which have higher\nclosing ranks."
+  },
+  {
+    "context": "Question 60: Is a 1,00,000 JEE rank suf\ufb01cient for admission to PU?\nAnswer: Yes, for branches like Mechanical, EEE, or Bio Tech, which have higher\nclosing ranks.",
+    "question": "is a jee ranking of 100000 suitable to join pu?",
+    "answer": "Yes, for branches like Mechanical, EEE, or Bio Tech, which have higher\nclosing ranks."
+  },
+  {
+    "context": "Question 61: Which branches can I get with a JEE rank of 70,000?\nAnswer: You may be eligible for ECE, IT, and possibly EEE, but not CSE.",
+    "question": "Which branches can I get with a JEE rank of 70,000?",
+    "answer": "You may be eligible for ECE, IT, and possibly EEE, but not CSE."
+  },
+  {
+    "context": "Question 62: What if my rank is around 1.5 lakh?\nAnswer: You could get Biotechnology, Mechanical, or EEE, based on spot round\ntrends.",
+    "question": "What if my rank is around 1.5 lakh?",
+    "answer": "You could get Biotechnology, Mechanical, or EEE, based on spot round\ntrends."
+  },
+  {
+    "context": "Question 63: How accurate are these cutoffs for future reference?\nAnswer: These are past cutoffs and provide a good estimate, but actual ranks\nmay vary yearly due to number of applicants and preference trends.\nCounseling & Rounds",
+    "question": "How accurate are these cutoffs for future reference?",
+    "answer": "These are past cutoffs and provide a good estimate, but actual ranks\nmay vary yearly due to number of applicants and preference trends.\nCounseling & Rounds"
+  },
+  {
+    "context": "Question 63: How accurate are these cutoffs for future reference?\nAnswer: These are past cutoffs and provide a good estimate, but actual ranks\nmay vary yearly due to number of applicants and preference trends.\nCounseling & Rounds",
+    "question": "how accurate are the cutoffs for future reference?",
+    "answer": "These are past cutoffs and provide a good estimate, but actual ranks\nmay vary yearly due to number of applicants and preference trends.\nCounseling & Rounds"
+  },
+  {
+    "context": "Question 64: What isTechnical the meaning of Special Round in this chart?\nAnswer: It refers to an extra counseling round held after regular ones for vacant\nseats. Lower ranks often get admission in this round.",
+    "question": "What isTechnical the meaning of Special Round in this chart?",
+    "answer": "It refers to an extra counseling round held after regular ones for vacant\nseats. Lower ranks often get admission in this round."
+  },
+  {
+    "context": "Question 65: Is the spot round cutoff available in this image?\nAnswer: No, only Special Round minimum and maximum ranks are shown. Spot\nRound data is missing here.",
+    "question": "Is the spot round cutoff available in this image?",
+    "answer": "No, only Special Round minimum and maximum ranks are shown. Spot\nRound data is missing here."
+  },
+  {
+    "context": "Question 66: Do cutoff ranks increase or decrease in spot rounds?\nAnswer: Cutoff ranks usually increase (become less competitive) in spot rounds\nbecause many top-ranked students have already taken seats elsewhere.",
+    "question": "Do cutoff ranks increase or decrease in spot rounds?",
+    "answer": "Cutoff ranks usually increase (become less competitive) in spot rounds\nbecause many top-ranked students have already taken seats elsewhere."
+  },
+  {
+    "context": "Question 66: Do cutoff ranks increase or decrease in spot rounds?\nAnswer: Cutoff ranks usually increase (become less competitive) in spot rounds\nbecause many top-ranked students have already taken seats elsewhere.",
+    "question": "how do cutoff ranks change in spot rounds?",
+    "answer": "Cutoff ranks usually increase (become less competitive) in spot rounds\nbecause many top-ranked students have already taken seats elsewhere."
+  },
+  {
+    "context": "Question 90: Should I wait for a spot round if my rank is just above the cutoff?\nAnswer: If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks.",
+    "question": "Should I wait for a spot round if my rank is slightly above cutoff?",
+    "answer": "If your rank is within 10-15% above the max shown, waiting for the spot\nround might be worth it.\nDecision Making Questions"
+  },
+  {
+    "context": "Question 90: Should I wait for a spot round if my rank is just above the cutoff?\nAnswer: If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks.",
+    "question": "should i wait for a place round if my rank is slightly above cutoff?",
+    "answer": "If your rank is within 10-15% above the max shown, waiting for the spot\nround might be worth it.\nDecision Making Questions"
+  },
+  {
+    "context": "Question 68: Is IT a better option than ECE at PU if I get both?\nAnswer: Depends on your interestIT is closer to CSE and has strong job prospects\nin software, while ECE offers \ufb02exibility between electronics and computing.\n6",
+    "question": "Is IT a better option than ECE at PU if I get both?",
+    "answer": "Depends on your interestIT is closer to CSE and has strong job prospects\nin software, while ECE offers \ufb02exibility between electronics and computing.\n6"
+  },
+  {
+    "context": "Question 69: Why is Biotechnology cut-off so high (less competitive)?\nAnswer: Biotechnology has fewer job opportunities in the core \ufb01eld compared\nto CS/IT, which reduces demand.",
+    "question": "Why is Biotechnology cut-off so high (less competitive)?",
+    "answer": "Biotechnology has fewer job opportunities in the core \ufb01eld compared\nto CS/IT, which reduces demand."
+  },
+  {
+    "context": "Question 70: Why is CSE cut-off so low (more competitive)?\nAnswer: Due to its popularity, high placements, and scope in software/tech,\nCSE sees the highest demand, hence lower cutoff ranks.",
+    "question": "Why is CSE cut-off so low (more competitive)?",
+    "answer": "Due to its popularity, high placements, and scope in software/tech,\nCSE sees the highest demand, hence lower cutoff ranks."
+  },
+  {
+    "context": "Question 71: Should I choose a lower branch in a better institute or a better branch in a\nlower one?\nAnswer: Its subjectiveCSE in a lesser-known college can still offer better pack-\nages than Mechanical in a top one. Research your interests and goals.",
+    "question": "Should I choose a lower branch in a better institute or a better branch in a lower one?",
+    "answer": "Its subjectiveCSE in a lesser-known college can still offer better packages than Mechanical in a top one. Research your interests and goals."
+  },
+  {
+    "context": "Question 71: Should I choose a lower branch in a better institute or a better branch in a\nlower one?\nAnswer: Its subjectiveCSE in a lesser-known college can still offer better pack-\nages than Mechanical in a top one. Research your interests and goals.",
+    "question": "should i choose a lower branch in a better institute or a better branch in a lower institute?",
+    "answer": "Its subjectiveCSE in a lesser-known college can still offer better packages than Mechanical in a top one. Research your interests and goals."
+  },
+  {
+    "context": "Question 72: Can I upgrade my branch later after getting admission?\nAnswer: Some colleges allow branch change after 1st year based on CGPA and\nseat availability. Con\ufb01rm with the speci\ufb01c college.\nMiscellaneous & Practical Queries",
+    "question": "Can I upgrade my branch later after getting admission?",
+    "answer": "Some colleges allow branch change after 1st year based on CGPA and\nseat availability. Con\ufb01rm with the speci\ufb01c college.\nMiscellaneous & Practical Queries"
+  },
+  {
+    "context": "Question 72: Can I upgrade my branch later after getting admission?\nAnswer: Some colleges allow branch change after 1st year based on CGPA and\nseat availability. Con\ufb01rm with the speci\ufb01c college.\nMiscellaneous & Practical Queries",
+    "question": "can i upgrade my branch later after i get admission?",
+    "answer": "Some colleges allow branch change after 1st year based on CGPA and\nseat availability. Con\ufb01rm with the speci\ufb01c college.\nMiscellaneous & Practical Queries"
+  },
+  {
+    "context": "Question 73: Is this cutoff data for UIET Chandigarh?\nAnswer: Most likely yes, based on the pattern and ranks. Con\ufb01rm via of\ufb01cial\nwebsite or brochure.",
+    "question": "Is this cutoff data for UIET Chandigarh?",
+    "answer": "Most likely yes, based on the pattern and ranks. Con\ufb01rm via of\ufb01cial\nwebsite or brochure."
+  },
+  {
+    "context": "Question 74: Are these closing ranks different for state quota?\nAnswer: Yes, State Quota usually has different (and often more lenient) cutoffs\nthan the All India Quota.",
+    "question": "Are these closing ranks different for state quota?",
+    "answer": "Yes, State Quota usually has different (and often more lenient) cutoffs\nthan the All India Quota."
+  },
+  {
+    "context": "Question 74: Are these closing ranks different for state quota?\nAnswer: Yes, State Quota usually has different (and often more lenient) cutoffs\nthan the All India Quota.",
+    "question": "how does this compare to a state quota?",
+    "answer": "Yes, State Quota usually has different (and often more lenient) cutoffs\nthan the All India Quota."
+  },
+  {
+    "context": "Question 75: Do reserved categories have different cutoffs?\nAnswer: Absolutely, SC/ST/OBC/EWS and PwD candidates have relaxed cut-\noffs under their respective quotas.",
+    "question": "Do reserved categories have different cutoffs?",
+    "answer": "Absolutely, SC/ST/OBC/EWS and PwD candidates have relaxed cut-\noffs under their respective quotas."
+  },
+  {
+    "context": "Question 76: Is this cutoff applicable to girls-only category or gender-neutral?\nAnswer: This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this.",
+    "question": "Is this cutoff applicable to girls-only category or gender-neutral?",
+    "answer": "This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this."
+  },
+  {
+    "context": "Question 76: Is this cutoff applicable to girls-only category or gender-neutral?\nAnswer: This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this.",
+    "question": "is this cutoff applicable to only girls?",
+    "answer": "This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this."
+  },
+  {
+    "context": "Question 76: Is this cutoff applicable to girls-only category or gender-neutral?\nAnswer: This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this.",
+    "question": "is this cutoff applicable to a girls only category?",
+    "answer": "This data re\ufb02ects General (Open) category, gender-neutral. Girls can\nalso apply under this."
+  },
+  {
+    "context": "Question 77: How can I \ufb01nd updated or of\ufb01cial cutoffs?\nAnswer: Visit the of\ufb01cial PU website or check https://collegepravesh.com for\nrecent years\u2019 data.",
+    "question": "How can I \ufb01nd updated or of\ufb01cial cutoffs?",
+    "answer": "Visit the of\ufb01cial PU website or check https://collegepravesh.com for\nrecent years\u2019 data."
+  },
+  {
+    "context": "Question 78: What if I want to prepare again if I didnt get in this year?\nAnswer: You can take a drop year and reattempt JEE, aiming for a better rank\nto secure a top branch next year.\nBranch-wise Cutoff Questions (BC Category)",
+    "question": "What if I want to prepare again if I didnt get in this year?",
+    "answer": "You can take a drop year and reattempt JEE, aiming for a better rank\nto secure a top branch next year.\nBranch-wise Cutoff Questions (BC Category)"
+  },
+  {
+    "context": "Question 79: What is the cutoff range for Computer Science and Engineering (CSE)?\nAnswer: CSE admitted students from Rank 56803 to 70422 under BC category\nstill competitive even in the spot round.",
+    "question": "What is the cutoff range for Computer Science and Engineering (CSE)?",
+    "answer": "CSE admitted students from Rank 56803 to 70422 under BC category\nstill competitive even in the spot round."
+  },
+  {
+    "context": "Question 79: What is the cutoff range for Computer Science and Engineering (CSE)?\nAnswer: CSE admitted students from Rank 56803 to 70422 under BC category\nstill competitive even in the spot round.",
+    "question": "tell me the cutoff range for computer science and engineering?",
+    "answer": "CSE admitted students from Rank 56803 to 70422 under BC category\nstill competitive even in the spot round."
+  },
+  {
+    "context": "Question 80: What is the cutoff for Information Technology (IT)?\nAnswer: IT admitted students between 71765 and 74231, slightly more relaxed\nthan CSE but still in high demand.\n7",
+    "question": "What is the cutoff for Information Technology (IT)?",
+    "answer": "IT admitted students between 71765 and 74231, slightly more relaxed\nthan CSE but still in high demand.\n7"
+  },
+  {
+    "context": "Question 80: What is the cutoff for Information Technology (IT)?\nAnswer: IT admitted students between 71765 and 74231, slightly more relaxed\nthan CSE but still in high demand.\n7",
+    "question": "tell me the cit cutoff for information technology?",
+    "answer": "IT admitted students between 71765 and 74231, slightly more relaxed\nthan CSE but still in high demand.\n7"
+  },
+  {
+    "context": "Question 81: How competitive was Electronics and Communication Engineering (ECE)?\nAnswer: ECE cutoff was 93990 to 102169, making it moderately competitive.",
+    "question": "How competitive was Electronics and Communication Engineering (ECE)?",
+    "answer": "ECE cutoff was 93990 to 102169, making it moderately competitive."
+  },
+  {
+    "context": "Question 82: What about Electrical and Electronics Engineering (EEE)?\nAnswer: EEE admitted BC students from 147710 to 154242, showing more\nrelaxed cutoffs than CS/IT/ECE.",
+    "question": "What about Electrical and Electronics Engineering (EEE)?",
+    "answer": "EEE admitted BC students from 147710 to 154242, showing more\nrelaxed cutoffs than CS/IT/ECE."
+  },
+  {
+    "context": "Question 117: Im an ST candidate with a rank of 500000. Is Electrical and Electronics\nEngineering a good option for me?\nAnswer: Yes, with a rank of 500000, you qualify for Electrical and Electronics\nEngineering (min: 516610, max: 752917), as your rank is within the range.",
+    "question": "what about electrical and electronics engineering?",
+    "answer": "EEE admitted BC students from 147710 to 154242, showing more\nrelaxed cutoffs than CS/IT/ECE."
+  },
+  {
+    "context": "Question 83: What is the Mechanical Engineering spot round cutoff?\nAnswer: Mechanical had the widest range, admitting students from 211177 to\n219068, indicating low demand in this round.",
+    "question": "What is the Mechanical Engineering spot round cutoff?",
+    "answer": "Mechanical had the widest range, admitting students from 211177 to\n219068, indicating low demand in this round."
+  },
+  {
+    "context": "Question 84: Is there data for Biotechnology?\nAnswer: No speci\ufb01c rank data is shown for Biotechnology in this round either\nno seats were \ufb01lled or data is missing.\nTrend & Analysis Questions (BC Category)",
+    "question": "Is there data for Biotechnology?",
+    "answer": "No speci\ufb01c rank data is shown for Biotechnology in this round either\nno seats were \ufb01lled or data is missing.\nTrend & Analysis Questions (BC Category)"
+  },
+  {
+    "context": "Question 84: Is there data for Biotechnology?\nAnswer: No speci\ufb01c rank data is shown for Biotechnology in this round either\nno seats were \ufb01lled or data is missing.\nTrend & Analysis Questions (BC Category)",
+    "question": "are there any data for biotechnology?",
+    "answer": "No speci\ufb01c rank data is shown for Biotechnology in this round either\nno seats were \ufb01lled or data is missing.\nTrend & Analysis Questions (BC Category)"
+  },
+  {
+    "context": "Question 85: Which branch had the most competitive cutoff in the spot round?\nAnswer: CSE, with a minimum rank of 56803, remained the most competitive\neven in the spot round.",
+    "question": "Which branch had the most competitive cutoff in the spot round?",
+    "answer": "CSE, with a minimum rank of 56803, remained the most competitive\neven in the spot round."
+  },
+  {
+    "context": "Question 86: Which branch had the highest (least competitive) closing rank?\nAnswer: Mechanical Engineering, with a max rank of 219068, had the least\ncompetition.",
+    "question": "Which branch had the highest (least competitive) closing rank?",
+    "answer": "Mechanical Engineering, with a max rank of 219068, had the least\ncompetition."
+  },
+  {
+    "context": "Question 87: Can I get a seat in PU B.E. with a JEE rank of 1.5 lakh under BC?\nAnswer: Yes, you might get EEE or Mechanical, based on this data.",
+    "question": "Can I get a seat in PU B.E. with a JEE rank of 1.5 lakh under BC?",
+    "answer": "Yes, you might get EEE or Mechanical, based on this data."
+  },
+  {
+    "context": "Question 88: Can a rank of 90,000 secure ECE in this round?\nAnswer: Yes, ECE admitted students between 93990102169, so a rank slightly\nunder that may qualify.",
+    "question": "Can a rank of 90,000 secure ECE in this round?",
+    "answer": "Yes, ECE admitted students between 93990102169, so a rank slightly\nunder that may qualify."
+  },
+  {
+    "context": "Question 61: Which branches can I get with a JEE rank of 70,000?\nAnswer: You may be eligible for ECE, IT, and possibly EEE, but not CSE.",
+    "question": "What about a JEE rank of 70,000?",
+    "answer": "You can expect to get CSE (upper range), IT, or possibly ECE, depend-\ning on seat availability.\nStudent-Oriented Concerns (BC Category)"
+  },
+  {
+    "context": "Question 90: Should I wait for a spot round if my rank is just above the cutoff?\nAnswer: If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks.",
+    "question": "Should I wait for a spot round if my rank is just above the cutoff?",
+    "answer": "If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks."
+  },
+  {
+    "context": "Question 90: Should I wait for a spot round if my rank is just above the cutoff?\nAnswer: If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks.",
+    "question": "is there any reason to wait till a new round if your rank is above the cutoff?",
+    "answer": "If you\u2019re within 510% of the max rank cutoff, its worth waiting. Spot\nrounds often \ufb01ll leftover seats and admit higher ranks."
+  },
+  {
+    "context": "Question 91: Why is Mechanical Engineering cut-off so high (less competitive)?\nAnswer: Mechanical branches currently see lower demand due to fewer soft-\nware jobs, leading to higher cutoff ranks.",
+    "question": "Why is Mechanical Engineering cut-off so high (less competitive)?",
+    "answer": "Mechanical branches currently see lower demand due to fewer soft-\nware jobs, leading to higher cutoff ranks."
+  },
+  {
+    "context": "Question 92: Why is CSE still competitive even in the spot round?\nAnswer: CSE remains in top demand for placements and future scope in IT/software,\nkeeping cutoffs low even in late rounds.",
+    "question": "Why is CSE still competitive even in the spot round?",
+    "answer": "CSE remains in top demand for placements and future scope in IT/software,\nkeeping cutoffs low even in late rounds."
+  },
+  {
+    "context": "Question 92: Why is CSE still competitive even in the spot round?\nAnswer: CSE remains in top demand for placements and future scope in IT/software,\nkeeping cutoffs low even in late rounds.",
+    "question": "is cse still competitive in spot rounds?",
+    "answer": "CSE remains in top demand for placements and future scope in IT/software,\nkeeping cutoffs low even in late rounds."
+  },
+  {
+    "context": "Question 93: Will next years cutoffs be the same?\nAnswer: Cutoffs vary yearly based on number of applicants, dif\ufb01culty of JEE,\npreferences, and category applications.\n8\n\nSpecial Notes (BC Category)",
+    "question": "Will next years cutoffs be the same?",
+    "answer": "Cutoffs vary yearly based on number of applicants, dif\ufb01culty of JEE,\npreferences, and category applications.\n8\n\nSpecial Notes (BC Category)"
+  },
+  {
+    "context": "Question 94: Do spot round admissions have different rules?\nAnswer: Yes, spot rounds typically allow candidates who havent been allotted\nin earlier rounds or are seeking upgrades. Usually, there\u2019s no withdrawal/refund\nafter spot admission.",
+    "question": "Do spot round admissions have different rules?",
+    "answer": "Yes, spot rounds typically allow candidates who havent been allotted\nin earlier rounds or are seeking upgrades. Usually, there\u2019s no withdrawal/refund\nafter spot admission."
+  },
+  {
+    "context": "Question 94: Do spot round admissions have different rules?\nAnswer: Yes, spot rounds typically allow candidates who havent been allotted\nin earlier rounds or are seeking upgrades. Usually, there\u2019s no withdrawal/refund\nafter spot admission.",
+    "question": "are admissions made in a spot round different from the regular admission rounds?",
+    "answer": "Yes, spot rounds typically allow candidates who havent been allotted\nin earlier rounds or are seeking upgrades. Usually, there\u2019s no withdrawal/refund\nafter spot admission."
+  },
+  {
+    "context": "Question 95: Is a fresh application required for spot round?\nAnswer: Sometimes yes. Some institutes reopen registration or require intent\ncon\ufb01rmation for spot rounds. Check the PU portal for exact instructions.\nSC Category Questions",
+    "question": "Is a fresh application required for spot round?",
+    "answer": "Sometimes yes. Some institutes reopen registration or require intent\ncon\ufb01rmation for spot rounds. Check the PU portal for exact instructions.\nSC Category Questions"
+  },
+  {
+    "context": "Question 96: As an SC student, what is the safest branch to choose if my rank is 200000?\nAnswer: With a rank of 200000, the safest branches (where your rank is well\nwithin the range) are: Electronics and Communication Engineering (max rank:\n219829), Electrical and Electronics Engineering (max rank: 271802).",
+    "question": "As an SC student, what is the safest branch to choose if my rank is 200000?",
+    "answer": "With a rank of 200000, the safest branches (where your rank is well\nwithin the range) are: Electronics and Communication Engineering (max rank:\n219829), Electrical and Electronics Engineering (max rank: 271802)."
+  },
+  {
+    "context": "Question 97: Im an SC candidate with a rank of 85000. Can I get into any branch?\nAnswer: Yes, with a rank of 85000, you can get into Computer Science and\nEngineering, as its minimum rank is 85676, which is very close to your rank.\nHowever, you wont qualify for other branches since their minimum ranks are\nhigher.",
+    "question": "Im an SC candidate with a rank of 85000. Can I get into any branch?",
+    "answer": "Yes, with a rank of 85000, you can get into Computer Science and\nEngineering, as its minimum rank is 85676, which is very close to your rank.\nHowever, you wont qualify for other branches since their minimum ranks are\nhigher."
+  },
+  {
+    "context": "Question 98: What is the difference between the minimum and maximum ranks for Me-\nchanical Engineering for SC students?\nAnswer: For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724.",
+    "question": "What is the difference between the minimum and maximum ranks for Me-\nchanical Engineering for SC students?",
+    "answer": "For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724."
+  },
+  {
+    "context": "Question 98: What is the difference between the minimum and maximum ranks for Me-\nchanical Engineering for SC students?\nAnswer: For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724.",
+    "question": "tell me the difference between minimum and maximum rank in mechanical engineering for sc students?",
+    "answer": "For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724."
+  },
+  {
+    "context": "Question 98: What is the difference between the minimum and maximum ranks for Me-\nchanical Engineering for SC students?\nAnswer: For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724.",
+    "question": "tell me the difference between the minimum and maximum rank for mechanical engineering for sc students?",
+    "answer": "For Mechanical Engineering, the minimum rank is 270303, and the\nmaximum rank is 307027. The difference is 307027 - 270303 = 36,724."
+  },
+  {
+    "context": "Question 99: As an SC student, if I aim for Biotechnology, how much buffer should I have\nin my rank?\nAnswer: The maximum rank for Biotechnology is 388856.\nTo be safe, you\nshould aim for a rank at least 10-15% lower than the maximum, so around\n330,000 or better, to account for competition and seat availability.",
+    "question": "As an SC student, if I aim for Biotechnology, how much buffer should I have\nin my rank?",
+    "answer": "The maximum rank for Biotechnology is 388856.\nTo be safe, you\nshould aim for a rank at least 10-15% lower than the maximum, so around\n330,000 or better, to account for competition and seat availability."
+  },
+  {
+    "context": "Question 100: Im an SC student with a rank of 190000. Should I prioritize Information\nTechnology or Electronics and Communication Engineering?\nAnswer: Your rank of 190000 quali\ufb01es you for both: Information Technology\n(min: 179529, max: 186198), Electronics and Communication Engineering (min:\n195911, max: 219829). Since your rank is closer to the maximum for Information\nTechnology, you should prioritize Electronics and Communication Engineering,\nwhere your rank has a better buffer.",
+    "question": "Im an SC student with a rank of 190000. Should I prioritize Information\nTechnology or Electronics and Communication Engineering?",
+    "answer": "Your rank of 190000 quali\ufb01es you for both: Information Technology\n(min: 179529, max: 186198), Electronics and Communication Engineering (min:\n195911, max: 219829). Since your rank is closer to the maximum for Information\nTechnology, you should prioritize Electronics and Communication Engineering,\nwhere your rank has a better buffer."
+  },
+  {
+    "context": "Question 101: Are these SC cutoffs likely to change in the next counseling round?\nAnswer: Cutoffs can vary slightly in each round depending on seat availability\nand candidate preferences. If many SC candidates with higher ranks opt for other\ncolleges or branches, the maximum rank might increase slightly in later rounds\nlike the Spot Round.",
+    "question": "Are these SC cutoffs likely to change in the next counseling round?",
+    "answer": "Cutoffs can vary slightly in each round depending on seat availability\nand candidate preferences. If many SC candidates with higher ranks opt for other\ncolleges or branches, the maximum rank might increase slightly in later rounds\nlike the Spot Round."
+  },
+  {
+    "context": "Question 101: Are these SC cutoffs likely to change in the next counseling round?\nAnswer: Cutoffs can vary slightly in each round depending on seat availability\nand candidate preferences. If many SC candidates with higher ranks opt for other\ncolleges or branches, the maximum rank might increase slightly in later rounds\nlike the Spot Round.",
+    "question": "are the sc cut-offs likely to change in the next counseling round?",
+    "answer": "Cutoffs can vary slightly in each round depending on seat availability\nand candidate preferences. If many SC candidates with higher ranks opt for other\ncolleges or branches, the maximum rank might increase slightly in later rounds\nlike the Spot Round."
+  },
+  {
+    "context": "Question 102: As an SC student, what happens if I dont meet the minimum rank for any\nbranch in Round 1?\n9\n\nAnswer: If you dont meet the minimum rank in Round 1, you can wait for sub-\nsequent rounds (Round 2, 3, Special, or Spot). Cutoffs often decrease in later\nrounds as seats remain un\ufb01lled. For example, the maximum ranks shown (e.g.,\n388856 for Biotechnology) might be from later rounds.",
+    "question": "As an SC student, what happens if I dont meet the minimum rank for any\nbranch in Round 1?\n9",
+    "answer": "If you dont meet the minimum rank in Round 1, you can wait for sub-\nsequent rounds (Round 2, 3, Special, or Spot). Cutoffs often decrease in later\nrounds as seats remain un\ufb01lled. For example, the maximum ranks shown (e.g.,\n388856 for Biotechnology) might be from later rounds."
+  },
+  {
+    "context": "Question 103: Im an SC candidate with a rank of 275000. Is Mechanical Engineering a\ngood choice for me?\nAnswer: Yes, with a rank of 275000, you qualify for Mechanical Engineering\n(min: 270303, max: 307027). Your rank is comfortably within the range, making\nit a good choice.",
+    "question": "Im an SC candidate with a rank of 275000. Is Mechanical Engineering a\ngood choice for me?",
+    "answer": "Yes, with a rank of 275000, you qualify for Mechanical Engineering\n(min: 270303, max: 307027). Your rank is comfortably within the range, making\nit a good choice."
+  },
+  {
+    "context": "Question 104: How many branches are available for SC students with a rank below 200000?\nAnswer: For a rank below 200000, the available branches are: Computer Sci-\nence and Engineering (min: 85676), Information Technology (min: 179529),\nElectronics and Communication Engineering (min: 195911). Thats 3 branches.",
+    "question": "How many branches are available for SC students with a rank below 200000?",
+    "answer": "For a rank below 200000, the available branches are: Computer Sci-\nence and Engineering (min: 85676), Information Technology (min: 179529),\nElectronics and Communication Engineering (min: 195911). Thats 3 branches."
+  },
+  {
+    "context": "Question 105: As an SC student, can I get a seat in the Special Round with a rank of\n380000?\nAnswer: Yes, with a rank of 380000, you can get into Biotechnology in the Spe-\ncial Round, as its maximum rank is 388856, which is above your rank.",
+    "question": "As an SC student, can I get a seat in the Special Round with a rank of\n380000?",
+    "answer": "Yes, with a rank of 380000, you can get into Biotechnology in the Spe-\ncial Round, as its maximum rank is 388856, which is above your rank."
+  },
+  {
+    "context": "Question 106: What is the least competitive branch for SC students based on this table?\nAnswer: The least competitive branch is Biotechnology, as it has the highest\nmaximum rank (388856), meaning it accepts students with lower ranks com-\npared to other branches.",
+    "question": "What is the least competitive branch for SC students based on this table?",
+    "answer": "The least competitive branch is Biotechnology, as it has the highest\nmaximum rank (388856), meaning it accepts students with lower ranks com-\npared to other branches."
+  },
+  {
+    "context": "Question 107: Im an SC student with a rank of 220000. Will I have a better chance in the\nSpot Round?\nAnswer: With a rank of 220000, you already qualify for Electronics and Com-\nmunication Engineering (max: 219829), Electrical and Electronics Engineering\n(max: 271802), and others in earlier rounds. The Spot Round might offer more\nseats if others dont accept their allotments, but youre already eligible for these\nbranches.",
+    "question": "Im an SC student with a rank of 220000. Will I have a better chance in the\nSpot Round?",
+    "answer": "With a rank of 220000, you already qualify for Electronics and Com-\nmunication Engineering (max: 219829), Electrical and Electronics Engineering\n(max: 271802), and others in earlier rounds. The Spot Round might offer more\nseats if others dont accept their allotments, but youre already eligible for these\nbranches."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "As an SC student, what is the rank difference between the most and least\ncompetitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the ranking difference between most competitive and least competitive branches of sc?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between the most competitive and less competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between most competitive and least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "If Im an SC student with a rank of 150000, how many branches can I apply\nfor?",
+    "answer": "With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available."
+  },
+  {
+    "context": "Question 110: As an SC student, should I be worried if my rank is close to the maximum\nrank for a branch?\nAnswer: If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions",
+    "question": "As an SC student, should I be worried if my rank is close to the maximum\nrank for a branch?",
+    "answer": "If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions"
+  },
+  {
+    "context": "Question 110: As an SC student, should I be worried if my rank is close to the maximum\nrank for a branch?\nAnswer: If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions",
+    "question": "should i worry about my rank if it is close to the maximumrank for a branch?",
+    "answer": "If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions"
+  },
+  {
+    "context": "Question 110: As an SC student, should I be worried if my rank is close to the maximum\nrank for a branch?\nAnswer: If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions",
+    "question": "should i be worried if my rank is close to the maximum rank in a branch?",
+    "answer": "If your rank is close to the maximum rank (e.g., 270000 for Electrical\nand Electronics Engineering with a max of 271802), theres some risk. Seats\nmay \ufb01ll up quickly, especially in earlier rounds. You might have a better chance\nin later rounds like the Spot Round if seats remain.\n10\n\nST Category Questions"
+  },
+  {
+    "context": "Question 111: As an ST student, what is the minimum rank required to get into Electronics\nand Communication Engineering?\nAnswer: The minimum rank for Electronics and Communication Engineering is\n498741.",
+    "question": "As an ST student, what is the minimum rank required to get into Electronics\nand Communication Engineering?",
+    "answer": "The minimum rank for Electronics and Communication Engineering is\n498741."
+  },
+  {
+    "context": "Question 111: As an ST student, what is the minimum rank required to get into Electronics\nand Communication Engineering?\nAnswer: The minimum rank for Electronics and Communication Engineering is\n498741.",
+    "question": "tell me the minimum rank required for electronics and communications engineering?",
+    "answer": "The minimum rank for Electronics and Communication Engineering is\n498741."
+  },
+  {
+    "context": "Question 111: As an ST student, what is the minimum rank required to get into Electronics\nand Communication Engineering?\nAnswer: The minimum rank for Electronics and Communication Engineering is\n498741.",
+    "question": "tell me the minimum rank required to get into electronics and communication engineering?",
+    "answer": "The minimum rank for Electronics and Communication Engineering is\n498741."
+  },
+  {
+    "context": "Question 112: Im an ST candidate with a rank of 400000. Which branches can I apply for?\nAnswer: With a rank of 400000, you can apply for: Information Technology (min:\n431211, max: 434215). No other branches are available, as their minimum ranks\nare either lower (e.g., Computer Science at 315588) or not speci\ufb01ed (Biotechnol-\nogy).",
+    "question": "Im an ST candidate with a rank of 400000. Which branches can I apply for?",
+    "answer": "With a rank of 400000, you can apply for: Information Technology (min:\n431211, max: 434215). No other branches are available, as their minimum ranks\nare either lower (e.g., Computer Science at 315588) or not speci\ufb01ed (Biotechnol-\nogy)."
+  },
+  {
+    "context": "Question 113: What is the maximum rank for Computer Science and Engineering for ST\nstudents?\nAnswer: The maximum rank for Computer Science and Engineering is 351500.",
+    "question": "What is the maximum rank for Computer Science and Engineering for ST\nstudents?",
+    "answer": "The maximum rank for Computer Science and Engineering is 351500."
+  },
+  {
+    "context": "Question 114: Im an ST student with a rank of 600000. Can I get into any branch?\nAnswer: No, with a rank of 600000, you cannot get into any branch, as the\nhighest maximum rank is 1134392 (Mechanical Engineering), but its minimum\nrank is 1134392, indicating a single seat or speci\ufb01c case.\nThe next highest\nmaximum rank is 752917 (Electrical and Electronics Engineering), which is still\nbelow your rank.",
+    "question": "Im an ST student with a rank of 600000. Can I get into any branch?",
+    "answer": "No, with a rank of 600000, you cannot get into any branch, as the\nhighest maximum rank is 1134392 (Mechanical Engineering), but its minimum\nrank is 1134392, indicating a single seat or speci\ufb01c case.\nThe next highest\nmaximum rank is 752917 (Electrical and Electronics Engineering), which is still\nbelow your rank."
+  },
+  {
+    "context": "Question 115: Why are there no ranks listed for Biotechnology for ST students?\nAnswer: The absence of ranks for Biotechnology likely means no ST candidates\nwere allotted seats in this branch under the All India Quota, possibly due to low\npreference, limited seats, or no ST applicants meeting other eligibility criteria.",
+    "question": "Why are there no ranks listed for Biotechnology for ST students?",
+    "answer": "The absence of ranks for Biotechnology likely means no ST candidates\nwere allotted seats in this branch under the All India Quota, possibly due to low\npreference, limited seats, or no ST applicants meeting other eligibility criteria."
+  },
+  {
+    "context": "Question 116: As an ST student, which branch is the most competitive based on the min-\nimum rank?\nAnswer: Computer Science and Engineering is the most competitive for ST stu-\ndents, with the lowest minimum rank of 315588.",
+    "question": "As an ST student, which branch is the most competitive based on the min-\nimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for ST stu-\ndents, with the lowest minimum rank of 315588."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "which branch is the most competitive based on the minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for ST stu-\ndents, with the lowest minimum rank of 315588."
+  },
+  {
+    "context": "Question 117: Im an ST candidate with a rank of 500000. Is Electrical and Electronics\nEngineering a good option for me?\nAnswer: Yes, with a rank of 500000, you qualify for Electrical and Electronics\nEngineering (min: 516610, max: 752917), as your rank is within the range.",
+    "question": "Im an ST candidate with a rank of 500000. Is Electrical and Electronics\nEngineering a good option for me?",
+    "answer": "Yes, with a rank of 500000, you qualify for Electrical and Electronics\nEngineering (min: 516610, max: 752917), as your rank is within the range."
+  },
+  {
+    "context": "Question 118: How many branches are available for ST students with a rank below 450000?\nAnswer: For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches.",
+    "question": "How many branches are available for ST students with a rank below 450000?",
+    "answer": "For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches."
+  },
+  {
+    "context": "Question 118: How many branches are available for ST students with a rank below 450000?\nAnswer: For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches.",
+    "question": "how many branches are available for st students who rank below 450000?",
+    "answer": "For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches."
+  },
+  {
+    "context": "Question 118: How many branches are available for ST students with a rank below 450000?\nAnswer: For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches.",
+    "question": "how many branches are available for a st student with a rank below 450000?",
+    "answer": "For a rank below 450000, the available branches are: Computer Sci-\nence and Engineering (min: 315588), Information Technology (min: 431211).\nThats 2 branches."
+  },
+  {
+    "context": "Question 119: As an ST student, what is the rank range for Mechanical Engineering?\nAnswer: The rank range for Mechanical Engineering is 1134392 (minimum) to\n1134392 (maximum), indicating it might be a single seat or a speci\ufb01c allotment.",
+    "question": "As an ST student, what is the rank range for Mechanical Engineering?",
+    "answer": "The rank range for Mechanical Engineering is 1134392 (minimum) to\n1134392 (maximum), indicating it might be a single seat or a speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 120: Im an ST student with a rank of 350000. Can I get into Computer Science\nand Engineering in the Spot Round?\nAnswer: Yes, with a rank of 350000, you can get into Computer Science and En-\ngineering (min: 315588, max: 351500) in any round, including the Spot Round,\nas your rank is within the range.\n11",
+    "question": "Im an ST student with a rank of 350000. Can I get into Computer Science\nand Engineering in the Spot Round?",
+    "answer": "Yes, with a rank of 350000, you can get into Computer Science and En-\ngineering (min: 315588, max: 351500) in any round, including the Spot Round,\nas your rank is within the range.\n11"
+  },
+  {
+    "context": "Question 121: What is the least competitive branch for ST students based on this table?\nAnswer: Mechanical Engineering is the least competitive, with the highest min-\nimum rank of 1134392, but this seems to be a special case (possibly one seat).\nExcluding that, Electrical and Electronics Engineering is the least competitive\nwith a maximum rank of 752917.",
+    "question": "What is the least competitive branch for ST students based on this table?",
+    "answer": "Mechanical Engineering is the least competitive, with the highest min-\nimum rank of 1134392, but this seems to be a special case (possibly one seat).\nExcluding that, Electrical and Electronics Engineering is the least competitive\nwith a maximum rank of 752917."
+  },
+  {
+    "context": "Question 122: As an ST student, if my rank is 430000, should I prioritize Information Tech-\nnology or Electronics and Communication Engineering?\nAnswer: With a rank of 430000, you qualify for: Information Technology (min:\n431211, max: 434215). You dont qualify for Electronics and Communication\nEngineering (min: 498741). So, you should prioritize Information Technology.",
+    "question": "As an ST student, if my rank is 430000, should I prioritize Information Tech-\nnology or Electronics and Communication Engineering?",
+    "answer": "With a rank of 430000, you qualify for: Information Technology (min:\n431211, max: 434215). You dont qualify for Electronics and Communication\nEngineering (min: 498741). So, you should prioritize Information Technology."
+  },
+  {
+    "context": "Question 123: Im an ST candidate. What is the rank difference between Computer Science\nand Electrical and Electronics Engineering?\nAnswer: The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022.",
+    "question": "Im an ST candidate. What is the rank difference between Computer Science\nand Electrical and Electronics Engineering?",
+    "answer": "The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022."
+  },
+  {
+    "context": "Question 123: Im an ST candidate. What is the rank difference between Computer Science\nand Electrical and Electronics Engineering?\nAnswer: The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022.",
+    "question": "tell me the difference between computer science and electrical and electronic engineering?",
+    "answer": "The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022."
+  },
+  {
+    "context": "Question 123: Im an ST candidate. What is the rank difference between Computer Science\nand Electrical and Electronics Engineering?\nAnswer: The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022.",
+    "question": "tell me the difference between computer science and electrical and electronics engineering?",
+    "answer": "The minimum rank for Computer Science and Engineering is 315588,\nand for Electrical and Electronics Engineering, its 516610.\nThe difference is\n516610 - 315588 = 201,022."
+  },
+  {
+    "context": "Question 124: As an ST student, can I expect the cutoffs to drop in Round 3 if I have a\nrank of 800000?\nAnswer: With a rank of 800000, you dont qualify for any branch except possibly\nMechanical Engineering (min/max: 1134392), which seems to be a special case.\nCutoffs might drop slightly in Round 3 if seats remain un\ufb01lled, but its unlikely to\ndrop enough for you to qualify for other branches (e.g., Electrical and Electronics\nEngineerings max is 752917).",
+    "question": "As an ST student, can I expect the cutoffs to drop in Round 3 if I have a\nrank of 800000?",
+    "answer": "With a rank of 800000, you dont qualify for any branch except possibly\nMechanical Engineering (min/max: 1134392), which seems to be a special case.\nCutoffs might drop slightly in Round 3 if seats remain un\ufb01lled, but its unlikely to\ndrop enough for you to qualify for other branches (e.g., Electrical and Electronics\nEngineerings max is 752917)."
+  },
+  {
+    "context": "Question 124: As an ST student, can I expect the cutoffs to drop in Round 3 if I have a\nrank of 800000?\nAnswer: With a rank of 800000, you dont qualify for any branch except possibly\nMechanical Engineering (min/max: 1134392), which seems to be a special case.\nCutoffs might drop slightly in Round 3 if seats remain un\ufb01lled, but its unlikely to\ndrop enough for you to qualify for other branches (e.g., Electrical and Electronics\nEngineerings max is 752917).",
+    "question": "can a st student get cut off in round 3 if he has a rank of 800000?",
+    "answer": "With a rank of 800000, you dont qualify for any branch except possibly\nMechanical Engineering (min/max: 1134392), which seems to be a special case.\nCutoffs might drop slightly in Round 3 if seats remain un\ufb01lled, but its unlikely to\ndrop enough for you to qualify for other branches (e.g., Electrical and Electronics\nEngineerings max is 752917)."
+  },
+  {
+    "context": "Question 125: Im an ST student with a rank of 320000. How many branches can I apply\nfor?\nAnswer: With a rank of 320000, you can apply for: Computer Science and\nEngineering (min: 315588, max: 351500). No other branches are available, as\ntheir minimum ranks are higher (e.g., Information Technology at 431211).\nPwD Category Questions",
+    "question": "Im an ST student with a rank of 320000. How many branches can I apply\nfor?",
+    "answer": "With a rank of 320000, you can apply for: Computer Science and\nEngineering (min: 315588, max: 351500). No other branches are available, as\ntheir minimum ranks are higher (e.g., Information Technology at 431211).\nPwD Category Questions"
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches can i apply for?",
+    "answer": "With a rank of 320000, you can apply for: Computer Science and\nEngineering (min: 315588, max: 351500). No other branches are available, as\ntheir minimum ranks are higher (e.g., Information Technology at 431211).\nPwD Category Questions"
+  },
+  {
+    "context": "Question 126: As a PwD student, which branches have seats available for me?\nAnswer: Seats are available for PwD students in: Computer Science and Engi-\nneering (min/max: 998050), Information Technology (min/max: 1154312). Other\nbranches (Biotechnology, Electrical and Electronics Engineering, Electronics and\nCommunication Engineering, Mechanical Engineering) have no ranks listed, in-\ndicating no seats were allotted to PwD candidates.",
+    "question": "As a PwD student, which branches have seats available for me?",
+    "answer": "Seats are available for PwD students in: Computer Science and Engi-\nneering (min/max: 998050), Information Technology (min/max: 1154312). Other\nbranches (Biotechnology, Electrical and Electronics Engineering, Electronics and\nCommunication Engineering, Mechanical Engineering) have no ranks listed, in-\ndicating no seats were allotted to PwD candidates."
+  },
+  {
+    "context": "Question 127: Im a PwD candidate with a rank of 1000000. Can I get into Computer Sci-\nence and Engineering?\nAnswer: Yes, with a rank of 1000000, you can get into Computer Science and\nEngineering, as the rank is 998050, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment.",
+    "question": "Im a PwD candidate with a rank of 1000000. Can I get into Computer Sci-\nence and Engineering?",
+    "answer": "Yes, with a rank of 1000000, you can get into Computer Science and\nEngineering, as the rank is 998050, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 170: Im an OGC candidate with a rank of 75000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330).",
+    "question": "can i get into computer science  engineering?",
+    "answer": "Yes, with a rank of 1000000, you can get into Computer Science and\nEngineering, as the rank is 998050, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 128: What is the maximum rank for Information Technology for PwD students?\nAnswer: The maximum rank for Information Technology is 1154312.",
+    "question": "What is the maximum rank for Information Technology for PwD students?",
+    "answer": "The maximum rank for Information Technology is 1154312."
+  },
+  {
+    "context": "Question 129: Im a PwD student with a rank of 1200000. Can I get into any branch?\nAnswer: No, with a rank of 1200000, you cannot get into any branch.\nThe\n12\n\nhighest maximum rank is 1154312 (Information Technology), which is below your\nrank.",
+    "question": "Im a PwD student with a rank of 1200000. Can I get into any branch?",
+    "answer": "No, with a rank of 1200000, you cannot get into any branch.\nThe\n12\n\nhighest maximum rank is 1154312 (Information Technology), which is below your\nrank."
+  },
+  {
+    "context": "Question 130: Why are there no ranks listed for most branches for PwD students?\nAnswer: The absence of ranks for branches like Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, and Me-\nchanical Engineering likely means no PwD candidates were allotted seats in\nthese branches under the All India Quota, possibly due to limited seats, low pref-\nerence, or no PwD applicants meeting eligibility criteria.",
+    "question": "Why are there no ranks listed for most branches for PwD students?",
+    "answer": "The absence of ranks for branches like Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, and Me-\nchanical Engineering likely means no PwD candidates were allotted seats in\nthese branches under the All India Quota, possibly due to limited seats, low pref-\nerence, or no PwD applicants meeting eligibility criteria."
+  },
+  {
+    "context": "Question 131: As a PwD student, which branch is the most competitive based on the\nminimum rank?\nAnswer: Computer Science and Engineering is the most competitive for PwD\nstudents, with a minimum rank of 998050, compared to Information Technologys\nminimum rank of 1154312.",
+    "question": "As a PwD student, which branch is the most competitive based on the\nminimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for PwD\nstudents, with a minimum rank of 998050, compared to Information Technologys\nminimum rank of 1154312."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "which branch is the most competitive based on rank?",
+    "answer": "Computer Science and Engineering is the most competitive for PwD\nstudents, with a minimum rank of 998050, compared to Information Technologys\nminimum rank of 1154312."
+  },
+  {
+    "context": "Question 132: Im a PwD candidate with a rank of 1100000. Is Information Technology a\ngood option for me?\nAnswer: Yes, with a rank of 1100000, you qualify for Information Technology\n(min/max: 1154312), as your rank is within the range.",
+    "question": "Im a PwD candidate with a rank of 1100000. Is Information Technology a\ngood option for me?",
+    "answer": "Yes, with a rank of 1100000, you qualify for Information Technology\n(min/max: 1154312), as your rank is within the range."
+  },
+  {
+    "context": "Question 133: As a PwD student, can I expect to get a seat in the Spot Round with a rank\nof 1160000?\nAnswer: No, with a rank of 1160000, you wont qualify for any branch, as the\nhighest maximum rank is 1154312 (Information Technology). The Spot Round\nmight not help unless new seats are added, which is unlikely.",
+    "question": "As a PwD student, can I expect to get a seat in the Spot Round with a rank\nof 1160000?",
+    "answer": "No, with a rank of 1160000, you wont qualify for any branch, as the\nhighest maximum rank is 1154312 (Information Technology). The Spot Round\nmight not help unless new seats are added, which is unlikely."
+  },
+  {
+    "context": "Question 134: Im a PwD student with a rank of 900000. How many branches can I apply\nfor?\nAnswer: With a rank of 900000, you cannot apply for any branch, as the lowest\nminimum rank is 998050 (Computer Science and Engineering), which is above\nyour rank.",
+    "question": "Im a PwD student with a rank of 900000. How many branches can I apply\nfor?",
+    "answer": "With a rank of 900000, you cannot apply for any branch, as the lowest\nminimum rank is 998050 (Computer Science and Engineering), which is above\nyour rank."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches can i apply for?",
+    "answer": "With a rank of 900000, you cannot apply for any branch, as the lowest\nminimum rank is 998050 (Computer Science and Engineering), which is above\nyour rank."
+  },
+  {
+    "context": "Question 135: As a PwD student, what is the rank difference between Computer Science\nand Information Technology?\nAnswer: The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262.",
+    "question": "As a PwD student, what is the rank difference between Computer Science\nand Information Technology?",
+    "answer": "The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262."
+  },
+  {
+    "context": "Question 135: As a PwD student, what is the rank difference between Computer Science\nand Information Technology?\nAnswer: The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262.",
+    "question": "tell me the differences between computer science and information technology?",
+    "answer": "The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262."
+  },
+  {
+    "context": "Question 135: As a PwD student, what is the rank difference between Computer Science\nand Information Technology?\nAnswer: The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262.",
+    "question": "tell me the difference between computer science and information technology?",
+    "answer": "The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262."
+  },
+  {
+    "context": "Question 136: Im a PwD candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 1000000?\nAnswer: No, there are no seats allotted for PwD students in Electronics and\nCommunication Engineering, as indicated by the missing ranks.",
+    "question": "Im a PwD candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 1000000?",
+    "answer": "No, there are no seats allotted for PwD students in Electronics and\nCommunication Engineering, as indicated by the missing ranks."
+  },
+  {
+    "context": "Question 137: As a PwD student, should I be concerned if my rank is close to the minimum\nrank for Computer Science and Engineering?\nAnswer: Yes, if your rank is close to 998050 (e.g., 999000), you should be\ncautious. The min/max rank being the same (998050) suggests it might be a\nsingle seat, so competition could be high, and you might miss out if that seat is\ntaken.",
+    "question": "As a PwD student, should I be concerned if my rank is close to the minimum\nrank for Computer Science and Engineering?",
+    "answer": "Yes, if your rank is close to 998050 (e.g., 999000), you should be\ncautious. The min/max rank being the same (998050) suggests it might be a\nsingle seat, so competition could be high, and you might miss out if that seat is\ntaken."
+  },
+  {
+    "context": "Question 138: Im a PwD student with a rank of 1150000. Can I get a seat in the Special\n13\n\nRound?\nAnswer: Yes, with a rank of 1150000, you can get into Information Technology\n(min/max: 1154312) in the Special Round, as your rank is within the range.",
+    "question": "Im a PwD student with a rank of 1150000. Can I get a seat in the Special\n13\n\nRound?",
+    "answer": "Yes, with a rank of 1150000, you can get into Information Technology\n(min/max: 1154312) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 138: Im a PwD student with a rank of 1150000. Can I get a seat in the Special\n13\n\nRound?\nAnswer: Yes, with a rank of 1150000, you can get into Information Technology\n(min/max: 1154312) in the Special Round, as your rank is within the range.",
+    "question": "can i get a seat in the special 13 round?",
+    "answer": "Yes, with a rank of 1150000, you can get into Information Technology\n(min/max: 1154312) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 139: As a PwD student, what does it mean if the minimum and maximum ranks\nare the same for a branch?\nAnswer: If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota.",
+    "question": "As a PwD student, what does it mean if the minimum and maximum ranks\nare the same for a branch?",
+    "answer": "If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota."
+  },
+  {
+    "context": "Question 139: As a PwD student, what does it mean if the minimum and maximum ranks\nare the same for a branch?\nAnswer: If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota.",
+    "question": "what will mean as a pwd student if the minimum and the maximum ranks are the same for a branch?",
+    "answer": "If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota."
+  },
+  {
+    "context": "Question 139: As a PwD student, what does it mean if the minimum and maximum ranks\nare the same for a branch?\nAnswer: If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota.",
+    "question": "as a pwd student what does it mean if the minimum and maximum ranks are the same for a branch?",
+    "answer": "If the minimum and maximum ranks are the same (e.g., 998050 for\nComputer Science and Engineering), it likely means only one PwD candidate\nwas allotted a seat in that branch, or it re\ufb02ects a speci\ufb01c allotment case under\nthe All India Quota."
+  },
+  {
+    "context": "Question 140: Im a PwD candidate. Are these ranks speci\ufb01c to my category, or do they\ninclude other categories?\nAnswer: The ranks are speci\ufb01c to the PwD category under the All India Quota,\nas indicated by the \"PERSON WITH DISABILITY (PWD)\" label at the top.\nFreedom Fighter (FF) Category Questions",
+    "question": "Im a PwD candidate. Are these ranks speci\ufb01c to my category, or do they\ninclude other categories?",
+    "answer": "The ranks are speci\ufb01c to the PwD category under the All India Quota,\nas indicated by the \"PERSON WITH DISABILITY (PWD)\" label at the top.\nFreedom Fighter (FF) Category Questions"
+  },
+  {
+    "context": "Question 141: As a Freedom Fighter quota student, which branches have seats available\nfor me?\nAnswer: Seats are available for Freedom Fighter quota students in: Computer\nScience and Engineering (min: 113118, max: 142886), Information Technology\n(min: 312072, max: 538484). Other branches (Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, Mechan-\nical Engineering) have no ranks listed, indicating no seats were allotted to FF\ncandidates.",
+    "question": "As a Freedom Fighter quota student, which branches have seats available\nfor me?",
+    "answer": "Seats are available for Freedom Fighter quota students in: Computer\nScience and Engineering (min: 113118, max: 142886), Information Technology\n(min: 312072, max: 538484). Other branches (Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, Mechan-\nical Engineering) have no ranks listed, indicating no seats were allotted to FF\ncandidates."
+  },
+  {
+    "context": "Question 141: As a Freedom Fighter quota student, which branches have seats available\nfor me?\nAnswer: Seats are available for Freedom Fighter quota students in: Computer\nScience and Engineering (min: 113118, max: 142886), Information Technology\n(min: 312072, max: 538484). Other branches (Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, Mechan-\nical Engineering) have no ranks listed, indicating no seats were allotted to FF\ncandidates.",
+    "question": "what branches are full of seats for freedom fighter students?",
+    "answer": "Seats are available for Freedom Fighter quota students in: Computer\nScience and Engineering (min: 113118, max: 142886), Information Technology\n(min: 312072, max: 538484). Other branches (Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, Mechan-\nical Engineering) have no ranks listed, indicating no seats were allotted to FF\ncandidates."
+  },
+  {
+    "context": "Question 142: Im an FF candidate with a rank of 120000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 120000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 113118, max: 142886).",
+    "question": "Im an FF candidate with a rank of 120000. Can I get into Computer Science\nand Engineering?",
+    "answer": "Yes, with a rank of 120000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 113118, max: 142886)."
+  },
+  {
+    "context": "Question 143: What is the maximum rank for Information Technology for Freedom Fighter\nstudents?\nAnswer: The maximum rank for Information Technology is 538484.",
+    "question": "What is the maximum rank for Information Technology for Freedom Fighter\nstudents?",
+    "answer": "The maximum rank for Information Technology is 538484."
+  },
+  {
+    "context": "Question 144: Im an FF student with a rank of 600000. Can I get into any branch?\nAnswer: No, with a rank of 600000, you cannot get into any branch. The highest\nmaximum rank is 538484 (Information Technology), which is below your rank.",
+    "question": "Im an FF student with a rank of 600000. Can I get into any branch?",
+    "answer": "No, with a rank of 600000, you cannot get into any branch. The highest\nmaximum rank is 538484 (Information Technology), which is below your rank."
+  },
+  {
+    "context": "Question 145: Why are there no ranks listed for most branches for Freedom Fighter stu-\ndents?\nAnswer: The absence of ranks for branches like Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, and Me-\nchanical Engineering likely means no FF candidates were allotted seats in these\nbranches under the All India Quota, possibly due to limited seats, low preference,\nor no FF applicants meeting eligibility criteria.",
+    "question": "Why are there no ranks listed for most branches for Freedom Fighter stu-\ndents?",
+    "answer": "The absence of ranks for branches like Biotechnology, Electrical and\nElectronics Engineering, Electronics and Communication Engineering, and Me-\nchanical Engineering likely means no FF candidates were allotted seats in these\nbranches under the All India Quota, possibly due to limited seats, low preference,\nor no FF applicants meeting eligibility criteria."
+  },
+  {
+    "context": "Question 146: As an FF student, which branch is the most competitive based on the min-\nimum rank?\nAnswer: Computer Science and Engineering is the most competitive for FF stu-\n14\n\ndents, with a minimum rank of 113118, compared to Information Technologys\nminimum rank of 312072.",
+    "question": "As an FF student, which branch is the most competitive based on the min-\nimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for FF stu-\n14\n\ndents, with a minimum rank of 113118, compared to Information Technologys\nminimum rank of 312072."
+  },
+  {
+    "context": "Question 147: Im an FF candidate with a rank of 400000. Is Information Technology a\ngood option for me?\nAnswer: Yes, with a rank of 400000, you qualify for Information Technology (min:\n312072, max: 538484), as your rank is within the range.",
+    "question": "Im an FF candidate with a rank of 400000. Is Information Technology a\ngood option for me?",
+    "answer": "Yes, with a rank of 400000, you qualify for Information Technology (min:\n312072, max: 538484), as your rank is within the range."
+  },
+  {
+    "context": "Question 148: As an FF student, can I expect to get a seat in the Spot Round with a rank\nof 550000?\nAnswer: No, with a rank of 550000, you wont qualify for any branch, as the\nhighest maximum rank is 538484 (Information Technology). The Spot Round\nmight not help unless new seats are added, which is unlikely.",
+    "question": "As an FF student, can I expect to get a seat in the Spot Round with a rank\nof 550000?",
+    "answer": "No, with a rank of 550000, you wont qualify for any branch, as the\nhighest maximum rank is 538484 (Information Technology). The Spot Round\nmight not help unless new seats are added, which is unlikely."
+  },
+  {
+    "context": "Question 149: Im an FF student with a rank of 200000. How many branches can I apply\nfor?\nAnswer: With a rank of 200000, you can apply for: Computer Science and\nEngineering (min: 113118, max: 142886). You dont qualify for Information Tech-\nnology (min: 312072), so only 1 branch is available.",
+    "question": "Im an FF student with a rank of 200000. How many branches can I apply\nfor?",
+    "answer": "With a rank of 200000, you can apply for: Computer Science and\nEngineering (min: 113118, max: 142886). You dont qualify for Information Tech-\nnology (min: 312072), so only 1 branch is available."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches i can apply for?",
+    "answer": "With a rank of 200000, you can apply for: Computer Science and\nEngineering (min: 113118, max: 142886). You dont qualify for Information Tech-\nnology (min: 312072), so only 1 branch is available."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches can i apply for?",
+    "answer": "With a rank of 200000, you can apply for: Computer Science and\nEngineering (min: 113118, max: 142886). You dont qualify for Information Tech-\nnology (min: 312072), so only 1 branch is available."
+  },
+  {
+    "context": "Question 150: As an FF student, what is the rank difference between Computer Science\nand Information Technology?\nAnswer: The minimum rank for Computer Science and Engineering is 113118,\nand for Information Technology, its 312072. The difference is 312072 - 113118 =\n198,954.",
+    "question": "As an FF student, what is the rank difference between Computer Science\nand Information Technology?",
+    "answer": "The minimum rank for Computer Science and Engineering is 113118,\nand for Information Technology, its 312072. The difference is 312072 - 113118 =\n198,954."
+  },
+  {
+    "context": "Question 135: As a PwD student, what is the rank difference between Computer Science\nand Information Technology?\nAnswer: The minimum rank for Computer Science and Engineering is 998050,\nand for Information Technology, its 1154312. The difference is 1154312 - 998050\n= 156,262.",
+    "question": "tell me the rank difference between computer science and information technology?",
+    "answer": "The minimum rank for Computer Science and Engineering is 113118,\nand for Information Technology, its 312072. The difference is 312072 - 113118 =\n198,954."
+  },
+  {
+    "context": "Question 151: Im an FF candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 150000?\nAnswer: No, there are no seats allotted for FF students in Electronics and Com-\nmunication Engineering, as indicated by the missing ranks.",
+    "question": "Im an FF candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 150000?",
+    "answer": "No, there are no seats allotted for FF students in Electronics and Com-\nmunication Engineering, as indicated by the missing ranks."
+  },
+  {
+    "context": "Question 152: As an FF student, what is the safest branch to choose if my rank is 350000?\nAnswer: With a rank of 350000, the safest branch is Information Technology\n(min: 312072, max: 538484), as your rank is comfortably within the range.",
+    "question": "As an FF student, what is the safest branch to choose if my rank is 350000?",
+    "answer": "With a rank of 350000, the safest branch is Information Technology\n(min: 312072, max: 538484), as your rank is comfortably within the range."
+  },
+  {
+    "context": "Question 153: Im an FF student with a rank of 500000. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 500000, you can get into Information Technology\n(min: 312072, max: 538484) in the Special Round, as your rank is within the\nrange.",
+    "question": "Im an FF student with a rank of 500000. Can I get a seat in the Special\nRound?",
+    "answer": "Yes, with a rank of 500000, you can get into Information Technology\n(min: 312072, max: 538484) in the Special Round, as your rank is within the\nrange."
+  },
+  {
+    "context": "Question 94: Do spot round admissions have different rules?\nAnswer: Yes, spot rounds typically allow candidates who havent been allotted\nin earlier rounds or are seeking upgrades. Usually, there\u2019s no withdrawal/refund\nafter spot admission.",
+    "question": "can i apply for a special round?",
+    "answer": "Yes, with a rank of 500000, you can get into Information Technology\n(min: 312072, max: 538484) in the Special Round, as your rank is within the\nrange."
+  },
+  {
+    "context": "Question 154: As an FF student, what does the rank range for Computer Science and\nEngineering tell me about my chances?\nAnswer: The rank range for Computer Science and Engineering is 113118 to\n142886. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 140000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "As an FF student, what does the rank range for Computer Science and\nEngineering tell me about my chances?",
+    "answer": "The rank range for Computer Science and Engineering is 113118 to\n142886. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 140000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 154: As an FF student, what does the rank range for Computer Science and\nEngineering tell me about my chances?\nAnswer: The rank range for Computer Science and Engineering is 113118 to\n142886. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 140000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "what does the rank range for computer science and engineering tell me about my chances?",
+    "answer": "The rank range for Computer Science and Engineering is 113118 to\n142886. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 140000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 155: Im an FF candidate. Are these ranks speci\ufb01c to the Freedom Fighter quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Freedom Fighter quota under the All India\nQuota, as indicated by the \"FREEDOM FIGHTER\" label at the top.\n15\n\nKashmiri Migrant (KM) Category Questions",
+    "question": "Im an FF candidate. Are these ranks speci\ufb01c to the Freedom Fighter quota,\nor do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Freedom Fighter quota under the All India\nQuota, as indicated by the \"FREEDOM FIGHTER\" label at the top.\n15\n\nKashmiri Migrant (KM) Category Questions"
+  },
+  {
+    "context": "Question 156: Im a KM candidate with a rank of 80000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 80000, you can get into Computer Science and\nEngineering, as the rank is 76864, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment.",
+    "question": "Im a KM candidate with a rank of 80000. Can I get into Computer Science\nand Engineering?",
+    "answer": "Yes, with a rank of 80000, you can get into Computer Science and\nEngineering, as the rank is 76864, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 157: What is the maximum rank for Mechanical Engineering for Kashmiri Mi-\ngrant students?\nAnswer: The maximum rank for Mechanical Engineering is 106715.",
+    "question": "What is the maximum rank for Mechanical Engineering for Kashmiri Mi-\ngrant students?",
+    "answer": "The maximum rank for Mechanical Engineering is 106715."
+  },
+  {
+    "context": "Question 158: Im a KM student with a rank of 200000. Can I get into any branch?\nAnswer: Yes, with a rank of 200000, you can get into Biotechnology (min/max:\n265226), as your rank is better than the cutoff. Other branches have lower ranks\n(e.g., Computer Science at 76864), so you wont qualify for those.",
+    "question": "Im a KM student with a rank of 200000. Can I get into any branch?",
+    "answer": "Yes, with a rank of 200000, you can get into Biotechnology (min/max:\n265226), as your rank is better than the cutoff. Other branches have lower ranks\n(e.g., Computer Science at 76864), so you wont qualify for those."
+  },
+  {
+    "context": "Question 159: Why are the minimum and maximum ranks the same for all branches for\nKashmiri Migrant students?\nAnswer: The minimum and maximum ranks being the same (e.g., 76864 for\nComputer Science and Engineering) likely means only one KM candidate was\nallotted a seat per branch under the All India Quota, or it re\ufb02ects a speci\ufb01c allot-\nment case.",
+    "question": "Why are the minimum and maximum ranks the same for all branches for\nKashmiri Migrant students?",
+    "answer": "The minimum and maximum ranks being the same (e.g., 76864 for\nComputer Science and Engineering) likely means only one KM candidate was\nallotted a seat per branch under the All India Quota, or it re\ufb02ects a speci\ufb01c allot-\nment case."
+  },
+  {
+    "context": "Question 159: Why are the minimum and maximum ranks the same for all branches for\nKashmiri Migrant students?\nAnswer: The minimum and maximum ranks being the same (e.g., 76864 for\nComputer Science and Engineering) likely means only one KM candidate was\nallotted a seat per branch under the All India Quota, or it re\ufb02ects a speci\ufb01c allot-\nment case.",
+    "question": "why are minimum and maximum ranks the same for all branches for kashmiri migrant students?",
+    "answer": "The minimum and maximum ranks being the same (e.g., 76864 for\nComputer Science and Engineering) likely means only one KM candidate was\nallotted a seat per branch under the All India Quota, or it re\ufb02ects a speci\ufb01c allot-\nment case."
+  },
+  {
+    "context": "Question 160: As a KM student, which branch is the most competitive based on the rank?\nAnswer: Computer Science and Engineering is the most competitive for KM\nstudents, with the lowest rank of 76864.",
+    "question": "As a KM student, which branch is the most competitive based on the rank?",
+    "answer": "Computer Science and Engineering is the most competitive for KM\nstudents, with the lowest rank of 76864."
+  },
+  {
+    "context": "Question 161: Im a KM candidate with a rank of 90000. Which branches can I apply for?\nAnswer: With a rank of 90000, you can apply for: Electronics and Communica-\ntion Engineering (min/max: 88431), Information Technology (min/max: 88414).\nOther branches have either lower ranks (e.g., Computer Science at 76864) or\nhigher ranks (e.g., Biotechnology at 265226).",
+    "question": "Im a KM candidate with a rank of 90000. Which branches can I apply for?",
+    "answer": "With a rank of 90000, you can apply for: Electronics and Communica-\ntion Engineering (min/max: 88431), Information Technology (min/max: 88414).\nOther branches have either lower ranks (e.g., Computer Science at 76864) or\nhigher ranks (e.g., Biotechnology at 265226)."
+  },
+  {
+    "context": "Question 167: Im a KM student with a rank of 88000. Can I get a seat in the Special Round?\nAnswer: Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round.",
+    "question": "As a KM student, can I expect to get a seat in the Spot Round with a rank\nof 300000?",
+    "answer": "Yes, with a rank of 300000, you can get into Biotechnology (min/max:\n265226) in the Spot Round, as your rank is better than the cutoff. However, other\nbranches have lower ranks, so you wont qualify for them."
+  },
+  {
+    "context": "Question 163: Im a KM student with a rank of 50000. How many branches can I apply for?\nAnswer: With a rank of 50000, you can apply for no branches, as the lowest\nrank is 76864 (Computer Science and Engineering), which is above your rank.",
+    "question": "Im a KM student with a rank of 50000. How many branches can I apply for?",
+    "answer": "With a rank of 50000, you can apply for no branches, as the lowest\nrank is 76864 (Computer Science and Engineering), which is above your rank."
+  },
+  {
+    "context": "Question 164: As a KM student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(rank: 76864), and the least competitive is Biotechnology (rank: 265226). The\ndifference is 265226 - 76864 = 188,362.",
+    "question": "As a KM student, what is the rank difference between the most and least\ncompetitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(rank: 76864), and the least competitive is Biotechnology (rank: 265226). The\ndifference is 265226 - 76864 = 188,362."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between the most competitive and least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(rank: 76864), and the least competitive is Biotechnology (rank: 265226). The\ndifference is 265226 - 76864 = 188,362."
+  },
+  {
+    "context": "Question 165: Im a KM candidate. Can I get into Electrical and Electronics Engineering\nwith a rank of 95000?\n16\n\nAnswer: No, with a rank of 95000, you cannot get into Electrical and Electronics\nEngineering, as the rank is 94147, which is below your rank.",
+    "question": "Im a KM candidate. Can I get into Electrical and Electronics Engineering\nwith a rank of 95000?\n16",
+    "answer": "No, with a rank of 95000, you cannot get into Electrical and Electronics\nEngineering, as the rank is 94147, which is below your rank."
+  },
+  {
+    "context": "Question 166: As a KM student, what is the safest branch to choose if my rank is 260000?\nAnswer: With a rank of 260000, the safest branch is Biotechnology (min/max:\n265226), as your rank is very close to the cutoff.",
+    "question": "As a KM student, what is the safest branch to choose if my rank is 260000?",
+    "answer": "With a rank of 260000, the safest branch is Biotechnology (min/max:\n265226), as your rank is very close to the cutoff."
+  },
+  {
+    "context": "Question 167: Im a KM student with a rank of 88000. Can I get a seat in the Special Round?\nAnswer: Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round.",
+    "question": "Im a KM student with a rank of 88000. Can I get a seat in the Special Round?",
+    "answer": "Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round."
+  },
+  {
+    "context": "Question 153: Im an FF student with a rank of 500000. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 500000, you can get into Information Technology\n(min: 312072, max: 538484) in the Special Round, as your rank is within the\nrange.",
+    "question": "can i get a seat in the special round?",
+    "answer": "Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round."
+  },
+  {
+    "context": "Question 168: As a KM student, what does the rank being the same for minimum and\nmaximum tell me about my chances?\nAnswer: The min/max ranks being the same (e.g., 88431 for Electronics and\nCommunication Engineering) suggests only one seat was allotted per branch for\nKM students. If your rank is better than the cutoff, you have a chance, but if the\nseat is already taken, you may not get it.",
+    "question": "As a KM student, what does the rank being the same for minimum and\nmaximum tell me about my chances?",
+    "answer": "The min/max ranks being the same (e.g., 88431 for Electronics and\nCommunication Engineering) suggests only one seat was allotted per branch for\nKM students. If your rank is better than the cutoff, you have a chance, but if the\nseat is already taken, you may not get it."
+  },
+  {
+    "context": "Question 169: Im a KM candidate. Are these ranks speci\ufb01c to the Kashmiri Migrant quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Kashmiri Migrant quota under the All India\nQuota, as indicated by the \"KASHMIRI MIGRANT\" label at the top.\nOne Girl Child (OGC) Category Questions",
+    "question": "Im a KM candidate. Are these ranks speci\ufb01c to the Kashmiri Migrant quota,\nor do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Kashmiri Migrant quota under the All India\nQuota, as indicated by the \"KASHMIRI MIGRANT\" label at the top.\nOne Girl Child (OGC) Category Questions"
+  },
+  {
+    "context": "Question 169: Im a KM candidate. Are these ranks speci\ufb01c to the Kashmiri Migrant quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Kashmiri Migrant quota under the All India\nQuota, as indicated by the \"KASHMIRI MIGRANT\" label at the top.\nOne Girl Child (OGC) Category Questions",
+    "question": "i am a km candidate are these ranks specic to the kashmiri migrant quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Kashmiri Migrant quota under the All India\nQuota, as indicated by the \"KASHMIRI MIGRANT\" label at the top.\nOne Girl Child (OGC) Category Questions"
+  },
+  {
+    "context": "Question 170: Im an OGC candidate with a rank of 75000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330).",
+    "question": "Im an OGC candidate with a rank of 75000. Can I get into Computer Science\nand Engineering?",
+    "answer": "Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330)."
+  },
+  {
+    "context": "Question 188: Im an EWS candidate with a rank of 6000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 6000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 5423, max: 55564).",
+    "question": "can i get into computer science and engineering?",
+    "answer": "Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330)."
+  },
+  {
+    "context": "Question 185: Im a TP candidate with a rank of 1200000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 1200000, you can get into Computer Science and\nEngineering, as the rank is 1228828, which is close to your rank. However, this\nappears to be a single seat or speci\ufb01c allotment.",
+    "question": "can i get admission into computer science and engineering?",
+    "answer": "Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330)."
+  },
+  {
+    "context": "Question 171: What is the maximum rank for Information Technology for OGC students?\nAnswer: The maximum rank for Information Technology is 80056.",
+    "question": "What is the maximum rank for Information Technology for OGC students?",
+    "answer": "The maximum rank for Information Technology is 80056."
+  },
+  {
+    "context": "Question 171: What is the maximum rank for Information Technology for OGC students?\nAnswer: The maximum rank for Information Technology is 80056.",
+    "question": "what is maximum rank for information technology for ogc students?",
+    "answer": "The maximum rank for Information Technology is 80056."
+  },
+  {
+    "context": "Question 172: Im an OGC student with a rank of 400000. Can I get into any branch?\nAnswer: Yes, with a rank of 400000, you can get into Mechanical Engineering\n(min: 309844, max: 321829). Other branches have lower maximum ranks (e.g.,\nElectrical and Electronics Engineering at 149895).",
+    "question": "Im an OGC student with a rank of 400000. Can I get into any branch?",
+    "answer": "Yes, with a rank of 400000, you can get into Mechanical Engineering\n(min: 309844, max: 321829). Other branches have lower maximum ranks (e.g.,\nElectrical and Electronics Engineering at 149895)."
+  },
+  {
+    "context": "Question 172: Im an OGC student with a rank of 400000. Can I get into any branch?\nAnswer: Yes, with a rank of 400000, you can get into Mechanical Engineering\n(min: 309844, max: 321829). Other branches have lower maximum ranks (e.g.,\nElectrical and Electronics Engineering at 149895).",
+    "question": "can i get admitted into any ogc branches?",
+    "answer": "Yes, with a rank of 400000, you can get into Mechanical Engineering\n(min: 309844, max: 321829). Other branches have lower maximum ranks (e.g.,\nElectrical and Electronics Engineering at 149895)."
+  },
+  {
+    "context": "Question 173: Why are there no ranks listed for Biotechnology for OGC students?\nAnswer: The absence of ranks for Biotechnology likely means no OGC candi-\ndates were allotted seats in this branch under the All India Quota, possibly due\nto limited seats, low preference, or no OGC applicants meeting eligibility criteria.",
+    "question": "Why are there no ranks listed for Biotechnology for OGC students?",
+    "answer": "The absence of ranks for Biotechnology likely means no OGC candi-\ndates were allotted seats in this branch under the All India Quota, possibly due\nto limited seats, low preference, or no OGC applicants meeting eligibility criteria."
+  },
+  {
+    "context": "Question 173: Why are there no ranks listed for Biotechnology for OGC students?\nAnswer: The absence of ranks for Biotechnology likely means no OGC candi-\ndates were allotted seats in this branch under the All India Quota, possibly due\nto limited seats, low preference, or no OGC applicants meeting eligibility criteria.",
+    "question": "why are no biotechnology rank listed for ogc students?",
+    "answer": "The absence of ranks for Biotechnology likely means no OGC candi-\ndates were allotted seats in this branch under the All India Quota, possibly due\nto limited seats, low preference, or no OGC applicants meeting eligibility criteria."
+  },
+  {
+    "context": "Question 174: As an OGC student, which branch is the most competitive based on the\nminimum rank?\nAnswer: Computer Science and Engineering is the most competitive for OGC\nstudents, with the lowest minimum rank of 70887.",
+    "question": "As an OGC student, which branch is the most competitive based on the\nminimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for OGC\nstudents, with the lowest minimum rank of 70887."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "which branch is the most competitive based on minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for OGC\nstudents, with the lowest minimum rank of 70887."
+  },
+  {
+    "context": "Question 175: Im an OGC candidate with a rank of 100000. Which branches can I apply\nfor?\n17\n\nAnswer: With a rank of 100000, you can apply for: Electronics and Communica-\ntion Engineering (min: 96374, max: 97331), Electrical and Electronics Engineer-\ning (min: 147993, max: 149895), Mechanical Engineering (min: 309844, max:\n321829). You dont qualify for Computer Science (max: 76330) or Information\nTechnology (max: 80056).",
+    "question": "Im an OGC candidate with a rank of 100000. Which branches can I apply\nfor?\n17",
+    "answer": "With a rank of 100000, you can apply for: Electronics and Communica-\ntion Engineering (min: 96374, max: 97331), Electrical and Electronics Engineer-\ning (min: 147993, max: 149895), Mechanical Engineering (min: 309844, max:\n321829). You dont qualify for Computer Science (max: 76330) or Information\nTechnology (max: 80056)."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "what branches can i apply for? 17",
+    "answer": "With a rank of 100000, you can apply for: Electronics and Communica-\ntion Engineering (min: 96374, max: 97331), Electrical and Electronics Engineer-\ning (min: 147993, max: 149895), Mechanical Engineering (min: 309844, max:\n321829). You dont qualify for Computer Science (max: 76330) or Information\nTechnology (max: 80056)."
+  },
+  {
+    "context": "Question 176: As an OGC student, can I expect to get a seat in the Spot Round with a rank\nof 330000?\nAnswer: Yes, with a rank of 330000, you can get into Mechanical Engineering\n(min: 309844, max: 321829) in the Spot Round. Other branches have lower\nmaximum ranks.",
+    "question": "As an OGC student, can I expect to get a seat in the Spot Round with a rank\nof 330000?",
+    "answer": "Yes, with a rank of 330000, you can get into Mechanical Engineering\n(min: 309844, max: 321829) in the Spot Round. Other branches have lower\nmaximum ranks."
+  },
+  {
+    "context": "Question 177: Im an OGC student with a rank of 60000. How many branches can I apply\nfor?\nAnswer: With a rank of 60000, you can apply for no branches, as the lowest\nminimum rank is 70887 (Computer Science and Engineering), which is above\nyour rank.",
+    "question": "Im an OGC student with a rank of 60000. How many branches can I apply\nfor?",
+    "answer": "With a rank of 60000, you can apply for no branches, as the lowest\nminimum rank is 70887 (Computer Science and Engineering), which is above\nyour rank."
+  },
+  {
+    "context": "Question 178: As an OGC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 70887), and the least competitive is Mechanical Engineering (max: 321829).\nThe difference is 321829 - 70887 = 250,942.",
+    "question": "As an OGC student, what is the rank difference between the most and least\ncompetitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 70887), and the least competitive is Mechanical Engineering (max: 321829).\nThe difference is 321829 - 70887 = 250,942."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "what's the rank difference between a most competitive branch and a least competitive branch?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 70887), and the least competitive is Mechanical Engineering (max: 321829).\nThe difference is 321829 - 70887 = 250,942."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between most competitive and least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 70887), and the least competitive is Mechanical Engineering (max: 321829).\nThe difference is 321829 - 70887 = 250,942."
+  },
+  {
+    "context": "Question 179: Im an OGC candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 95000?\nAnswer: Yes, with a rank of 95000, you can get into Electronics and Communi-\ncation Engineering, as your rank falls within the range (min: 96374, max: 97331).",
+    "question": "Im an OGC candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 95000?",
+    "answer": "Yes, with a rank of 95000, you can get into Electronics and Communi-\ncation Engineering, as your rank falls within the range (min: 96374, max: 97331)."
+  },
+  {
+    "context": "Question 180: As an OGC student, what is the safest branch to choose if my rank is\n310000?\nAnswer: With a rank of 310000, the safest branch is Mechanical Engineering\n(min: 309844, max: 321829), as your rank is comfortably within the range.",
+    "question": "As an OGC student, what is the safest branch to choose if my rank is\n310000?",
+    "answer": "With a rank of 310000, the safest branch is Mechanical Engineering\n(min: 309844, max: 321829), as your rank is comfortably within the range."
+  },
+  {
+    "context": "Question 181: Im an OGC student with a rank of 80000. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 80000, you can get into Information Technology\n(min: 79902, max: 80056) in the Special Round, as your rank is within the range.",
+    "question": "Im an OGC student with a rank of 80000. Can I get a seat in the Special\nRound?",
+    "answer": "Yes, with a rank of 80000, you can get into Information Technology\n(min: 79902, max: 80056) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 167: Im a KM student with a rank of 88000. Can I get a seat in the Special Round?\nAnswer: Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round.",
+    "question": "can i get a seat in the special round with a rank of 80000?",
+    "answer": "Yes, with a rank of 80000, you can get into Information Technology\n(min: 79902, max: 80056) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 182: As an OGC student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 147993 to\n149895. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 149000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "As an OGC student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 147993 to\n149895. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 149000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 182: As an OGC student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 147993 to\n149895. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 149000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "as an ogc student what does the rank range for electrical and electronics engineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 147993 to\n149895. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 149000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 183: Im an OGC candidate. Are these ranks speci\ufb01c to the One Girl Child quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the \"One Girl Child Out of the Only Two Girl\nChildren\" quota under the All India Quota, as indicated by the label at the top.\n18\n\nThalassemia Patient (TP) Category Questions",
+    "question": "Im an OGC candidate. Are these ranks speci\ufb01c to the One Girl Child quota,\nor do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the \"One Girl Child Out of the Only Two Girl\nChildren\" quota under the All India Quota, as indicated by the label at the top.\n18\n\nThalassemia Patient (TP) Category Questions"
+  },
+  {
+    "context": "Question 183: Im an OGC candidate. Are these ranks speci\ufb01c to the One Girl Child quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the \"One Girl Child Out of the Only Two Girl\nChildren\" quota under the All India Quota, as indicated by the label at the top.\n18\n\nThalassemia Patient (TP) Category Questions",
+    "question": "are the ranks specific to the one girl child quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the \"One Girl Child Out of the Only Two Girl\nChildren\" quota under the All India Quota, as indicated by the label at the top.\n18\n\nThalassemia Patient (TP) Category Questions"
+  },
+  {
+    "context": "Question 184: As a Thalassemia Patient student, which branches have seats available for\nme?\nAnswer: Seats are available for Thalassemia Patient students only in: Com-\nputer Science and Engineering (min/max: 1228828). Other branches (Biotech-\nnology, Electrical and Electronics Engineering, Electronics and Communication\nEngineering, Information Technology, Mechanical Engineering) have no ranks\nlisted, indicating no seats were allotted to TP candidates.",
+    "question": "As a Thalassemia Patient student, which branches have seats available for\nme?",
+    "answer": "Seats are available for Thalassemia Patient students only in: Com-\nputer Science and Engineering (min/max: 1228828). Other branches (Biotech-\nnology, Electrical and Electronics Engineering, Electronics and Communication\nEngineering, Information Technology, Mechanical Engineering) have no ranks\nlisted, indicating no seats were allotted to TP candidates."
+  },
+  {
+    "context": "Question 185: Im a TP candidate with a rank of 1200000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 1200000, you can get into Computer Science and\nEngineering, as the rank is 1228828, which is close to your rank. However, this\nappears to be a single seat or speci\ufb01c allotment.",
+    "question": "Im a TP candidate with a rank of 1200000. Can I get into Computer Science\nand Engineering?",
+    "answer": "Yes, with a rank of 1200000, you can get into Computer Science and\nEngineering, as the rank is 1228828, which is close to your rank. However, this\nappears to be a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 186: What is the maximum rank for Computer Science and Engineering for Tha-\nlassemia Patient students?\nAnswer: The maximum rank for Computer Science and Engineering is 1228828.",
+    "question": "What is the maximum rank for Computer Science and Engineering for Tha-\nlassemia Patient students?",
+    "answer": "The maximum rank for Computer Science and Engineering is 1228828."
+  },
+  {
+    "context": "Question 187: Im a TP student with a rank of 1300000. Can I get into any branch?\nAnswer: No, with a rank of 1300000, you cannot get into any branch, as the only\navailable branch, Computer Science and Engineering, has a rank of 1228828,\nwhich is below your rank.\nEconomically Weaker Section (EWS) Category Questions",
+    "question": "Im a TP student with a rank of 1300000. Can I get into any branch?",
+    "answer": "No, with a rank of 1300000, you cannot get into any branch, as the only\navailable branch, Computer Science and Engineering, has a rank of 1228828,\nwhich is below your rank.\nEconomically Weaker Section (EWS) Category Questions"
+  },
+  {
+    "context": "Question 188: Im an EWS candidate with a rank of 6000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 6000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 5423, max: 55564).",
+    "question": "Im an EWS candidate with a rank of 6000. Can I get into Computer Science\nand Engineering?",
+    "answer": "Yes, with a rank of 6000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 5423, max: 55564)."
+  },
+  {
+    "context": "Question 170: Im an OGC candidate with a rank of 75000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 75000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 70887, max: 76330).",
+    "question": "can i get a job in computing science or engineering?",
+    "answer": "Yes, with a rank of 6000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 5423, max: 55564)."
+  },
+  {
+    "context": "Question 189: What is the maximum rank for Information Technology for EWS students?\nAnswer: The maximum rank for Information Technology is 67113.",
+    "question": "What is the maximum rank for Information Technology for EWS students?",
+    "answer": "The maximum rank for Information Technology is 67113."
+  },
+  {
+    "context": "Question 189: What is the maximum rank for Information Technology for EWS students?\nAnswer: The maximum rank for Information Technology is 67113.",
+    "question": "what is maximum rank for information technology for ews students?",
+    "answer": "The maximum rank for Information Technology is 67113."
+  },
+  {
+    "context": "Question 190: Im an EWS student with a rank of 200000. Can I get into any branch?\nAnswer: Yes, with a rank of 200000, you can get into Biotechnology (min:\n135000, max: 193410). Other branches have lower maximum ranks (e.g., Me-\nchanical Engineering at 102646).",
+    "question": "Im an EWS student with a rank of 200000. Can I get into any branch?",
+    "answer": "Yes, with a rank of 200000, you can get into Biotechnology (min:\n135000, max: 193410). Other branches have lower maximum ranks (e.g., Me-\nchanical Engineering at 102646)."
+  },
+  {
+    "context": "Question 191: As an EWS student, which branch is the most competitive based on the\nminimum rank?\nAnswer: Computer Science and Engineering is the most competitive for EWS\nstudents, with the lowest minimum rank of 5423.",
+    "question": "As an EWS student, which branch is the most competitive based on the\nminimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for EWS\nstudents, with the lowest minimum rank of 5423."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "which branch is the most competitive based on minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for EWS\nstudents, with the lowest minimum rank of 5423."
+  },
+  {
+    "context": "Question 192: Im an EWS candidate with a rank of 70000. Which branches can I apply\nfor?\nAnswer: With a rank of 70000, you can apply for: Electronics and Communi-\ncation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-\nneering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:\n102646), Biotechnology (min: 135000, max: 193410). You dont qualify for Com-\nputer Science (max: 55564) or Information Technology (max: 67113).\n19",
+    "question": "Im an EWS candidate with a rank of 70000. Which branches can I apply\nfor?",
+    "answer": "With a rank of 70000, you can apply for: Electronics and Communi-\ncation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-\nneering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:\n102646), Biotechnology (min: 135000, max: 193410). You dont qualify for Com-\nputer Science (max: 55564) or Information Technology (max: 67113).\n19"
+  },
+  {
+    "context": "Question 193: As an EWS student, can I expect to get a seat in the Spot Round with a rank\nof 110000?\nAnswer: Yes, with a rank of 110000, you can get into: Mechanical Engineering\n(min: 100069, max: 102646), Biotechnology (min: 135000, max: 193410). You\ncan secure a seat in the Spot Round for these branches.",
+    "question": "As an EWS student, can I expect to get a seat in the Spot Round with a rank\nof 110000?",
+    "answer": "Yes, with a rank of 110000, you can get into: Mechanical Engineering\n(min: 100069, max: 102646), Biotechnology (min: 135000, max: 193410). You\ncan secure a seat in the Spot Round for these branches."
+  },
+  {
+    "context": "Question 194: Im an EWS student with a rank of 5000. How many branches can I apply\nfor?\nAnswer: With a rank of 5000, you can apply for: Computer Science and En-\ngineering (min: 5423, max: 55564). No other branches are available, as their\nminimum ranks are higher (e.g., Information Technology at 58714).",
+    "question": "Im an EWS student with a rank of 5000. How many branches can I apply\nfor?",
+    "answer": "With a rank of 5000, you can apply for: Computer Science and En-\ngineering (min: 5423, max: 55564). No other branches are available, as their\nminimum ranks are higher (e.g., Information Technology at 58714)."
+  },
+  {
+    "context": "Question 195: As an EWS student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 5423), and the least competitive is Biotechnology (max: 193410). The\ndifference is 193410 - 5423 = 187,987.",
+    "question": "As an EWS student, what is the rank difference between the most and least\ncompetitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 5423), and the least competitive is Biotechnology (max: 193410). The\ndifference is 193410 - 5423 = 187,987."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the ranking difference between the most competitive and the least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 5423), and the least competitive is Biotechnology (max: 193410). The\ndifference is 193410 - 5423 = 187,987."
+  },
+  {
+    "context": "Question 196: Im an EWS candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 71000?\nAnswer: Yes, with a rank of 71000, you can get into Electronics and Communi-\ncation Engineering, as your rank falls within the range (min: 70236, max: 72612).",
+    "question": "Im an EWS candidate. Can I get into Electronics and Communication Engi-\nneering with a rank of 71000?",
+    "answer": "Yes, with a rank of 71000, you can get into Electronics and Communi-\ncation Engineering, as your rank falls within the range (min: 70236, max: 72612)."
+  },
+  {
+    "context": "Question 197: As an EWS student, what is the safest branch to choose if my rank is\n150000?\nAnswer: With a rank of 150000, the safest branch is Biotechnology (min: 135000,\nmax: 193410), as your rank is comfortably within the range.",
+    "question": "As an EWS student, what is the safest branch to choose if my rank is\n150000?",
+    "answer": "With a rank of 150000, the safest branch is Biotechnology (min: 135000,\nmax: 193410), as your rank is comfortably within the range."
+  },
+  {
+    "context": "Question 198: Im an EWS student with a rank of 60000. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 60000, you can get into Information Technology\n(min: 58714, max: 67113) in the Special Round, as your rank is within the range.",
+    "question": "Im an EWS student with a rank of 60000. Can I get a seat in the Special\nRound?",
+    "answer": "Yes, with a rank of 60000, you can get into Information Technology\n(min: 58714, max: 67113) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 167: Im a KM student with a rank of 88000. Can I get a seat in the Special Round?\nAnswer: Yes, with a rank of 88000, you can get into: Electronics and Com-\nmunication Engineering (min/max: 88431), Information Technology (min/max:\n88414). Your rank is better than these cutoffs, so you can secure a seat in the\nSpecial Round.",
+    "question": "can i get a seat at the specialround?",
+    "answer": "Yes, with a rank of 60000, you can get into Information Technology\n(min: 58714, max: 67113) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 199: As an EWS student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 85164 to\n98346. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 98000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "As an EWS student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 85164 to\n98346. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 98000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 199: As an EWS student, what does the rank range for Electrical and Electronics\nEngineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 85164 to\n98346. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 98000), you should be cautious as\nseats may \ufb01ll up quickly.",
+    "question": "as an ews student what does the rank range for electrical and electronics engineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 85164 to\n98346. If your rank is within this range, you have a good chance of securing a\nseat, but if its closer to the maximum (e.g., 98000), you should be cautious as\nseats may \ufb01ll up quickly."
+  },
+  {
+    "context": "Question 200: Im an EWS student with a rank of 80000. Which branch should I prioritize?\nAnswer: With a rank of 80000, you can apply for: Electronics and Communi-\ncation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-\nneering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:\n102646), Biotechnology (min: 135000, max: 193410). You should prioritize Elec-\ntronics and Communication Engineering, as your rank is closest to its range and\nits a more competitive branch.",
+    "question": "Im an EWS student with a rank of 80000. Which branch should I prioritize?",
+    "answer": "With a rank of 80000, you can apply for: Electronics and Communi-\ncation Engineering (min: 70236, max: 72612), Electrical and Electronics Engi-\nneering (min: 85164, max: 98346), Mechanical Engineering (min: 100069, max:\n102646), Biotechnology (min: 135000, max: 193410). You should prioritize Elec-\ntronics and Communication Engineering, as your rank is closest to its range and\nits a more competitive branch."
+  },
+  {
+    "context": "Question 201: Im an EWS candidate. Are these ranks speci\ufb01c to the Economically Weaker\nSection quota, or do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions",
+    "question": "Im an EWS candidate. Are these ranks speci\ufb01c to the Economically Weaker\nSection quota, or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions"
+  },
+  {
+    "context": "Question 201: Im an EWS candidate. Are these ranks speci\ufb01c to the Economically Weaker\nSection quota, or do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions",
+    "question": "are these ranks specific to the economically weaker section quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions"
+  },
+  {
+    "context": "Question 201: Im an EWS candidate. Are these ranks speci\ufb01c to the Economically Weaker\nSection quota, or do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions",
+    "question": "are these ranks specic to the economically weaker section quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Economically Weaker Section quota under\nthe All India Quota, as indicated by the \"ECONOMICALLY WEAKER SECTION\"\n20\n\nlabel at the top.\nSports Category Questions"
+  },
+  {
+    "context": "Question 202: Im a Sports quota candidate with a rank of 10. Can I get into Computer\nScience and Engineering?\nAnswer: Yes, with a rank of 10, you can get into Computer Science and Engi-\nneering, as the rank is 7, which is close to your rank. However, this appears to\nbe a single seat or speci\ufb01c allotment.",
+    "question": "Im a Sports quota candidate with a rank of 10. Can I get into Computer\nScience and Engineering?",
+    "answer": "Yes, with a rank of 10, you can get into Computer Science and Engi-\nneering, as the rank is 7, which is close to your rank. However, this appears to\nbe a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 127: Im a PwD candidate with a rank of 1000000. Can I get into Computer Sci-\nence and Engineering?\nAnswer: Yes, with a rank of 1000000, you can get into Computer Science and\nEngineering, as the rank is 998050, which is very close to your rank. However,\nthis appears to be a single seat or speci\ufb01c allotment.",
+    "question": "is it possible to get into computer science with a rank of 10?",
+    "answer": "Yes, with a rank of 10, you can get into Computer Science and Engi-\nneering, as the rank is 7, which is close to your rank. However, this appears to\nbe a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 188: Im an EWS candidate with a rank of 6000. Can I get into Computer Science\nand Engineering?\nAnswer: Yes, with a rank of 6000, you can get into Computer Science and\nEngineering, as your rank falls within the range (min: 5423, max: 55564).",
+    "question": "can i get into computer science and engineering?",
+    "answer": "Yes, with a rank of 10, you can get into Computer Science and Engi-\nneering, as the rank is 7, which is close to your rank. However, this appears to\nbe a single seat or speci\ufb01c allotment."
+  },
+  {
+    "context": "Question 203: What is the maximum rank for Mechanical Engineering for Sports quota\nstudents?\nAnswer: The maximum rank for Mechanical Engineering is 41.",
+    "question": "What is the maximum rank for Mechanical Engineering for Sports quota\nstudents?",
+    "answer": "The maximum rank for Mechanical Engineering is 41."
+  },
+  {
+    "context": "Question 204: Im a Sports quota student with a rank of 50. Can I get into any branch?\nAnswer: No, with a rank of 50, you cannot get into any branch, as the highest\nmaximum rank is 43 (Biotechnology), which is below your rank.",
+    "question": "Im a Sports quota student with a rank of 50. Can I get into any branch?",
+    "answer": "No, with a rank of 50, you cannot get into any branch, as the highest\nmaximum rank is 43 (Biotechnology), which is below your rank."
+  },
+  {
+    "context": "Question 205: As a Sports quota student, which branch is the most competitive based on\nthe minimum rank?\nAnswer: Computer Science and Engineering is the most competitive for Sports\nquota students, with the lowest minimum rank of 7.",
+    "question": "As a Sports quota student, which branch is the most competitive based on\nthe minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for Sports\nquota students, with the lowest minimum rank of 7."
+  },
+  {
+    "context": "Question 205: As a Sports quota student, which branch is the most competitive based on\nthe minimum rank?\nAnswer: Computer Science and Engineering is the most competitive for Sports\nquota students, with the lowest minimum rank of 7.",
+    "question": "which branch of sports has the best competition based on minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for Sports\nquota students, with the lowest minimum rank of 7."
+  },
+  {
+    "context": "Question 206: Im a Sports quota candidate with a rank of 20. Which branches can I apply\nfor?\nAnswer: With a rank of 20, you can apply for: Electronics and Communica-\ntion Engineering (min/max: 18), Electrical and Electronics Engineering (min: 24,\nmax: 27), Mechanical Engineering (min: 35, max: 41), Biotechnology (min/max:\n43). You dont qualify for Computer Science (max: 7) or Information Technology\n(max: 12).",
+    "question": "Im a Sports quota candidate with a rank of 20. Which branches can I apply\nfor?",
+    "answer": "With a rank of 20, you can apply for: Electronics and Communica-\ntion Engineering (min/max: 18), Electrical and Electronics Engineering (min: 24,\nmax: 27), Mechanical Engineering (min: 35, max: 41), Biotechnology (min/max:\n43). You dont qualify for Computer Science (max: 7) or Information Technology\n(max: 12)."
+  },
+  {
+    "context": "Question 207: As a Sports quota student, can I expect to get a seat in the Spot Round\nwith a rank of 40?\nAnswer: Yes, with a rank of 40, you can get into: Mechanical Engineering (min:\n35, max: 41), Biotechnology (min/max: 43). You can secure a seat in the Spot\nRound for these branches.",
+    "question": "As a Sports quota student, can I expect to get a seat in the Spot Round\nwith a rank of 40?",
+    "answer": "Yes, with a rank of 40, you can get into: Mechanical Engineering (min:\n35, max: 41), Biotechnology (min/max: 43). You can secure a seat in the Spot\nRound for these branches."
+  },
+  {
+    "context": "Question 208: Im a Sports quota student with a rank of 5. How many branches can I apply\nfor?\nAnswer: With a rank of 5, you can apply for: Computer Science and Engineering\n(min/max: 7).\nNo other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 12).",
+    "question": "Im a Sports quota student with a rank of 5. How many branches can I apply\nfor?",
+    "answer": "With a rank of 5, you can apply for: Computer Science and Engineering\n(min/max: 7).\nNo other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 12)."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches can i apply for?",
+    "answer": "With a rank of 5, you can apply for: Computer Science and Engineering\n(min/max: 7).\nNo other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 12)."
+  },
+  {
+    "context": "Question 209: As a Sports quota student, what is the rank difference between the most\nand least competitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 7), and the least competitive is Biotechnology (max: 43). The difference is\n43 - 7 = 36.",
+    "question": "As a Sports quota student, what is the rank difference between the most\nand least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 7), and the least competitive is Biotechnology (max: 43). The difference is\n43 - 7 = 36."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between most and least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 7), and the least competitive is Biotechnology (max: 43). The difference is\n43 - 7 = 36."
+  },
+  {
+    "context": "Question 210: Im a Sports quota candidate. Can I get into Electronics and Communication\nEngineering with a rank of 15?\n21\n\nAnswer: Yes, with a rank of 15, you can get into Electronics and Communication\nEngineering, as your rank is better than the cutoff (min/max: 18).",
+    "question": "Im a Sports quota candidate. Can I get into Electronics and Communication\nEngineering with a rank of 15?\n21",
+    "answer": "Yes, with a rank of 15, you can get into Electronics and Communication\nEngineering, as your rank is better than the cutoff (min/max: 18)."
+  },
+  {
+    "context": "Question 211: As a Sports quota student, what is the safest branch to choose if my rank\nis 40?\nAnswer: With a rank of 40, the safest branch is Mechanical Engineering (min:\n35, max: 41), as your rank is comfortably within the range.\nBiotechnology\n(min/max: 43) is also an option but riskier as your rank is closer to the cutoff.",
+    "question": "As a Sports quota student, what is the safest branch to choose if my rank\nis 40?",
+    "answer": "With a rank of 40, the safest branch is Mechanical Engineering (min:\n35, max: 41), as your rank is comfortably within the range.\nBiotechnology\n(min/max: 43) is also an option but riskier as your rank is closer to the cutoff."
+  },
+  {
+    "context": "Question 212: Im a Sports quota student with a rank of 12. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 12, you can get into Information Technology (min/max:\n12) in the Special Round, as your rank matches the cutoff.",
+    "question": "Im a Sports quota student with a rank of 12. Can I get a seat in the Special\nRound?",
+    "answer": "Yes, with a rank of 12, you can get into Information Technology (min/max:\n12) in the Special Round, as your rank matches the cutoff."
+  },
+  {
+    "context": "Question 153: Im an FF student with a rank of 500000. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 500000, you can get into Information Technology\n(min: 312072, max: 538484) in the Special Round, as your rank is within the\nrange.",
+    "question": "can i get a seat in the special round?",
+    "answer": "Yes, with a rank of 12, you can get into Information Technology (min/max:\n12) in the Special Round, as your rank matches the cutoff."
+  },
+  {
+    "context": "Question 213: As a Sports quota student, what does the rank range for Electrical and\nElectronics Engineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 24 to 27.\nIf your rank is within this range, you have a good chance of securing a seat, but\nif its closer to the maximum (e.g., 26), you should be cautious as seats may \ufb01ll\nup quickly.",
+    "question": "As a Sports quota student, what does the rank range for Electrical and\nElectronics Engineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 24 to 27.\nIf your rank is within this range, you have a good chance of securing a seat, but\nif its closer to the maximum (e.g., 26), you should be cautious as seats may \ufb01ll\nup quickly."
+  },
+  {
+    "context": "Question 214: Im a Sports quota student with a rank of 30. Which branch should I priori-\ntize?\nAnswer: With a rank of 30, you can apply for: Mechanical Engineering (min: 35,\nmax: 41), Biotechnology (min/max: 43). You should prioritize Mechanical Engi-\nneering, as your rank is more comfortably within its range compared to Biotech-\nnology.",
+    "question": "Im a Sports quota student with a rank of 30. Which branch should I priori-\ntize?",
+    "answer": "With a rank of 30, you can apply for: Mechanical Engineering (min: 35,\nmax: 41), Biotechnology (min/max: 43). You should prioritize Mechanical Engi-\nneering, as your rank is more comfortably within its range compared to Biotech-\nnology."
+  },
+  {
+    "context": "Question 215: Im a Sports quota candidate. Are these ranks speci\ufb01c to the Sports quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Sports quota under the All India Quota,\nas indicated by the \"SPORTS\" label at the top.\nDefence Category Questions",
+    "question": "Im a Sports quota candidate. Are these ranks speci\ufb01c to the Sports quota,\nor do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Sports quota under the All India Quota,\nas indicated by the \"SPORTS\" label at the top.\nDefence Category Questions"
+  },
+  {
+    "context": "Question 215: Im a Sports quota candidate. Are these ranks speci\ufb01c to the Sports quota,\nor do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Sports quota under the All India Quota,\nas indicated by the \"SPORTS\" label at the top.\nDefence Category Questions",
+    "question": "i am a sports quota candidate are these ranks specific to the sports quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Sports quota under the All India Quota,\nas indicated by the \"SPORTS\" label at the top.\nDefence Category Questions"
+  },
+  {
+    "context": "Question 216: As a Defence quota student, which branches have seats available for me?\nAnswer: Seats are available for Defence quota students in all branches: Biotech-\nnology (min: 68, max: 112), Computer Science and Engineering (min: 2, max:\n8), Electrical and Electronics Engineering (min: 45, max: 47), Electronics and\nCommunication Engineering (min: 24, max: 32), Information Technology (min:\n15, max: 23), Mechanical Engineering (min: 51, max: 57).",
+    "question": "As a Defence quota student, which branches have seats available for me?",
+    "answer": "Seats are available for Defence quota students in all branches: Biotech-\nnology (min: 68, max: 112), Computer Science and Engineering (min: 2, max:\n8), Electrical and Electronics Engineering (min: 45, max: 47), Electronics and\nCommunication Engineering (min: 24, max: 32), Information Technology (min:\n15, max: 23), Mechanical Engineering (min: 51, max: 57)."
+  },
+  {
+    "context": "Question 217: Im a Defence quota candidate with a rank of 5. Can I get into Computer\nScience and Engineering?\nAnswer: Yes, with a rank of 5, you can get into Computer Science and Engi-\nneering, as your rank falls within the range (min: 2, max: 8).",
+    "question": "Im a Defence quota candidate with a rank of 5. Can I get into Computer\nScience and Engineering?",
+    "answer": "Yes, with a rank of 5, you can get into Computer Science and Engi-\nneering, as your rank falls within the range (min: 2, max: 8)."
+  },
+  {
+    "context": "Question 218: What is the maximum rank for Information Technology for Defence quota\nstudents?\nAnswer: The maximum rank for Information Technology is 23.",
+    "question": "What is the maximum rank for Information Technology for Defence quota\nstudents?",
+    "answer": "The maximum rank for Information Technology is 23."
+  },
+  {
+    "context": "Question 219: Im a Defence quota student with a rank of 60. Can I get into any branch?\n22\n\nAnswer: Yes, with a rank of 60, you can get into Biotechnology (min: 68, max:\n112). Other branches have lower maximum ranks (e.g., Mechanical Engineering\nat 57).",
+    "question": "Im a Defence quota student with a rank of 60. Can I get into any branch?",
+    "answer": "Yes, with a rank of 60, you can get into Biotechnology (min: 68, max:\n112). Other branches have lower maximum ranks (e.g., Mechanical Engineering\nat 57)."
+  },
+  {
+    "context": "Question 220: As a Defence quota student, which branch is the most competitive based\non the minimum rank?\nAnswer: Computer Science and Engineering is the most competitive for De-\nfence quota students, with the lowest minimum rank of 2.",
+    "question": "As a Defence quota student, which branch is the most competitive based\non the minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for De-\nfence quota students, with the lowest minimum rank of 2."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "which branch is most competitive based on minimum rank?",
+    "answer": "Computer Science and Engineering is the most competitive for De-\nfence quota students, with the lowest minimum rank of 2."
+  },
+  {
+    "context": "Question 221: Im a Defence quota candidate with a rank of 30. Which branches can I apply\nfor?\nAnswer: With a rank of 30, you can apply for: Electronics and Communication\nEngineering (min: 24, max: 32), Electrical and Electronics Engineering (min:\n45, max: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min:\n68, max: 112). You dont qualify for Computer Science (max: 8) or Information\nTechnology (max: 23).",
+    "question": "Im a Defence quota candidate with a rank of 30. Which branches can I apply\nfor?",
+    "answer": "With a rank of 30, you can apply for: Electronics and Communication\nEngineering (min: 24, max: 32), Electrical and Electronics Engineering (min:\n45, max: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min:\n68, max: 112). You dont qualify for Computer Science (max: 8) or Information\nTechnology (max: 23)."
+  },
+  {
+    "context": "Question 222: As a Defence quota student, can I expect to get a seat in the Spot Round\nwith a rank of 100?\nAnswer: Yes, with a rank of 100, you can get into Biotechnology (min: 68, max:\n112) in the Spot Round. Other branches have lower maximum ranks.",
+    "question": "As a Defence quota student, can I expect to get a seat in the Spot Round\nwith a rank of 100?",
+    "answer": "Yes, with a rank of 100, you can get into Biotechnology (min: 68, max:\n112) in the Spot Round. Other branches have lower maximum ranks."
+  },
+  {
+    "context": "Question 223: Im a Defence quota student with a rank of 1. How many branches can I\napply for?\nAnswer: With a rank of 1, you can apply for: Computer Science and Engineering\n(min: 2, max: 8). No other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 15).",
+    "question": "Im a Defence quota student with a rank of 1. How many branches can I\napply for?",
+    "answer": "With a rank of 1, you can apply for: Computer Science and Engineering\n(min: 2, max: 8). No other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 15)."
+  },
+  {
+    "context": "Question 109: If Im an SC student with a rank of 150000, how many branches can I apply\nfor?\nAnswer: With a rank of 150000, you can apply for: Computer Science and\nEngineering (min: 85676). Other branches have minimum ranks above 150000\n(e.g., Information Technology at 179529), so only 1 branch is available.",
+    "question": "how many branches can i apply for?",
+    "answer": "With a rank of 1, you can apply for: Computer Science and Engineering\n(min: 2, max: 8). No other branches are available, as their minimum ranks are\nhigher (e.g., Information Technology at 15)."
+  },
+  {
+    "context": "Question 224: As a Defence quota student, what is the rank difference between the most\nand least competitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110.",
+    "question": "As a Defence quota student, what is the rank difference between the most\nand least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110."
+  },
+  {
+    "context": "Question 224: As a Defence quota student, what is the rank difference between the most\nand least competitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110.",
+    "question": "tell me the rank difference between most and least competitive departments in defence?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110."
+  },
+  {
+    "context": "Question 108: As an SC student, what is the rank difference between the most and least\ncompetitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min rank: 85676), and the least competitive is Biotechnology (max rank: 388856).\nThe difference is 388856 - 85676 = 303,180.",
+    "question": "tell me the rank difference between the most competitive and least competitive branch?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110."
+  },
+  {
+    "context": "Question 224: As a Defence quota student, what is the rank difference between the most\nand least competitive branches?\nAnswer: The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110.",
+    "question": "as a defence student what's the rank difference between most and least competitive branches?",
+    "answer": "The most competitive branch is Computer Science and Engineering\n(min: 2), and the least competitive is Biotechnology (max: 112). The difference\nis 112 - 2 = 110."
+  },
+  {
+    "context": "Question 225: Im a Defence quota candidate. Can I get into Electronics and Communica-\ntion Engineering with a rank of 25?\nAnswer: Yes, with a rank of 25, you can get into Electronics and Communication\nEngineering, as your rank falls within the range (min: 24, max: 32).",
+    "question": "Im a Defence quota candidate. Can I get into Electronics and Communica-\ntion Engineering with a rank of 25?",
+    "answer": "Yes, with a rank of 25, you can get into Electronics and Communication\nEngineering, as your rank falls within the range (min: 24, max: 32)."
+  },
+  {
+    "context": "Question 226: As a Defence quota student, what is the safest branch to choose if my rank\nis 90?\nAnswer: With a rank of 90, the safest branch is Biotechnology (min: 68, max:\n112), as your rank is comfortably within the range.",
+    "question": "As a Defence quota student, what is the safest branch to choose if my rank\nis 90?",
+    "answer": "With a rank of 90, the safest branch is Biotechnology (min: 68, max:\n112), as your rank is comfortably within the range."
+  },
+  {
+    "context": "Question 227: Im a Defence quota student with a rank of 20. Can I get a seat in the Special\nRound?\nAnswer: Yes, with a rank of 20, you can get into Information Technology (min:\n15, max: 23) in the Special Round, as your rank is within the range.",
+    "question": "Im a Defence quota student with a rank of 20. Can I get a seat in the Special\nRound?",
+    "answer": "Yes, with a rank of 20, you can get into Information Technology (min:\n15, max: 23) in the Special Round, as your rank is within the range."
+  },
+  {
+    "context": "Question 228: As a Defence quota student, what does the rank range for Electrical and\nElectronics Engineering tell me about my chances?\nAnswer: The rank range for Electrical and Electronics Engineering is 45 to 47.\n23\n\nIf your rank is within this range, you have a good chance of securing a seat, but\nif its closer to the maximum (e.g., 47), you should be cautious as seats may \ufb01ll\nup quickly.",
+    "question": "As a Defence quota student, what does the rank range for Electrical and\nElectronics Engineering tell me about my chances?",
+    "answer": "The rank range for Electrical and Electronics Engineering is 45 to 47.\n23\n\nIf your rank is within this range, you have a good chance of securing a seat, but\nif its closer to the maximum (e.g., 47), you should be cautious as seats may \ufb01ll\nup quickly."
+  },
+  {
+    "context": "Question 229: Im a Defence quota student with a rank of 40. Which branch should I prior-\nitize?\nAnswer: With a rank of 40, you can apply for: Electronics and Communication\nEngineering (min: 24, max: 32), Electrical and Electronics Engineering (min: 45,\nmax: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min: 68,\nmax: 112). You should prioritize Electronics and Communication Engineering,\nas your rank is closest to its range and its a more competitive branch.",
+    "question": "Im a Defence quota student with a rank of 40. Which branch should I prior-\nitize?",
+    "answer": "With a rank of 40, you can apply for: Electronics and Communication\nEngineering (min: 24, max: 32), Electrical and Electronics Engineering (min: 45,\nmax: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min: 68,\nmax: 112). You should prioritize Electronics and Communication Engineering,\nas your rank is closest to its range and its a more competitive branch."
+  },
+  {
+    "context": "Question 211: As a Sports quota student, what is the safest branch to choose if my rank\nis 40?\nAnswer: With a rank of 40, the safest branch is Mechanical Engineering (min:\n35, max: 41), as your rank is comfortably within the range.\nBiotechnology\n(min/max: 43) is also an option but riskier as your rank is closer to the cutoff.",
+    "question": "which branches should i prioritize with a rank of 40?",
+    "answer": "With a rank of 40, you can apply for: Electronics and Communication\nEngineering (min: 24, max: 32), Electrical and Electronics Engineering (min: 45,\nmax: 47), Mechanical Engineering (min: 51, max: 57), Biotechnology (min: 68,\nmax: 112). You should prioritize Electronics and Communication Engineering,\nas your rank is closest to its range and its a more competitive branch."
+  },
+  {
+    "context": "Question 230: Im a Defence quota candidate. Are these ranks speci\ufb01c to the Defence\nquota, or do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Defence quota under the All India Quota,\nas indicated by the \"DEFENCE\" label at the top.\n24",
+    "question": "Im a Defence quota candidate. Are these ranks speci\ufb01c to the Defence\nquota, or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Defence quota under the All India Quota,\nas indicated by the \"DEFENCE\" label at the top.\n24"
+  },
+  {
+    "context": "Question 230: Im a Defence quota candidate. Are these ranks speci\ufb01c to the Defence\nquota, or do they include other categories?\nAnswer: The ranks are speci\ufb01c to the Defence quota under the All India Quota,\nas indicated by the \"DEFENCE\" label at the top.\n24",
+    "question": "i am a candidate for a defence quota are these ranks specifically geared to defence quota or do they include other categories?",
+    "answer": "The ranks are speci\ufb01c to the Defence quota under the All India Quota,\nas indicated by the \"DEFENCE\" label at the top.\n24"
+  }
 ]
