@@ -101,6 +101,7 @@ h1 {
 .chat-input {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .chat-input textarea {
@@ -112,6 +113,7 @@ h1 {
   font-size: 1rem;
   height: 50px;
   outline: none;
+  min-width: 60%;
 }
 
 .chat-input textarea:focus {
@@ -129,16 +131,72 @@ h1 {
   cursor: pointer;
   transition: background-color 0.3s ease;
   font-size: 1rem;
+  height: 50px;
 }
 
 .chat-input button:hover {
   background-color: #5a3680;
 }
 
+/* Feedback Box Styling */
+textarea#feedbackInput {
+  width: 90%;
+  max-width: 700px;
+  display: block;
+  margin: 10px auto;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: vertical;
+  font-size: 1rem;
+  background: #ffffff;
+}
+
+button[onclick="submitFeedback()"] {
+  display: block;
+  margin: 0 auto 10px auto;
+  background: #198754;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+button[onclick="submitFeedback()"]:hover {
+  background: #146c43;
+}
+
+#feedbackStatus {
+  text-align: center;
+  font-style: italic;
+  color: #28a745;
+}
+.feedback-box{
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .chat-container {
-    height: 70vh;
+    height: auto;
     margin: 20px;
+  }
+  .chat-input textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .chat-input button {
+    width: 100%;
+  }
+  textarea#feedbackInput {
+    width: 100%;
   }
 }
