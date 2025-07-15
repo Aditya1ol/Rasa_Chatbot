@@ -19,8 +19,13 @@ from cachetools import TTLCache
 from transformers import pipeline
 import torch
 
-# Initialize Flask app
+
+import uuid
+from flask import Flask, render_template, request, jsonify, redirect, url_for, session
+from functools import wraps
+
 app = Flask(__name__)
+app.secret_key = 'your_secret_key_here'  # Change this to a secure key in production
 CORS(app)
 logging.basicConfig(level=logging.INFO, filename="chatbot.log")
 
@@ -58,10 +63,41 @@ if os.path.exists(GENERATED_QUESTIONS_PATH):
 else:
     generated_questions = []
 
+# In-memory user store (for demo purposes)
+users = {
+    "adi_admin": {
+        "password": "Myfirstchatbot6999",
+        "email": "anayyer50@gmail.com",
+        "is_admin": True
+    },
+    "student1": {"password": "studentpass", "is_admin": False}
+}
+
+# In-memory posts store
+posts = []
+
 # Utility: Normalize text spacing
 
 def clean_text(text):
     return re.sub(r'\s+', ' ', text).strip()
+
+# Authentication decorator
+def login_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'username' not in session:
+            return redirect(url_for('auth'))
+        return f(*args, **kwargs)
+    return decorated_function
+
+# Admin check decorator
+def admin_required(f):
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if 'username' not in session or not users.get(session['username'], {}).get('is_admin', False):
+            return redirect(url_for('auth'))
+        return f(*args, **kwargs)
+    return decorated_function
 
 # Extract chunks from PDF pages
 def extract_chunks_from_pdf(pdf_path, window_size=3, stride=1):
@@ -203,6 +239,80 @@ def landing():
 def home():
     return render_template("index.html", saved_questions=saved_faq, generated_questions=generated_questions)
 
+# Forum page
+@app.route("/forum", methods=["GET"])
+def forum():
+    logged_in = 'username' in session
+    is_admin = False
+    if logged_in:
+        is_admin = users.get(session['username'], {}).get('is_admin', False)
+    return render_template("forum.html", posts=posts, logged_in=logged_in, is_admin=is_admin)
+
+# Authentication (login/signup) handler
+@app.route("/auth", methods=["GET", "POST"])
+def auth():
+    if request.method == "GET":
+        return render_template("login.html")
+    error = None
+    user_type = request.form.get("user_type")
+    username = request.form.get("username")
+    email = request.form.get("email")
+    password = request.form.get("password")
+    branch = request.form.get("branch")
+    year = request.form.get("year")
+
+    if not user_type or not username or not email or not password:
+        error = "Please fill in all required fields."
+        return render_template("login.html", error=error)
+
+    # Admin credentials hardcoded
+    if user_type == "admin":
+        admin_user = users.get("adi_admin")
+        if username == "adi_admin" and password == admin_user["password"]:
+            session['username'] = "adi_admin"
+            return redirect(url_for('forum'))
+        else:
+            error = "Invalid admin username or password."
+            return render_template("login.html", error=error)
+
+    # For college students and query users, handle signup/login
+    user = users.get(username)
+    if user:
+        # User exists, check password and type
+        if user["password"] == password and user.get("type") == user_type:
+            session['username'] = username
+            return redirect(url_for('forum'))
+        else:
+            error = "Invalid username, password, or user type."
+            return render_template("login.html", error=error)
+    else:
+        # New user signup
+        new_user = {
+            "password": password,
+            "type": user_type,
+            "email": email
+        }
+        if user_type == "college_student":
+            new_user["branch"] = branch
+            new_user["year"] = year
+        users[username] = new_user
+        session['username'] = username
+        return redirect(url_for('forum'))
+
+    return render_template("login.html", error=error)
+
+# Login page rendering
+@app.route("/login", methods=["GET"])
+def login():
+    return render_template("login.html")
+
+# Logout
+@app.route("/logout")
+@login_required
+def logout():
+    session.pop('username', None)
+    return redirect(url_for('login'))
+
 # Main chat endpoint
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -218,7 +328,6 @@ def chat():
         else:
             return jsonify({"response": ["No more information to show."]})
         
-
 
     # Priority 1: FAQ match
     faq_answer = find_faq_answer(user_message)
@@ -251,6 +360,168 @@ def save_faq():
     with open("college_faq.json", "w", encoding="utf-8") as f:
         json.dump(saved_faq, f, indent=2)
     return jsonify({"message": "FAQ saved successfully"})
+
+# Post an answer to a forum question
+@app.route("/post_answer", methods=["POST"])
+@login_required
+def post_answer():
+    post_id = request.form.get("post_id")
+    answer_text = request.form.get("answer_text", "").strip()
+    username = session.get("username")
+
+    if not post_id or not answer_text:
+        return redirect(url_for('forum'))
+
+    user = users.get(username, {})
+    if user.get("type") != "college_student" and not user.get("is_admin", False):
+        # Only college students and admins can answer questions
+        return redirect(url_for('forum'))
+
+    # Find the post
+    for post in posts:
+        if post["id"] == post_id:
+            answer_id = str(uuid.uuid4())
+            answer_entry = {
+                "id": answer_id,
+                "text": answer_text,
+                "user": username,
+                "verified": False,
+                "votes": 0
+            }
+            post["answers"].append(answer_entry)
+            break
+    else:
+        # Post not found
+        return redirect(url_for('forum'))
+
+    return redirect(url_for('forum'))
+
+# Post a new question to the forum
+@app.route("/post_question", methods=["POST"])
+@login_required
+def post_question():
+    question_text = request.form.get("question_text", "").strip()
+    username = session.get("username")
+
+    if not question_text:
+        return redirect(url_for('forum'))
+
+    user = users.get(username, {})
+    if user.get("type") == "query_user" or user.get("is_admin", False):
+        # Only query users and admins can post new questions
+        question_id = str(uuid.uuid4())
+        new_post = {
+            "id": question_id,
+            "question": question_text,
+            "answers": []
+        }
+        posts.append(new_post)
+        return redirect(url_for('forum'))
+    else:
+        # Not permitted to post questions
+        return redirect(url_for('forum'))
+
+# Verify an answer (admin only)
+@app.route("/verify_answer", methods=["POST"])
+@admin_required
+def verify_answer():
+    post_id = request.form.get("post_id")
+    answer_id = request.form.get("answer_id")
+
+    for post in posts:
+        if post["id"] == post_id:
+            for answer in post["answers"]:
+                if answer["id"] == answer_id:
+                    answer["verified"] = True
+                    break
+            break
+
+    return redirect(url_for('forum'))
+
+# Vote for an answer (admin only)
+@app.route("/vote_answer", methods=["POST"])
+@admin_required
+def vote_answer():
+    post_id = request.form.get("post_id")
+    answer_id = request.form.get("answer_id")
+
+    for post in posts:
+        if post["id"] == post_id:
+            for answer in post["answers"]:
+                if answer["id"] == answer_id:
+                    answer["votes"] += 1
+                    break
+            break
+
+    return redirect(url_for('forum'))
+
+# Delete a post (admin only)
+@app.route("/delete_post", methods=["POST"])
+@admin_required
+def delete_post():
+    post_id = request.form.get("post_id")
+    global posts
+    posts = [post for post in posts if post["id"] != post_id]
+    return redirect(url_for('forum'))
+
+# Delete an answer (admin only)
+@app.route("/delete_answer", methods=["POST"])
+@admin_required
+def delete_answer():
+    post_id = request.form.get("post_id")
+    answer_id = request.form.get("answer_id")
+
+    for post in posts:
+        if post["id"] == post_id:
+            post["answers"] = [ans for ans in post["answers"] if ans["id"] != answer_id]
+            break
+
+    return redirect(url_for('forum'))
+
+# Submit contact info of current students
+@app.route("/submit_contact_info", methods=["POST"])
+def submit_contact_info():
+    data = request.json
+    name = data.get("name", "").strip()
+    email = data.get("email", "").strip()
+    phone = data.get("phone", "").strip()
+    department = data.get("department", "").strip()
+
+    if not name or not email:
+        return jsonify({"success": False, "message": "Name and email are required."})
+
+    contact_entry = {
+        "name": name,
+        "email": email,
+        "phone": phone,
+        "department": department
+    }
+
+    contacts_file = "students_contacts.json"
+    contacts = []
+    if os.path.exists(contacts_file):
+        with open(contacts_file, "r", encoding="utf-8") as f:
+            try:
+                contacts = json.load(f)
+            except:
+                contacts = []
+
+    contacts.append(contact_entry)
+    with open(contacts_file, "w", encoding="utf-8") as f:
+        json.dump(contacts, f, indent=2)
+
+    return jsonify({"success": True, "message": "Contact information submitted successfully."})
+
+# Student chat endpoint (simulate sending or storing messages)
+@app.route("/student_chat", methods=["POST"])
+def student_chat():
+    user_message = request.json.get("message", "").strip()
+    # For now, just echo back the message with a placeholder response
+    response_messages = [
+        "Thank you for your question! A current student will get back to you soon.",
+        "Meanwhile, feel free to explore the chatbot or contact us page."
+    ]
+    return jsonify({"response": response_messages})
 
 @app.route("/submit_feedback", methods=["POST"])
 def submit_feedback():

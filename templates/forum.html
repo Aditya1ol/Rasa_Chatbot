@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forum - College Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/chatbot" class="nav-logo">College Chatbot</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="/chatbot" class="nav-link">Chatbot</a></li>
+        <li class="nav-item"><a href="/forum" class="nav-link active">Forum</a></li>
+        {% if logged_in %}
+        <li class="nav-item"><a href="/logout" class="nav-link">Logout</a></li>
+        {% else %}
+        <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Student Forum</h1>
+
+  <div class="forum-container">
+    <div class="forum-messages" id="forum-messages">
+      {% if posts %}
+        {% for post in posts %}
+          <div class="forum-post">
+            <div class="post-question"><strong>Q:</strong> {{ post.question }}</div>
+            <div class="post-answers">
+              {% for answer in post.answers %}
+                <div class="forum-answer {% if answer.verified %}verified{% endif %}">
+                  <p>{{ answer.text }}</p>
+                  <p><em>By: {{ answer.user }}</em></p>
+                  <p>Votes: {{ answer.votes }}</p>
+                  {% if is_admin %}
+                    <form method="POST" action="/verify_answer" style="display:inline;">
+                      <input type="hidden" name="post_id" value="{{ post.id }}">
+                      <input type="hidden" name="answer_id" value="{{ answer.id }}">
+                      {% if not answer.verified %}
+                      <button type="submit">Verify</button>
+                      {% endif %}
+                    </form>
+                    <form method="POST" action="/vote_answer" style="display:inline;">
+                      <input type="hidden" name="post_id" value="{{ post.id }}">
+                      <input type="hidden" name="answer_id" value="{{ answer.id }}">
+                      <button type="submit">Vote</button>
+                    </form>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+            {% if logged_in %}
+            <form class="answer-form" data-post-id="{{ post.id }}">
+              <textarea name="answer_text" placeholder="Write your reply here..." required></textarea><br>
+              <button type="submit">Submit Reply</button>
+            </form>
+            {% else %}
+            <p><a href="/login">Login</a> to submit a reply.</p>
+            {% endif %}
+          </div>
+        {% endfor %}
+      {% else %}
+        <p>No questions posted yet.</p>
+      {% endif %}
+    </div>
+
+    <div class="forum-post-box">
+      {% if logged_in %}
+      <h2>Post a New Question</h2>
+      <form id="new-question-form" method="POST" action="/post_question">
+        <textarea name="question_text" placeholder="Write your question here..." required></textarea><br>
+        <button type="submit">Post Question</button>
+      </form>
+      {% else %}
+      <p><a href="/login">Login</a> to post a new question.</p>
+      {% endif %}
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      // Handle new question submission
+      const newQuestionForm = document.getElementById("new-question-form");
+      if (newQuestionForm) {
+        newQuestionForm.addEventListener("submit", async function(e) {
+          e.preventDefault();
+          const question = newQuestionForm.querySelector("textarea[name='question_text']").value.trim();
+          if (!question) return;
+
+          // TODO: Implement backend API for new question creation
+          alert("New question posting is not yet implemented.");
+          newQuestionForm.querySelector("textarea[name='question_text']").value = "";
+        });
+      }
+
+      // Handle answer submissions
+      const answerForms = document.querySelectorAll(".answer-form");
+      answerForms.forEach(form => {
+        form.addEventListener("submit", async function(e) {
+          e.preventDefault();
+          const postId = form.getAttribute("data-post-id");
+          const answerText = form.querySelector("textarea[name='answer_text']").value.trim();
+          if (!answerText) return;
+
+          const formData = new FormData();
+          formData.append("post_id", postId);
+          formData.append("answer_text", answerText);
+
+          try {
+            const response = await fetch("/post_answer", {
+              method: "POST",
+              body: formData,
+              credentials: "same-origin"
+            });
+            if (response.redirected) {
+              window.location.href = response.url;
+            } else {
+              alert("Failed to submit reply.");
+            }
+          } catch (error) {
+            alert("Error submitting reply.");
+          }
+        });
+      });
+    });
+  </script>
+
+  <style>
+    .forum-container {
+      display: flex;
+      max-width: 900px;
+      margin: 20px auto;
+      gap: 20px;
+    }
+    .forum-messages {
+      flex: 2;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      max-height: 600px;
+      overflow-y: auto;
+    }
+    .forum-post-box {
+      flex: 1;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      height: fit-content;
+    }
+    .forum-post {
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 15px;
+      margin-bottom: 15px;
+    }
+    .post-question {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .post-answers {
+      margin-left: 20px;
+      margin-bottom: 10px;
+    }
+    .forum-answer {
+      background: #f1f1f1;
+      border-radius: 10px;
+      padding: 8px 12px;
+      margin-bottom: 8px;
+    }
+    .forum-answer.verified {
+      border-left: 4px solid #28a745;
+      background: #e6ffe6;
+    }
+    textarea {
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    button {
+      background-color: #764ba2;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+    button:hover {
+      background-color: #5a3680;
+    }
+  </style>
+</body>
+</html>

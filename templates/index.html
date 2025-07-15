@@ -7,7 +7,22 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <h1>College Chatbot</h1>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/" class="nav-logo">College Chatbot</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="/chatbot" class="nav-link">Chatbot</a></li>
+        <li class="nav-item"><a href="/forum" class="nav-link">Forum</a></li>
+        {% if session.get('username') %}
+        <li class="nav-item"><a href="/logout" class="nav-link">Logout ({{ session.get('username') }})</a></li>
+        {% else %}
+        <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
+        {% endif %}
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Welcome to the College Chatbot</h1>
 
   <!-- Dropdown selector -->
   <div>
@@ -21,8 +36,6 @@
     <button id="send-dropdown-btn">Ask</button>
   </div>
 
-
-
   <!-- Chat container -->
   <div class="chat-container">
     <div id="chat-messages" class="chat-messages"></div>
@@ -34,7 +47,7 @@
     </form>
   </div>
 
-    <!-- 🔍 Friendly user clarification -->
+  <!-- 🔍 Friendly user clarification -->
   <div style="margin-top: 10px; padding: 8px; background-color: #e6f2ff; border-left: 4px solid #3399ff;">
     <p><strong>💡 Did you know?</strong> The chatbot learns from documents and FAQs. But if an answer seems unclear or incomplete:</p>
     <ul style="margin-left: 16px;">
@@ -45,12 +58,12 @@
   </div>
 
   <!-- 📝 Feedback Box -->
-   <div class="feedback-box">
-  <hr>
-  <h4>📝 Was the response helpful?</h4>
-  <textarea id="feedbackInput" rows="3" cols="60" placeholder="Leave your feedback here..."></textarea><br>
-  <button onclick="submitFeedback()">Submit Feedback</button>
-  <p id="feedbackStatus"></p>
+  <div class="feedback-box">
+    <hr>
+    <h4>📝 Was the response helpful?</h4>
+    <textarea id="feedbackInput" rows="3" cols="60" placeholder="Leave your feedback here..."></textarea><br>
+    <button onclick="submitFeedback()">Submit Feedback</button>
+    <p id="feedbackStatus"></p>
   </div>
 
   <!-- Scripts -->

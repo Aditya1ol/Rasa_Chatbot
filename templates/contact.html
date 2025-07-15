@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - College Chatbot</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="/chatbot" class="nav-logo">College Chatbot</a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="/chatbot" class="nav-link">Chatbot</a></li>
+        <li class="nav-item"><a href="/contact" class="nav-link active">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <h1>Contact Current Students</h1>
+
+  <section class="contact-info-form">
+    <h2>Submit Your Contact Information</h2>
+    <form id="contact-form">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="phone">Phone Number:</label><br>
+      <input type="tel" id="phone" name="phone"><br>
+
+      <label for="department">Department:</label><br>
+      <input type="text" id="department" name="department"><br>
+
+      <button type="submit">Submit Contact Info</button>
+    </form>
+    <p id="contactStatus"></p>
+  </section>
+
+  <section class="student-chat">
+    <h2>Ask a Question to Current Students</h2>
+    <div class="chat-container">
+      <div id="student-chat-messages" class="chat-messages"></div>
+      <form id="student-chat-form" class="chat-input">
+        <textarea id="student-msg" placeholder="Type your question here..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script>
+    // Contact info form submission
+    const contactForm = document.getElementById('contact-form');
+    const contactStatus = document.getElementById('contactStatus');
+
+    contactForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const formData = {
+        name: contactForm.name.value.trim(),
+        email: contactForm.email.value.trim(),
+        phone: contactForm.phone.value.trim(),
+        department: contactForm.department.value.trim()
+      };
+
+      fetch('/submit_contact_info', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+      .then(res => res.json())
+      .then(data => {
+        contactStatus.innerText = data.message;
+        if (data.success) {
+          contactForm.reset();
+        }
+      })
+      .catch(() => {
+        contactStatus.innerText = 'Error submitting contact info.';
+      });
+    });
+
+    // Student chat form submission
+    const studentChatForm = document.getElementById('student-chat-form');
+    const studentChatMessages = document.getElementById('student-chat-messages');
+    const studentMsgInput = document.getElementById('student-msg');
+
+    function appendStudentMessage(sender, text) {
+      const msgDiv = document.createElement('div');
+      msgDiv.classList.add('message', sender === 'User' ? 'user' : 'bot');
+      msgDiv.innerText = text;
+      studentChatMessages.appendChild(msgDiv);
+      studentChatMessages.scrollTop = studentChatMessages.scrollHeight;
+    }
+
+    studentChatForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const msg = studentMsgInput.value.trim();
+      if (!msg) return;
+
+      appendStudentMessage('User', msg);
+      studentMsgInput.value = '';
+
+      fetch('/student_chat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ message: msg })
+      })
+      .then(res => res.json())
+      .then(data => {
+        if (data.response) {
+          data.response.forEach(msg => appendStudentMessage('Bot', msg));
+        } else {
+          appendStudentMessage('Bot', 'Sorry, something went wrong.');
+        }
+      })
+      .catch(() => {
+        appendStudentMessage('Bot', 'Error sending message.');
+      });
+    });
+  </script>
+</body>
+</html>
