@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Welcome to College Chatbot</title>
-    <link rel="stylesheet" href="/static/landing.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>College Chatbot - Welcome</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='landing.css') }}">
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to College Chatbot</h1>
-        <p>Your assistant for all college-related queries.</p>
-        <a href="/chatbot" class="btn">Start Chatting</a>
+  <div class="landing-wrapper">
+    <div class="glass-box">
+      <h1 class="title">Welcome to <span>College Chatbot</span></h1>
+      <p class="subtitle">Ask anything about campus life, academics, placements, and more!</p>
+      <a href="/chatbot" class="start-btn">💬 Start Chatting</a>
     </div>
+    <footer>
+      <p>&copy; 2025 UIET Chatbot • All rights reserved</p>
+      <p>&copy; Made by Aditya Nayyer</p>
+    </footer>
+  </div>
 </body>
 </html>

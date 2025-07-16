@@ -1,71 +1,116 @@
+/* Gradient animated background */
 body {
   margin: 0;
+  padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  background: linear-gradient(-45deg, #667eea, #764ba2, #6a11cb, #2575fc);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   color: white;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
-.container {
+/* Main layout */
+.landing-wrapper {
   text-align: center;
-  padding: 150px 20px;
-  animation: fadeIn 2s ease-in-out;
+  padding: 20px;
+  width: 100%;
+  max-width: 700px;
+  margin: auto;
 }
 
-h1 {
-  font-size: 3.5rem;
-  margin-bottom: 20px;
-  animation: slideInDown 1.5s ease forwards;
+/* Glassmorphism box */
+.glass-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  padding: 60px 30px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  animation: fadeIn 1.5s ease forwards;
 }
 
-p {
-  font-size: 1.5rem;
+.title {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.title span {
+  color: #ffd700;
+  text-shadow: 0 0 10px rgba(255, 215, 0, 0.7);
+}
+
+.subtitle {
+  font-size: 1.3rem;
   margin-bottom: 40px;
-  animation: slideInUp 1.5s ease forwards;
+  color: #f1f1f1;
 }
 
-.btn {
-  background-color: #ff6f61;
-  border: none;
+/* CTA Button */
+.start-btn {
+  background: #ff6f61;
   padding: 15px 40px;
-  font-size: 1.2rem;
   color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 30px;
-  cursor: pointer;
-  box-shadow: 0 8px 15px rgba(255, 111, 97, 0.3);
   transition: all 0.3s ease;
-  animation: fadeIn 3s ease forwards;
+  animation: pulse 2s infinite;
+  box-shadow: 0 5px 15px rgba(255, 111, 97, 0.5);
 }
 
-.btn:hover {
-  background-color: #ff3b2e;
-  box-shadow: 0 15px 20px rgba(255, 59, 46, 0.4);
-  transform: translateY(-3px);
+.start-btn:hover {
+  background-color: #e64a36;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(230, 74, 54, 0.6);
+}
+
+/* Footer */
+footer {
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #eee;
+}
+
+/* Animations */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
-@keyframes slideInDown {
-  from {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0.5); }
+  70% { box-shadow: 0 0 0 20px rgba(255, 111, 97, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(255, 111, 97, 0); }
 }
 
-@keyframes slideInUp {
-  from {
-    opacity: 0;
-    transform: translateY(50px);
+/* Responsive */
+@media (max-width: 600px) {
+  .title {
+    font-size: 2rem;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  .subtitle {
+    font-size: 1rem;
+  }
+
+  .start-btn {
+    font-size: 1rem;
+    padding: 12px 30px;
+  }
+
+  .glass-box {
+    padding: 40px 20px;
   }
 }

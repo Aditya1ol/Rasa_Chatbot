@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
+
+  <!-- Navbar -->
   <nav class="navbar">
     <div class="nav-container">
       <a href="/chatbot" class="nav-logo">College Chatbot</a>
@@ -17,52 +19,59 @@
     </div>
   </nav>
 
+  <!-- Login / Signup Form -->
   <div class="login-container">
     <h1>Login / Signup</h1>
     <form id="auth-form" method="POST" action="/auth">
-      <label for="user_type">User Type:</label><br>
+      
+      <!-- User Type -->
+      <label for="user_type">User Type:</label>
       <select id="user_type" name="user_type" required>
         <option value="" disabled selected>Select user type</option>
         <option value="admin">Admin</option>
         <option value="college_student">College Student</option>
         <option value="query_user">Query User</option>
-      </select><br>
+      </select>
 
-      <label for="username">Username:</label><br>
-      <input type="text" id="username" name="username" required><br>
+      <!-- Username -->
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username" placeholder="Enter username" required>
 
+      <!-- Branch and Year (for college students) -->
       <div id="college_student_fields" style="display:none;">
-        <label for="branch">Branch:</label><br>
-        <input type="text" id="branch" name="branch"><br>
+        <label for="branch">Branch:</label>
+        <input type="text" id="branch" name="branch" placeholder="e.g. CSE">
 
-        <label for="year">Year:</label><br>
-        <input type="text" id="year" name="year"><br>
+        <label for="year">Year:</label>
+        <input type="text" id="year" name="year" placeholder="e.g. 2nd">
       </div>
 
-      <label for="email">Email:</label><br>
-      <input type="email" id="email" name="email" required><br>
+      <!-- Email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter email" required>
 
-      <script>
-        const userTypeSelect = document.getElementById('user_type');
-        const collegeFields = document.getElementById('college_student_fields');
+      <!-- Password -->
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter password" required>
 
-        userTypeSelect.addEventListener('change', function() {
-          if (this.value === 'college_student') {
-            collegeFields.style.display = 'block';
-          } else {
-            collegeFields.style.display = 'none';
-          }
-        });
-      </script>
-
-      <label for="password">Password:</label><br>
-      <input type="password" id="password" name="password" required><br>
-
+      <!-- Submit -->
       <button type="submit">Submit</button>
+
+      <!-- Error message -->
+      {% if error %}
+      <p class="error-message" style="color:red; text-align:center;">{{ error }}</p>
+      {% endif %}
     </form>
-    {% if error %}
-    <p class="error-message" style="color:red;">{{ error }}</p>
-    {% endif %}
   </div>
+
+  <!-- JS to toggle branch/year for students -->
+  <script>
+    const userTypeSelect = document.getElementById('user_type');
+    const collegeFields = document.getElementById('college_student_fields');
+
+    userTypeSelect.addEventListener('change', function () {
+      collegeFields.style.display = this.value === 'college_student' ? 'block' : 'none';
+    });
+  </script>
 </body>
 </html>

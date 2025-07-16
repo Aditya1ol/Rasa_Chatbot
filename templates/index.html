@@ -4,131 +4,83 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>College Chatbot</title>
+
+  <!-- Link to external CSS file -->
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
-  <nav class="navbar">
-    <div class="nav-container">
-      <a href="/" class="nav-logo">College Chatbot</a>
-      <ul class="nav-menu">
-        <li class="nav-item"><a href="/chatbot" class="nav-link">Chatbot</a></li>
-        <li class="nav-item"><a href="/forum" class="nav-link">Forum</a></li>
-        {% if session.get('username') %}
-        <li class="nav-item"><a href="/logout" class="nav-link">Logout ({{ session.get('username') }})</a></li>
-        {% else %}
-        <li class="nav-item"><a href="/login" class="nav-link">Login</a></li>
-        {% endif %}
-      </ul>
+
+  <!-- 🧭 Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">College Chatbot</a>
+
+      <!-- Toggle button for mobile menu -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Navbar links -->
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="/chatbot">Chatbot</a></li>
+          <li class="nav-item"><a class="nav-link" href="/forum">Forum</a></li>
+
+          <!-- Show login/logout depending on session -->
+          {% if session.get('username') %}
+          <li class="nav-item"><a class="nav-link" href="/logout">Logout ({{ session.get('username') }})</a></li>
+          {% else %}
+          <li class="nav-item"><a class="nav-link" href="/login">Login</a></li>
+          {% endif %}
+        </ul>
+      </div>
     </div>
   </nav>
 
-  <h1>Welcome to the College Chatbot</h1>
+  <!-- 💬 Chatbot Interface -->
+  <div class="container mt-4">
+    <h1 class="text-center text-primary fw-bold">Welcome to the College Chatbot</h1>
 
-  <!-- Dropdown selector -->
-  <div>
-    <select id="question-dropdown">
-      <option value="" disabled selected>Select a question</option>
-      {% for item in saved_questions %}
-      {% set question_only = item.question.split('Answer:')[0].strip() %}
-      <option value="{{ item.question }}">{{ question_only }}</option>
-      {% endfor %}
-    </select>
-    <button id="send-dropdown-btn">Ask</button>
+    <!-- 🔽 Dropdown Menu to Select a Question -->
+    <div class="text-center my-3">
+      <select id="question-dropdown" class="form-select w-50 mx-auto">
+        <option value="" disabled selected>Select a question</option>
+        {% for item in saved_questions %}
+        {% set question_only = item.question.split('Answer:')[0].strip() %}
+        <option value="{{ item.question }}">{{ question_only }}</option>
+        {% endfor %}
+      </select>
+      <button id="send-dropdown-btn" class="btn btn-danger mt-2">Ask</button>
+    </div>
+
+    <!-- 🧠 Chat Interface -->
+    <div class="chat-container p-4 bg-white shadow rounded">
+      <!-- Chat message display area -->
+      <div id="chat-messages" class="chat-messages mb-3 p-3 border bg-light rounded" style="height: 400px; overflow-y: auto;"></div>
+
+      <!-- Message input area -->
+      <form id="chat-form" class="chat-input d-flex gap-2">
+        <textarea id="msg" class="form-control" placeholder="Type your question here..." required></textarea>
+        <button type="submit" class="btn btn-primary">Send</button>
+      </form>
+    </div>
+
+    <!-- ℹ️ User Guidance Note -->
+    <div class="alert alert-info mt-4">
+      💡 <strong>Note:</strong> If a response seems incomplete, it might be due to limited data or question phrasing. You can rephrase or submit feedback below.
+    </div>
+
+    <!-- ✅ Feedback Box -->
+    <div class="feedback-box my-4 text-center">
+      <h5>📝 Was the response helpful?</h5>
+      <textarea id="feedbackInput" rows="3" class="form-control" placeholder="Leave your feedback here..."></textarea>
+      <button onclick="submitFeedback()" class="btn btn-success mt-2">Submit Feedback</button>
+      <p id="feedbackStatus" class="text-success mt-1"></p>
+    </div>
   </div>
 
-  <!-- Chat container -->
-  <div class="chat-container">
-    <div id="chat-messages" class="chat-messages"></div>
-
-    <!-- Input form -->
-    <form id="chat-form" class="chat-input">
-      <textarea id="msg" placeholder="Type your question here..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-
-  <!-- 🔍 Friendly user clarification -->
-  <div style="margin-top: 10px; padding: 8px; background-color: #e6f2ff; border-left: 4px solid #3399ff;">
-    <p><strong>💡 Did you know?</strong> The chatbot learns from documents and FAQs. But if an answer seems unclear or incomplete:</p>
-    <ul style="margin-left: 16px;">
-      <li>The information might not be in our current data.</li>
-      <li>Or the question might be asked in a new way we haven’t seen before.</li>
-    </ul>
-    <p>Please share your feedback below to help us improve. 🙏</p>
-  </div>
-
-  <!-- 📝 Feedback Box -->
-  <div class="feedback-box">
-    <hr>
-    <h4>📝 Was the response helpful?</h4>
-    <textarea id="feedbackInput" rows="3" cols="60" placeholder="Leave your feedback here..."></textarea><br>
-    <button onclick="submitFeedback()">Submit Feedback</button>
-    <p id="feedbackStatus"></p>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    const chatMessages = document.getElementById("chat-messages");
-    const chatForm = document.getElementById("chat-form");
-    const msgInput = document.getElementById("msg");
-    const dropdown = document.getElementById("question-dropdown");
-    const sendDropdownBtn = document.getElementById("send-dropdown-btn");
-
-    function appendMessage(sender, text) {
-      const msgDiv = document.createElement("div");
-      msgDiv.classList.add("message", sender === "User" ? "user" : "bot");
-      msgDiv.innerText = `${text}`;
-      chatMessages.appendChild(msgDiv);
-      chatMessages.scrollTop = chatMessages.scrollHeight;
-    }
-
-    async function sendMessage(text) {
-      appendMessage("User", text);
-      msgInput.value = "";
-
-      const response = await fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message: text })
-      });
-
-      const data = await response.json();
-      if (data.response) {
-        data.response.forEach(msg => appendMessage("Bot", msg));
-      } else {
-        appendMessage("Bot", "Sorry, something went wrong.");
-      }
-    }
-
-    chatForm.addEventListener("submit", function (e) {
-      e.preventDefault();
-      const msg = msgInput.value.trim();
-      if (msg) sendMessage(msg);
-    });
-
-    sendDropdownBtn.addEventListener("click", function () {
-      const selected = dropdown.value;
-      if (selected) {
-        msgInput.value = selected;
-        sendMessage(selected);
-      }
-    });
-
-    function submitFeedback() {
-      const feedback = document.getElementById("feedbackInput").value.trim();
-      if (!feedback) return;
-
-      fetch("/submit_feedback", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ feedback: feedback })
-      })
-      .then(res => res.json())
-      .then(data => {
-        document.getElementById("feedbackStatus").innerText = data.message;
-        document.getElementById("feedbackInput").value = "";
-      });
-    }
-  </script>
+  <!-- 📜 JavaScript files -->
+  <script src="{{ url_for('static', filename='script.js') }}"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
