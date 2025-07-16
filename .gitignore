@@ -1,27 +1,37 @@
-# Byte-compiled / cache files
+# Python
 __pycache__/
 *.py[cod]
-*.so
-
-# Environment
-.env
-env/
-.b_env/
-
-# Logs
+*.pkl
 *.log
 
-# Rasa model files
-*.tar.gz
-models/
-*.safetensors
-*.pt
-*.pkl
+# Environments
+.env
+.venv/
+b_env/
+env/
 
-# IDE
-.vscode/
-.idea/
-
-# OS
+# System
 .DS_Store
-Thumbs.db
+
+# Model & Vector Files
+*.bin
+*.faiss
+*.pt
+*.h5
+*.safetensors
+*.ckpt
+
+# PDF or data
+pdfs/
+*.pdf
+
+# HuggingFace tokenizer/model
+*.json
+*.model
+
+# VSCode
+.vscode/
+
+# Output files
+*.zip
+*.csv
