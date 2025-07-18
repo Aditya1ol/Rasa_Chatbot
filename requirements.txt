@@ -8,7 +8,7 @@ nltk==3.9.1
 
 # ML & QA
 transformers==4.46.3
-torch==2.4.1  # ⚠️ use torch==2.4.1+cpu if no GPU
+torch==2.5.0 # ⚠️ use torch==2.4.1+cpu if no GPU
 sentence-transformers==3.2.1
 faiss-cpu==1.8.0.post1
 rasa==3.6.21
