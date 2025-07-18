@@ -1,27 +1,27 @@
 # Web framework
-Flask==3.0.3
-Flask-Cors==5.0.0
+Flask
+Flask-Cors
 
 # PDF & Text processing
-PyMuPDF==1.24.11
-nltk==3.9.1
+PyMuPDF
+nltk
 
 # ML & QA
-transformers==4.46.3
-torch==2.5.0 # ⚠️ use torch==2.4.1+cpu if no GPU
-sentence-transformers==3.2.1
-faiss-cpu==1.8.0.post1
-rasa==3.6.21
-rasa-sdk==3.6.2
+transformers
+torch # ⚠️ use torch==2.4.1+cpu if no GPU
+sentence-transformers
+faiss-cpu
+rasa
+rasa-sdk
 
 
 # Rasa integration
-requests==2.32.3
+requests
 
 # Extra utilities
-numpy==1.23.5
-scipy==1.10.1
-cachetools==5.3.3
+numpy
+scipy
+cachetools
 uuid
-json5==0.9.14
-gunicorn==21.2.0  # Optional, but Render prefers gunicorn over built-in server
+json5
+gunicorn # Optional, but Render prefers gunicorn over built-in server
