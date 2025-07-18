@@ -7,3 +7,5 @@ services:
     envVars:
       - key: RASA_API_URL
         value: http://localhost:5005/webhooks/rest/webhook
+    build:
+      pythonVersion: 3.8
