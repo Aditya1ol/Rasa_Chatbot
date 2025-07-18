@@ -7,7 +7,7 @@ PyMuPDF
 nltk
 
 # ML & QA
-transformers==4.30.2 
+transformers==4.28.1
 torch # ⚠️ use torch==2.4.1+cpu if no GPU
 sentence-transformers
 faiss-cpu
