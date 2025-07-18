@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const questionDropdown = document.getElementById("question-dropdown");
   const sendDropdownBtn = document.getElementById("send-dropdown-btn");
 
+  let lastSentMessage = "";
+
   /**
    * 🧱 Append a message to the chat window
    * @param {string} message - The message to display
@@ -23,31 +25,37 @@ document.addEventListener("DOMContentLoaded", () => {
    * 🚀 Send user message to backend Flask API
    * @param {string} message - User's input or dropdown selection
    */
-  async function sendMessage(message) {
-    appendMessage(message, "user");
+ async function sendMessage(message) {
+  if (!message) return;
+  appendMessage(message, "user");
 
-    try {
-      const response = await fetch("/chat", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ message })
+  try {
+    const response = await fetch("/chat", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
+    });
+
+    const data = await response.json();
+    if (data.response && Array.isArray(data.response)) {
+      data.response.forEach(resp => {
+        if (resp) appendMessage(resp, "bot");
       });
-
-      const data = await response.json();
-
-      // ✅ If response found, append each line
-      if (data.response && data.response.length > 0) {
-        data.response.forEach((resp) => appendMessage(resp, "bot"));
-      } else {
-        appendMessage("🤖 Sorry, I couldn't find any relevant information.", "bot");
-      }
-    } catch (error) {
-      appendMessage("⚠️ Error connecting to the server.", "bot");
-      console.error("Chat fetch error:", error);
+    } else {
+      appendMessage("🤖 No valid response from server.", "bot");
     }
+  } catch (error) {
+    console.error("Error:", error);
+    appendMessage("⚠️ Server error occurred.", "bot");
+  }
 
-    // Clear input after sending
-    userInput.value = "";
+  userInput.value = "";
+
+
+    // Allow asking same message again after 3 seconds
+    setTimeout(() => {
+      lastSentMessage = "";
+    }, 3000);
   }
 
   /**
@@ -64,12 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
   /**
    * 📥 Handle dropdown 'Ask' button click
    */
-  sendDropdownBtn.addEventListener("click", () => {
-    const selectedQuestion = questionDropdown.value;
-    if (selectedQuestion) {
-      sendMessage(selectedQuestion);
-    }
-  });
+  
 
   /**
    * 📝 Feedback submission logic

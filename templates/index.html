@@ -13,7 +13,7 @@
   <!-- 🧭 Navigation Bar -->
   <nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="/">College Chatbot</a>
+      <a class="navbar-brand" href="/">UIET Chatbot</a>
 
       <!-- Toggle button for mobile menu -->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -39,7 +39,7 @@
 
   <!-- 💬 Chatbot Interface -->
   <div class="container mt-4">
-    <h1 class="text-center text-primary fw-bold">Welcome to the College Chatbot</h1>
+    <h1 class="text-center text-primary fw-bold">Welcome to the UIET's Chatbot</h1>
 
     <!-- 🔽 Dropdown Menu to Select a Question -->
     <div class="text-center my-3">
@@ -74,47 +74,24 @@
     <div class="feedback-box my-4 text-center">
       <h5>📝 Was the response helpful?</h5>
       <textarea id="feedbackInput" rows="3" class="form-control" placeholder="Leave your feedback here..."></textarea>
+      
       <button onclick="submitFeedback()" class="btn btn-success mt-2">Submit Feedback</button>
       <p id="feedbackStatus" class="text-success mt-1"></p>
     </div>
   </div>
 
-<<<<<<< HEAD
+
   <!-- 📜 JavaScript files -->
   <script src="{{ url_for('static', filename='script.js') }}"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-=======
-
-
-  <!-- Chat container -->
-  <div class="chat-container">
-    <div id="chat-messages" class="chat-messages"></div>
-
-    <!-- Input form -->
-    <form id="chat-form" class="chat-input">
-      <textarea id="msg" placeholder="Type your question here..." required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
 
     <!-- 🔍 Friendly user clarification -->
   <div style="margin-top: 10px; padding: 8px; background-color: #e6f2ff; border-left: 4px solid #3399ff;">
-    <p><strong>💡 Did you know?</strong> The chatbot learns from documents and FAQs. But if an answer seems unclear or incomplete:</p>
-    <ul style="margin-left: 16px;">
-      <li>The information might not be in our current data.</li>
-      <li>Or the question might be asked in a new way we haven’t seen before.</li>
-    </ul>
-    <p>Please share your feedback below to help us improve. 🙏</p>
+    <p><strong>💡 Also, did you know?</strong> In the College Chatbot Forum you can ask any question related to UIET or counselling process and Students from UIET will help you out! </p>
+    <p>Please share your feedback to help us improve. 🙏</p>
   </div>
 
-  <!-- 📝 Feedback Box -->
-   <div class="feedback-box">
-  <hr>
-  <h4>📝 Was the response helpful?</h4>
-  <textarea id="feedbackInput" rows="3" cols="60" placeholder="Leave your feedback here..."></textarea><br>
-  <button onclick="submitFeedback()">Submit Feedback</button>
-  <p id="feedbackStatus"></p>
-  </div>
+
 
   <!-- Scripts -->
   <script>
@@ -180,6 +157,5 @@
       });
     }
   </script>
->>>>>>> 8bf9dbbcafd16d47b7bbacf9b4940e977436e1b8
 </body>
 </html>

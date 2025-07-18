@@ -32,6 +32,13 @@
           <div class="forum-post">
             <div class="post-question">
               <strong>Q:</strong> {{ post.question }}
+              <br>
+              <small><em>By: {{ post.user }}
+                       {% if post.user_type %}
+                         <span class="badge badge-{{ post.user_type|lower|replace(' ', '_') }}">{{ post.user_type }}</span>
+                       {% endif %}
+                      </em>
+              </small>
               {% if is_admin %}
                 <form method="POST" action="/delete_post" style="float:right; display:inline;">
                   <input type="hidden" name="post_id" value="{{ post.id }}">
@@ -44,7 +51,12 @@
               {% for answer in post.answers %}
                 <div class="forum-answer {% if answer.verified %}verified{% endif %}">
                   <p>{{ answer.text }}</p>
-                  <p><em>By: {{ answer.user }}</em></p>
+                  <p><em>By: {{ answer.user }}
+                    {% if answer.user_type %}
+                      <span class="badge badge-{{ answer.user_type|lower|replace(' ', '_') }}">{{ answer.user_type }}</span>
+                    {% endif %}
+                    </em>
+                   </p>
                   <p>Votes: {{ answer.votes }}</p>
 
                   {% if is_admin %}

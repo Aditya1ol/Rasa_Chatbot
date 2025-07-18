@@ -657,9 +657,29 @@ button[type="submit"]:hover {
   font-weight: 600;
   cursor: pointer;
 }
+.badge {
+  display: inline-block;
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  border-radius: 5px;
+  margin-left: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.badge-admin {
+  background-color: #d32f2f;
+}
+
+.badge_college_student {
+  background-color: #1565c0;
+}
+
+.badge_new_student {
+  background-color: #388e3c;
+}
+
 
 .post-question-form button:hover {
   background: linear-gradient(135deg, #5e35b1, #ab47bc);
-=======
->>>>>>> 8bf9dbbcafd16d47b7bbacf9b4940e977436e1b8
 }

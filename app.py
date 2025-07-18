@@ -38,10 +38,11 @@ cache = TTLCache(maxsize=100, ttl=3600)
 
 # Use GPU if available
 device = 0 if torch.cuda.is_available() else -1
-bert_qa = pipeline("question-answering", model="bert-large-uncased-whole-word-masking-finetuned-squad", device=device)
+bert_qa = pipeline("question-answering", model="distilbert-base-uncased-distilled-squad", device=device)
 
 index = None
 chunks = []
+chunk_embeddings = None  # Cache for chunk embeddings to avoid repeated computation
 pdf_response_state = {"chunks": [], "pointer": 0}
 
 # Load FAQ
@@ -116,13 +117,15 @@ def extract_chunks_from_txt(txt_path, window_size=3, stride=1):
     return chunks
 
 def process_all_documents():
-    global index, chunks
+    global index, chunks, chunk_embeddings
     if os.path.exists(INDEX_PATH) and os.path.exists(CHUNKS_PATH):
         print(f"✅ Using cached FAISS index from '{INDEX_PATH}'")
         index = faiss.read_index(INDEX_PATH)
         with open(CHUNKS_PATH, "rb") as f:
             chunks = pickle.load(f)
-        print(f"✅ Loaded {len(chunks)} chunks from cache")
+        # Compute and cache chunk embeddings once after loading chunks
+        chunk_embeddings = EMBEDDING_MODEL.encode(chunks, show_progress_bar=True)
+        print(f"✅ Loaded {len(chunks)} chunks and cached embeddings from cache")
         return
 
     print("🔄 Extracting chunks...")
@@ -145,20 +148,23 @@ def process_all_documents():
         with open(CHUNKS_PATH, "wb") as f:
             pickle.dump(all_chunks, f)
         chunks = all_chunks
-        print(f"✅ Indexed {len(chunks)} chunks.")
+        chunk_embeddings = embeddings  # Cache embeddings
+        print(f"✅ Indexed {len(chunks)} chunks and cached embeddings.")
     else:
         print("⚠️ No chunks to index.")
 
 def get_pdf_response(message, k=5):
-    if not index or not chunks:
-        return ["No PDF data found."]
+    if not index or not chunks or chunk_embeddings is None:
+        return None
     try:
         query_embedding = EMBEDDING_MODEL.encode([message])
         distances, indices = index.search(query_embedding, k * 10)
-        candidate_chunks = [chunks[idx] for idx in indices[0] if idx < len(chunks)]
         filtered_chunks, filtered_embeddings = [], []
-        for chunk in candidate_chunks:
-            emb = EMBEDDING_MODEL.encode([chunk])[0]
+        for idx in indices[0]:
+            if idx >= len(chunks):
+                continue
+            chunk = chunks[idx]
+            emb = chunk_embeddings[idx]
             sim_scores = [np.dot(emb, e) / (np.linalg.norm(emb) * np.linalg.norm(e)) for e in filtered_embeddings]
             if not any(score > 0.9 for score in sim_scores):
                 filtered_chunks.append(chunk)
@@ -167,10 +173,12 @@ def get_pdf_response(message, k=5):
                 break
         pdf_response_state["chunks"] = filtered_chunks
         pdf_response_state["pointer"] = min(2, len(filtered_chunks))
+        if len(filtered_chunks) == 0:
+            return None
         return filtered_chunks[:2]
     except Exception as e:
         logging.error(f"PDF search error: {e}")
-        return ["Error processing PDF."]
+        return None
 
 def generate_bert_answer(question, context_chunks):
     best_answer = ""
@@ -216,6 +224,7 @@ def forum():
     is_admin = users.get(session.get('username'), {}).get("is_admin", False)
     return render_template("forum.html", posts=posts, logged_in=logged_in, is_admin=is_admin)
 
+
 @app.route("/login")
 def login():
     return render_template("login.html")
@@ -252,6 +261,7 @@ def logout():
 @app.route("/chat", methods=["POST"])
 def chat():
     user_message = request.json.get("message", "").strip().lower()
+
     if user_message in ["continue", "more"]:
         start = pdf_response_state["pointer"]
         remaining = pdf_response_state["chunks"][start:]
@@ -262,21 +272,27 @@ def chat():
         else:
             return jsonify({"response": ["No more information to show."]})
 
+    # Step 1: Try FAQ
     faq_answer = find_faq_answer(user_message)
     if faq_answer:
         return jsonify({"response": [faq_answer]})
 
+    # Step 2: Try PDF + DistilBERT answer
     pdf_chunks = get_pdf_response(user_message)
-    if pdf_chunks and "No PDF data found." not in pdf_chunks[0]:
+    if pdf_chunks:
         bert_answer = generate_bert_answer(user_message, pdf_chunks)
         if bert_answer:
             return jsonify({"response": [bert_answer]})
 
+    # Step 3: Try Rasa
     rasa_responses = get_rasa_response(user_message)
     if rasa_responses:
         return jsonify({"response": rasa_responses})
 
+    # Step 4: Fallback
     return jsonify({"response": ["Sorry, I couldn’t find any relevant information."]})
+
+
 
 @app.route("/post_question", methods=["POST"])
 @login_required
@@ -285,7 +301,16 @@ def post_question():
     if not question_text:
         return redirect(url_for("forum"))
     question_id = str(uuid.uuid4())
-    posts.append({"id": question_id, "question": question_text, "answers": []})
+    user = session.get("username")
+    user_type = users.get(user, {}).get("type", "Student")
+    posts.append({
+        "id": question_id,
+        "question": question_text,
+        "user": user,
+        "user_type": user_type,
+        "answers": []
+    })
+
     with open(POSTS_FILE, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2)
     return redirect(url_for("forum"))
@@ -301,7 +326,16 @@ def post_answer():
     for post in posts:
         if post["id"] == post_id:
             answer_id = str(uuid.uuid4())
-            post["answers"].append({"id": answer_id, "text": answer_text, "user": username, "verified": False, "votes": 0})
+            user_type = users.get(username, {}).get("type", "Student")
+            post["answers"].append({
+            "id": answer_id,
+            "text": answer_text,
+            "user": username,
+            "user_type": user_type,
+            "verified": False,
+            "votes": 0
+})
+
             break
     with open(POSTS_FILE, "w", encoding="utf-8") as f:
         json.dump(posts, f, indent=2)
