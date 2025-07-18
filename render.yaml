@@ -2,9 +2,10 @@ services:
   - type: web
     name: uiet-chatbot
     env: python
+    pythonVersion: 3.12
     buildCommand: "pip install -r requirements.txt"
     startCommand: "./start.sh"
     envVars:
       - key: RASA_API_URL
         value: http://localhost:5005/webhooks/rest/webhook
-    pythonVersion: 3.8 
+    
