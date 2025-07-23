@@ -290,7 +290,7 @@ def chat():
         return jsonify({"response": rasa_responses})
 
     # Step 4: Fallback
-    return jsonify({"response": ["Sorry, I couldn’t find any relevant information."]})
+    return jsonify({"response": ["Sorry, I couldn’t find any relevant information, You can visit https://uiet.puchd.ac.in/ for more details or ask your doubt in forum section."]})
 
 
 
